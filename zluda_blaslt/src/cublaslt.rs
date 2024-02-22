@@ -187,7 +187,7 @@ impl cudaError {
     pub const cudaErrorLaunchFileScopedSurf: cudaError = cudaError(67);
 }
 impl cudaError {
-    #[doc = " This error indicates that a call to ::cudaDeviceSynchronize made from\n the device runtime failed because the call was made at grid depth greater\n than than either the default (2 levels of grids) or user specified device\n limit ::cudaLimitDevRuntimeSyncDepth. To be able to synchronize on\n launched grids at a greater depth successfully, the maximum nested\n depth at which ::cudaDeviceSynchronize will be called must be specified\n with the ::cudaLimitDevRuntimeSyncDepth limit to the ::cudaDeviceSetLimit\n api before the host-side launch of a kernel using the device runtime.\n Keep in mind that additional levels of sync depth require the runtime\n to reserve large amounts of device memory that cannot be used for\n user allocations."]
+    #[doc = " This error indicates that a call to ::cudaDeviceSynchronize made from\n the device runtime failed because the call was made at grid depth greater\n than either the default (2 levels of grids) or user specified device\n limit ::cudaLimitDevRuntimeSyncDepth. To be able to synchronize on\n launched grids at a greater depth successfully, the maximum nested\n depth at which ::cudaDeviceSynchronize will be called must be specified\n with the ::cudaLimitDevRuntimeSyncDepth limit to the ::cudaDeviceSetLimit\n api before the host-side launch of a kernel using the device runtime.\n Keep in mind that additional levels of sync depth require the runtime\n to reserve large amounts of device memory that cannot be used for\n user allocations."]
     pub const cudaErrorSyncDepthExceeded: cudaError = cudaError(68);
 }
 impl cudaError {
