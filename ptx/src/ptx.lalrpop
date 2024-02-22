@@ -1696,7 +1696,7 @@ InstBarRed: ast::Instruction<ast::ParsedArgParams<'input>> = {
 }
 
 // https://docs.nvidia.com/cuda/parallel-thread-execution/index.html#parallel-synchronization-and-communication-instructions-atom
-// The documentation does not mention all spported operations:
+// The documentation does not mention all supported operations:
 // * Operation .add requires .u32 or .s32 or .u64 or .f64 or f16 or f16x2 or .f32
 // * Operation .inc requires .u32 type for instruction
 // * Operation .dec requires .u32 type for instruction

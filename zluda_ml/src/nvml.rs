@@ -631,7 +631,7 @@ impl nvmlGpuP2PStatus_enum {
     pub const NVML_P2P_STATUS_OK: nvmlGpuP2PStatus_enum = nvmlGpuP2PStatus_enum(0);
 }
 impl nvmlGpuP2PStatus_enum {
-    pub const NVML_P2P_STATUS_CHIPSET_NOT_SUPPORED: nvmlGpuP2PStatus_enum =
+    pub const NVML_P2P_STATUS_CHIPSET_NOT_SUPPORTED: nvmlGpuP2PStatus_enum =
         nvmlGpuP2PStatus_enum(1);
 }
 impl nvmlGpuP2PStatus_enum {

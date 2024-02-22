@@ -5408,7 +5408,7 @@ pub struct ADLPoint {
     #[doc = " y coordinate"]
     pub iY: ::std::os::raw::c_int,
 }
-#[doc = "\n\\brief Structure containing information about driver supported gamut coordinates\n\n This structure is used to store the driver supported supported gamut coordinates\n \\nosubgrouping\n"]
+#[doc = "\n\\brief Structure containing information about driver supported gamut coordinates\n\n This structure is used to store the driver supported gamut coordinates\n \\nosubgrouping\n"]
 #[repr(C)]
 #[derive(Copy, Clone)]
 pub struct ADLGamutCoordinates {

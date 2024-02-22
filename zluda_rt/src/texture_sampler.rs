@@ -70,7 +70,7 @@ impl TextureSamplerData {
         };
         let buffer = buffer.borrow()?;
         // TODO: create mipmapped arrays when they work in HIP
-        // Currently hipMipmappedArrayCreate(...) fails, because it's "unuspported"
+        // Currently hipMipmappedArrayCreate(...) fails, because it's "unusupported"
         // (tested on Linux ROCm 5.4.3 on RX 6800 XT)
         let mut hip_texture = ptr::null_mut();
         let mut array = ptr::null_mut();

@@ -3899,7 +3899,7 @@ typedef struct ADLPoint
 /////////////////////////////////////////////////////////////////////////////////////////////
 ///\brief Structure containing information about driver supported gamut coordinates
 ///
-/// This structure is used to store the driver supported supported gamut coordinates
+/// This structure is used to store the driver supported gamut coordinates
 /// \nosubgrouping
 ////////////////////////////////////////////////////////////////////////////////////////////
 
