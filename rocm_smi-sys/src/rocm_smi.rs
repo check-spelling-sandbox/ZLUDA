@@ -412,7 +412,7 @@ impl rsmi_temperature_metric_t {
     pub const RSMI_TEMP_LAST: rsmi_temperature_metric_t = rsmi_temperature_metric_t(13);
 }
 #[repr(transparent)]
-#[doc = " @brief Temperature Metrics.  This enum is used to identify various\n temperature metrics. Corresponding values will be in millidegress\n Celcius."]
+#[doc = " @brief Temperature Metrics.  This enum is used to identify various\n temperature metrics. Corresponding values will be in millidegress\n Celsius."]
 #[derive(Copy, Clone, Hash, PartialEq, Eq)]
 pub struct rsmi_temperature_metric_t(pub ::std::os::raw::c_uint);
 impl rsmi_voltage_metric_t {
@@ -1288,7 +1288,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = "  @brief Get the temperature metric value for the specified metric, from the\n  specified temperature sensor on the specified device.\n\n  @details Given a device index @p dv_ind, a sensor type @p sensor_type, a\n  ::rsmi_temperature_metric_t @p metric and a pointer to an int64_t @p\n  temperature, this function will write the value of the metric indicated by\n  @p metric and @p sensor_type to the memory location @p temperature.\n\n  @param[in] dv_ind a device index\n\n  @param[in] sensor_type part of device from which temperature should be\n  obtained. This should come from the enum ::rsmi_temperature_type_t\n\n  @param[in] metric enum indicated which temperature value should be\n  retrieved\n\n  @param[inout] temperature a pointer to int64_t to which the temperature\n  will be written, in millidegrees Celcius.\n  If this parameter is nullptr, this function will return\n  ::RSMI_STATUS_INVALID_ARGS if the function is supported with the provided,\n  arguments and ::RSMI_STATUS_NOT_SUPPORTED if it is not supported with the\n  provided arguments.\n\n  @retval ::RSMI_STATUS_SUCCESS call was successful\n  @retval ::RSMI_STATUS_NOT_SUPPORTED installed software or hardware does not\n  support this function with the given arguments\n  @retval ::RSMI_STATUS_INVALID_ARGS the provided arguments are not valid\n"]
+    #[doc = "  @brief Get the temperature metric value for the specified metric, from the\n  specified temperature sensor on the specified device.\n\n  @details Given a device index @p dv_ind, a sensor type @p sensor_type, a\n  ::rsmi_temperature_metric_t @p metric and a pointer to an int64_t @p\n  temperature, this function will write the value of the metric indicated by\n  @p metric and @p sensor_type to the memory location @p temperature.\n\n  @param[in] dv_ind a device index\n\n  @param[in] sensor_type part of device from which temperature should be\n  obtained. This should come from the enum ::rsmi_temperature_type_t\n\n  @param[in] metric enum indicated which temperature value should be\n  retrieved\n\n  @param[inout] temperature a pointer to int64_t to which the temperature\n  will be written, in millidegrees Celsius.\n  If this parameter is nullptr, this function will return\n  ::RSMI_STATUS_INVALID_ARGS if the function is supported with the provided,\n  arguments and ::RSMI_STATUS_NOT_SUPPORTED if it is not supported with the\n  provided arguments.\n\n  @retval ::RSMI_STATUS_SUCCESS call was successful\n  @retval ::RSMI_STATUS_NOT_SUPPORTED installed software or hardware does not\n  support this function with the given arguments\n  @retval ::RSMI_STATUS_INVALID_ARGS the provided arguments are not valid\n"]
     pub fn rsmi_dev_temp_metric_get(
         dv_ind: u32,
         sensor_type: u32,
