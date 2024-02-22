@@ -5145,7 +5145,7 @@ pub struct ADL_RIS_SETTINGS {
     pub GlobalSharpeningDegree_MaxLimit: ::std::os::raw::c_int,
     pub GlobalSharpeningDegree_Step: ::std::os::raw::c_int,
 }
-#[doc = "\n\\brief Structure containing information about CHILL Settings change reason\n\n  Elements of Chiil settings changed reason.\n \\nosubgrouping\n"]
+#[doc = "\n\\brief Structure containing information about CHILL Settings change reason\n\n  Elements of Chill settings changed reason.\n \\nosubgrouping\n"]
 #[repr(C)]
 #[derive(Copy, Clone)]
 pub struct ADL_CHILL_NOTFICATION_REASON {

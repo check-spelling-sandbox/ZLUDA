@@ -3695,7 +3695,7 @@ typedef struct ADL_RIS_SETTINGS
 /////////////////////////////////////////////////////////////////////////////////////////////
 ///\brief Structure containing information about CHILL Settings change reason
 ///
-///  Elements of Chiil settings changed reason.
+///  Elements of Chill settings changed reason.
 /// \nosubgrouping
 ////////////////////////////////////////////////////////////////////////////////////////////
 typedef struct ADL_CHILL_NOTFICATION_REASON
