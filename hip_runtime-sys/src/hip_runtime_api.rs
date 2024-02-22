@@ -573,7 +573,7 @@ impl hipMemoryType {
     pub const hipMemoryTypeUnified: hipMemoryType = hipMemoryType(3);
 }
 impl hipMemoryType {
-    #[doc = "< Managed memory, automaticallly managed by the unified\n< memory system"]
+    #[doc = "< Managed memory, automatically managed by the unified\n< memory system"]
     pub const hipMemoryTypeManaged: hipMemoryType = hipMemoryType(4);
 }
 #[repr(transparent)]
