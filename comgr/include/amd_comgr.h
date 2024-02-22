@@ -98,7 +98,7 @@ extern "C" {
  *
  * The library supports generating and inspecting code objects that
  * contain machine code for a certain set of instruction set
- * arhitectures (isa). The set of isa supported and information about
+ * architectures (isa). The set of isa supported and information about
  * the properties of the isa can be queried.
  *
  * The library supports performing an action that can take data
