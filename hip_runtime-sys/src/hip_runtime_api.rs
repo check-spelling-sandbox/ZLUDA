@@ -3934,7 +3934,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Get CU mask associated with an asynchronous stream\n\n @param[in] stream stream to be queried\n @param[in] cuMaskSize number of the block of memories (uint32_t *) allocated by user\n @param[out] cuMask Pointer to a pre-allocated block of memories (uint32_t *) in which\n the stream's CU mask is returned. The CU mask is returned in a chunck of 32 bits where\n each active bit represents one active CU\n @return #hipSuccess, #hipErrorInvalidHandle, #hipErrorInvalidValue\n\n @see hipStreamCreate, hipStreamSynchronize, hipStreamWaitEvent, hipStreamDestroy"]
+    #[doc = " @brief Get CU mask associated with an asynchronous stream\n\n @param[in] stream stream to be queried\n @param[in] cuMaskSize number of the block of memories (uint32_t *) allocated by user\n @param[out] cuMask Pointer to a pre-allocated block of memories (uint32_t *) in which\n the stream's CU mask is returned. The CU mask is returned in a chunk of 32 bits where\n each active bit represents one active CU\n @return #hipSuccess, #hipErrorInvalidHandle, #hipErrorInvalidValue\n\n @see hipStreamCreate, hipStreamSynchronize, hipStreamWaitEvent, hipStreamDestroy"]
     pub fn hipExtStreamGetCUMask(
         stream: hipStream_t,
         cuMaskSize: u32,
