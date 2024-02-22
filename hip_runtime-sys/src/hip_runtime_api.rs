@@ -4491,7 +4491,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = "  @brief Returns a global pointer from a module.\n  Returns in *dptr and *bytes the pointer and size of the global of name name located in module hmod.\n  If no variable of that name exists, it returns hipErrorNotFound. Both parameters dptr and bytes are optional.\n  If one of them is NULL, it is ignored and hipSuccess is returned.\n\n  @param[out]  dptr  Returns global device pointer\n  @param[out]  bytes Returns global size in bytes\n  @param[in]   hmod  Module to retrieve global from\n  @param[in]   name  Name of global to retrieve\n\n  @return #hipSuccess, #hipErrorInvalidValue, #hipErrorNotFound, #hipErrorInvalidContext\n"]
+    #[doc = "  @brief Returns a global pointer from a module.\n  Returns in *dptr and *bytes the pointer and size of the global of name located in module hmod.\n  If no variable of that name exists, it returns hipErrorNotFound. Both parameters dptr and bytes are optional.\n  If one of them is NULL, it is ignored and hipSuccess is returned.\n\n  @param[out]  dptr  Returns global device pointer\n  @param[out]  bytes Returns global size in bytes\n  @param[in]   hmod  Module to retrieve global from\n  @param[in]   name  Name of global to retrieve\n\n  @return #hipSuccess, #hipErrorInvalidValue, #hipErrorNotFound, #hipErrorInvalidContext\n"]
     pub fn hipModuleGetGlobal(
         dptr: *mut hipDeviceptr_t,
         bytes: *mut usize,
