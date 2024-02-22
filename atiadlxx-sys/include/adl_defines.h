@@ -156,7 +156,7 @@
 #define ADL_DT_LCD_PANEL                       2
 /// Define DFP display type
 #define ADL_DT_DIGITAL_FLAT_PANEL        3
-/// Define Componment Video display type
+/// Define Component Video display type
 #define ADL_DT_COMPONENT_VIDEO               4
 /// Define Projector display type
 #define ADL_DT_PROJECTOR                       5

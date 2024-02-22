@@ -594,7 +594,7 @@ typedef struct ADLDisplayInfo
 /// The Display type. For example: CRT, TV, CV, DFP.
     int  iDisplayType;
 
-/// The display output type. For example: HDMI, SVIDEO, COMPONMNET VIDEO.
+/// The display output type. For example: HDMI, SVIDEO, COMPONENT VIDEO.
     int  iDisplayOutputType;
 
 /// The connector type for the device.

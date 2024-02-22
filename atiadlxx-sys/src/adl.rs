@@ -2775,7 +2775,7 @@ pub struct ADLDisplayInfo {
     pub strDisplayManufacturerName: [::std::os::raw::c_char; 256usize],
     #[doc = " The Display type. For example: CRT, TV, CV, DFP."]
     pub iDisplayType: ::std::os::raw::c_int,
-    #[doc = " The display output type. For example: HDMI, SVIDEO, COMPONMNET VIDEO."]
+    #[doc = " The display output type. For example: HDMI, SVIDEO, COMPONENT VIDEO."]
     pub iDisplayOutputType: ::std::os::raw::c_int,
     #[doc = " The connector type for the device."]
     pub iDisplayConnector: ::std::os::raw::c_int,
