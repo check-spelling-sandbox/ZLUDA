@@ -987,7 +987,7 @@ pub struct rsmi_gpu_metrics_t {
     pub pcie_link_speed: u16,
     pub padding: u16,
     pub gfx_activity_acc: u32,
-    pub mem_actvity_acc: u32,
+    pub mem_activity_acc: u32,
     pub temperature_hbm: [u16; 4usize],
 }
 #[doc = " @brief This structure holds error counts."]
