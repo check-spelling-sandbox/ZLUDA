@@ -4263,7 +4263,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Controls visibility of the specified pool between devices\n\n @param [in] mem_pool   Memory pool for acccess change\n @param [in] desc_list  Array of access descriptors. Each descriptor instructs the access to enable for a single gpu\n @param [in] count  Number of descriptors in the map array.\n\n @returns  #hipSuccess, #hipErrorInvalidValue\n\n @see hipMallocFromPoolAsync, hipMallocAsync, hipFreeAsync, hipMemPoolGetAttribute,\n hipMemPoolTrimTo, hipDeviceSetMemPool, hipMemPoolSetAttribute, hipMemPoolGetAccess\n\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues.\n\n @note  This API is implemented on Linux, under development on Windows."]
+    #[doc = " @brief Controls visibility of the specified pool between devices\n\n @param [in] mem_pool   Memory pool for access change\n @param [in] desc_list  Array of access descriptors. Each descriptor instructs the access to enable for a single gpu\n @param [in] count  Number of descriptors in the map array.\n\n @returns  #hipSuccess, #hipErrorInvalidValue\n\n @see hipMallocFromPoolAsync, hipMallocAsync, hipFreeAsync, hipMemPoolGetAttribute,\n hipMemPoolTrimTo, hipDeviceSetMemPool, hipMemPoolSetAttribute, hipMemPoolGetAccess\n\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues.\n\n @note  This API is implemented on Linux, under development on Windows."]
     pub fn hipMemPoolSetAccess(
         mem_pool: hipMemPool_t,
         desc_list: *const hipMemAccessDesc,
