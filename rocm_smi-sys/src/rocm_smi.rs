@@ -1688,7 +1688,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Get the value associated with a function/variant iterator\n\n @details Given an ::rsmi_func_id_iter_handle_t @p handle, this function\n will write the identifier of the function/variant to the user provided\n memory pointed to by @p value.\n\n @p value may point to a function name, a variant id, or a monitor/sensor\n index, depending on what kind of iterator @p handle is\n\n @param[in] handle An iterator for which the value is being requested\n\n @param[inout] value A pointer to an ::rsmi_func_id_value_t provided by the\n caller to which this function will write the value assocaited with @p handle\n\n @retval ::RSMI_STATUS_SUCCESS is returned upon successful call.\n"]
+    #[doc = " @brief Get the value associated with a function/variant iterator\n\n @details Given an ::rsmi_func_id_iter_handle_t @p handle, this function\n will write the identifier of the function/variant to the user provided\n memory pointed to by @p value.\n\n @p value may point to a function name, a variant id, or a monitor/sensor\n index, depending on what kind of iterator @p handle is\n\n @param[in] handle An iterator for which the value is being requested\n\n @param[inout] value A pointer to an ::rsmi_func_id_value_t provided by the\n caller to which this function will write the value associated with @p handle\n\n @retval ::RSMI_STATUS_SUCCESS is returned upon successful call.\n"]
     pub fn rsmi_func_iter_value_get(
         handle: rsmi_func_id_iter_handle_t,
         value: *mut rsmi_func_id_value_t,

@@ -96,7 +96,7 @@ typedef struct AdapterInfo
 /////////////////////////////////////////////////////////////////////////////////////////////
 ///\brief Structure containing information about the Linux X screen information.
 ///
-/// This structure is used to store the current screen number and xorg.conf ID name assoicated with an adapter index.
+/// This structure is used to store the current screen number and xorg.conf ID name associated with an adapter index.
 /// This structure is updated during ADL_Main_Control_Refresh or ADL_ScreenInfo_Update.
 /// Note:  This structure should be used in place of iXScreenNum and strXScreenConfigName in AdapterInfo as they will be
 /// deprecated.

@@ -3920,7 +3920,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Get the device assocaited with the stream\n\n @param[in] stream stream to be queried\n @param[out] device device associated with the stream\n @return #hipSuccess, #hipErrorInvalidValue, #hipErrorContextIsDestroyed, #hipErrorInvalidHandle,\n #hipErrorNotInitialized, #hipErrorDeinitialized, #hipErrorInvalidContext\n\n @see hipStreamCreate, hipStreamDestroy, hipDeviceGetStreamPriorityRange"]
+    #[doc = " @brief Get the device associated with the stream\n\n @param[in] stream stream to be queried\n @param[out] device device associated with the stream\n @return #hipSuccess, #hipErrorInvalidValue, #hipErrorContextIsDestroyed, #hipErrorInvalidHandle,\n #hipErrorNotInitialized, #hipErrorDeinitialized, #hipErrorInvalidContext\n\n @see hipStreamCreate, hipStreamDestroy, hipDeviceGetStreamPriorityRange"]
     pub fn hipStreamGetDevice(stream: hipStream_t, device: *mut hipDevice_t) -> hipError_t;
 }
 extern "C" {
