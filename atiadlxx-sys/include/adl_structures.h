@@ -521,7 +521,7 @@ typedef struct ADLGetClocksOUT
 /////////////////////////////////////////////////////////////////////////////////////////////
 ///\brief Structure containing HDTV information for display calls.
 ///
-/// This structure is used to retrieve HDTV information information for display calls.
+/// This structure is used to retrieve HDTV information for display calls.
 /// \nosubgrouping
 ////////////////////////////////////////////////////////////////////////////////////////////
 typedef struct ADLDisplayConfig

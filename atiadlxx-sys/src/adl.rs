@@ -2733,7 +2733,7 @@ pub struct ADLGetClocksOUT {
     pub ulCurrentMemoryClock: ::std::os::raw::c_long,
     pub ulReserved: ::std::os::raw::c_long,
 }
-#[doc = "\n\\brief Structure containing HDTV information for display calls.\n\n This structure is used to retrieve HDTV information information for display calls.\n \\nosubgrouping\n"]
+#[doc = "\n\\brief Structure containing HDTV information for display calls.\n\n This structure is used to retrieve HDTV information for display calls.\n \\nosubgrouping\n"]
 #[repr(C)]
 #[derive(Copy, Clone)]
 pub struct ADLDisplayConfig {
