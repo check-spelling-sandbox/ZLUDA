@@ -5246,7 +5246,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = "-------------------------------------------------------------------------------------------------\n-------------------------------------------------------------------------------------------------\n  @defgroup Occupancy Occupancy\n  @{\n  This section describes the occupancy functions of HIP runtime API.\n\n/\n/**\n @brief determine the grid and block sizes to achieves maximum occupancy for a kernel\n\n @param [out] gridSize           minimum grid size for maximum potential occupancy\n @param [out] blockSize          block size for maximum potential occupancy\n @param [in]  f                  kernel function for which occupancy is calulated\n @param [in]  dynSharedMemPerBlk dynamic shared memory usage (in bytes) intended for each block\n @param [in]  blockSizeLimit     the maximum block size for the kernel, use 0 for no limit\n\n Please note, HIP does not support kernel launch with total work items defined in dimension with\n size gridDim x blockDim >= 2^32.\n\n @returns hipSuccess, hipInvalidDevice, hipErrorInvalidValue"]
+    #[doc = "-------------------------------------------------------------------------------------------------\n-------------------------------------------------------------------------------------------------\n  @defgroup Occupancy Occupancy\n  @{\n  This section describes the occupancy functions of HIP runtime API.\n\n/\n/**\n @brief determine the grid and block sizes to achieves maximum occupancy for a kernel\n\n @param [out] gridSize           minimum grid size for maximum potential occupancy\n @param [out] blockSize          block size for maximum potential occupancy\n @param [in]  f                  kernel function for which occupancy is calculated\n @param [in]  dynSharedMemPerBlk dynamic shared memory usage (in bytes) intended for each block\n @param [in]  blockSizeLimit     the maximum block size for the kernel, use 0 for no limit\n\n Please note, HIP does not support kernel launch with total work items defined in dimension with\n size gridDim x blockDim >= 2^32.\n\n @returns hipSuccess, hipInvalidDevice, hipErrorInvalidValue"]
     pub fn hipModuleOccupancyMaxPotentialBlockSize(
         gridSize: *mut ::std::os::raw::c_int,
         blockSize: *mut ::std::os::raw::c_int,
@@ -5257,7 +5257,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief determine the grid and block sizes to achieves maximum occupancy for a kernel\n\n @param [out] gridSize           minimum grid size for maximum potential occupancy\n @param [out] blockSize          block size for maximum potential occupancy\n @param [in]  f                  kernel function for which occupancy is calulated\n @param [in]  dynSharedMemPerBlk dynamic shared memory usage (in bytes) intended for each block\n @param [in]  blockSizeLimit     the maximum block size for the kernel, use 0 for no limit\n @param [in]  flags            Extra flags for occupancy calculation (only default supported)\n\n Please note, HIP does not support kernel launch with total work items defined in dimension with\n size gridDim x blockDim >= 2^32.\n\n @returns hipSuccess, hipInvalidDevice, hipErrorInvalidValue"]
+    #[doc = " @brief determine the grid and block sizes to achieves maximum occupancy for a kernel\n\n @param [out] gridSize           minimum grid size for maximum potential occupancy\n @param [out] blockSize          block size for maximum potential occupancy\n @param [in]  f                  kernel function for which occupancy is calculated\n @param [in]  dynSharedMemPerBlk dynamic shared memory usage (in bytes) intended for each block\n @param [in]  blockSizeLimit     the maximum block size for the kernel, use 0 for no limit\n @param [in]  flags            Extra flags for occupancy calculation (only default supported)\n\n Please note, HIP does not support kernel launch with total work items defined in dimension with\n size gridDim x blockDim >= 2^32.\n\n @returns hipSuccess, hipInvalidDevice, hipErrorInvalidValue"]
     pub fn hipModuleOccupancyMaxPotentialBlockSizeWithFlags(
         gridSize: *mut ::std::os::raw::c_int,
         blockSize: *mut ::std::os::raw::c_int,
@@ -5269,7 +5269,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Returns occupancy for a device function.\n\n @param [out] numBlocks        Returned occupancy\n @param [in]  func             Kernel function (hipFunction) for which occupancy is calulated\n @param [in]  blockSize        Block size the kernel is intended to be launched with\n @param [in]  dynSharedMemPerBlk dynamic shared memory usage (in bytes) intended for each block"]
+    #[doc = " @brief Returns occupancy for a device function.\n\n @param [out] numBlocks        Returned occupancy\n @param [in]  func             Kernel function (hipFunction) for which occupancy is calculated\n @param [in]  blockSize        Block size the kernel is intended to be launched with\n @param [in]  dynSharedMemPerBlk dynamic shared memory usage (in bytes) intended for each block"]
     pub fn hipModuleOccupancyMaxActiveBlocksPerMultiprocessor(
         numBlocks: *mut ::std::os::raw::c_int,
         f: hipFunction_t,
@@ -5279,7 +5279,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Returns occupancy for a device function.\n\n @param [out] numBlocks        Returned occupancy\n @param [in]  f                Kernel function(hipFunction_t) for which occupancy is calulated\n @param [in]  blockSize        Block size the kernel is intended to be launched with\n @param [in]  dynSharedMemPerBlk dynamic shared memory usage (in bytes) intended for each block\n @param [in]  flags            Extra flags for occupancy calculation (only default supported)"]
+    #[doc = " @brief Returns occupancy for a device function.\n\n @param [out] numBlocks        Returned occupancy\n @param [in]  f                Kernel function(hipFunction_t) for which occupancy is calculated\n @param [in]  blockSize        Block size the kernel is intended to be launched with\n @param [in]  dynSharedMemPerBlk dynamic shared memory usage (in bytes) intended for each block\n @param [in]  flags            Extra flags for occupancy calculation (only default supported)"]
     pub fn hipModuleOccupancyMaxActiveBlocksPerMultiprocessorWithFlags(
         numBlocks: *mut ::std::os::raw::c_int,
         f: hipFunction_t,
@@ -5290,7 +5290,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Returns occupancy for a device function.\n\n @param [out] numBlocks        Returned occupancy\n @param [in]  func             Kernel function for which occupancy is calulated\n @param [in]  blockSize        Block size the kernel is intended to be launched with\n @param [in]  dynSharedMemPerBlk dynamic shared memory usage (in bytes) intended for each block"]
+    #[doc = " @brief Returns occupancy for a device function.\n\n @param [out] numBlocks        Returned occupancy\n @param [in]  func             Kernel function for which occupancy is calculated\n @param [in]  blockSize        Block size the kernel is intended to be launched with\n @param [in]  dynSharedMemPerBlk dynamic shared memory usage (in bytes) intended for each block"]
     pub fn hipOccupancyMaxActiveBlocksPerMultiprocessor(
         numBlocks: *mut ::std::os::raw::c_int,
         f: *const ::std::os::raw::c_void,
@@ -5300,7 +5300,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Returns occupancy for a device function.\n\n @param [out] numBlocks        Returned occupancy\n @param [in]  f                Kernel function for which occupancy is calulated\n @param [in]  blockSize        Block size the kernel is intended to be launched with\n @param [in]  dynSharedMemPerBlk dynamic shared memory usage (in bytes) intended for each block\n @param [in]  flags            Extra flags for occupancy calculation (currently ignored)"]
+    #[doc = " @brief Returns occupancy for a device function.\n\n @param [out] numBlocks        Returned occupancy\n @param [in]  f                Kernel function for which occupancy is calculated\n @param [in]  blockSize        Block size the kernel is intended to be launched with\n @param [in]  dynSharedMemPerBlk dynamic shared memory usage (in bytes) intended for each block\n @param [in]  flags            Extra flags for occupancy calculation (currently ignored)"]
     pub fn hipOccupancyMaxActiveBlocksPerMultiprocessorWithFlags(
         numBlocks: *mut ::std::os::raw::c_int,
         f: *const ::std::os::raw::c_void,
@@ -5311,7 +5311,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief determine the grid and block sizes to achieves maximum occupancy for a kernel\n\n @param [out] gridSize           minimum grid size for maximum potential occupancy\n @param [out] blockSize          block size for maximum potential occupancy\n @param [in]  f                  kernel function for which occupancy is calulated\n @param [in]  dynSharedMemPerBlk dynamic shared memory usage (in bytes) intended for each block\n @param [in]  blockSizeLimit     the maximum block size for the kernel, use 0 for no limit\n\n Please note, HIP does not support kernel launch with total work items defined in dimension with\n size gridDim x blockDim >= 2^32.\n\n @returns hipSuccess, hipInvalidDevice, hipErrorInvalidValue"]
+    #[doc = " @brief determine the grid and block sizes to achieves maximum occupancy for a kernel\n\n @param [out] gridSize           minimum grid size for maximum potential occupancy\n @param [out] blockSize          block size for maximum potential occupancy\n @param [in]  f                  kernel function for which occupancy is calculated\n @param [in]  dynSharedMemPerBlk dynamic shared memory usage (in bytes) intended for each block\n @param [in]  blockSizeLimit     the maximum block size for the kernel, use 0 for no limit\n\n Please note, HIP does not support kernel launch with total work items defined in dimension with\n size gridDim x blockDim >= 2^32.\n\n @returns hipSuccess, hipInvalidDevice, hipErrorInvalidValue"]
     pub fn hipOccupancyMaxPotentialBlockSize(
         gridSize: *mut ::std::os::raw::c_int,
         blockSize: *mut ::std::os::raw::c_int,
