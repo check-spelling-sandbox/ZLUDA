@@ -517,9 +517,9 @@ pub struct hipDeviceProp_t {
     pub maxTexture2D: [::std::os::raw::c_int; 2usize],
     #[doc = "< Maximum dimensions (width, height, depth) of 3D images, in image elements"]
     pub maxTexture3D: [::std::os::raw::c_int; 3usize],
-    #[doc = "< Addres of HDP_MEM_COHERENCY_FLUSH_CNTL register"]
+    #[doc = "< Address of HDP_MEM_COHERENCY_FLUSH_CNTL register"]
     pub hdpMemFlushCntl: *mut ::std::os::raw::c_uint,
-    #[doc = "< Addres of HDP_REG_COHERENCY_FLUSH_CNTL register"]
+    #[doc = "< Address of HDP_REG_COHERENCY_FLUSH_CNTL register"]
     pub hdpRegFlushCntl: *mut ::std::os::raw::c_uint,
     #[doc = "<Maximum pitch in bytes allowed by memory copies"]
     pub memPitch: usize,
