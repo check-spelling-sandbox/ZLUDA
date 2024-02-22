@@ -3769,7 +3769,7 @@ unsafe fn get_llvm_array_type(inner_type: LLVMTypeRef, dims: &[u32]) -> LLVMType
 
 // That is not spelled explicitly in LLVM LangRef, but the difference between linkage and visibility:
 // * Linkage applies during LLVM linking step, is visible in the single LLVM IR module
-// * Visibility appplies post-LLVM linking, is visible in the resulting ELF binary
+// * Visibility applies post-LLVM linking, is visible in the resulting ELF binary
 // So e.g. difference between private linkage and hidden visibility is:
 // * With private linkage, symbol is removed during LLVM linking phase and just not present from that point on
 // * With hidden visibility, symbol survives LLVM linking, but is emitted into ELF with HIDDEN visibility
