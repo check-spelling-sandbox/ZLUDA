@@ -5534,11 +5534,11 @@ pub struct ADLFeatureCaps {
     pub iFeatureMask: ::std::os::raw::c_int,
     #[doc = " Feature Property Values. See definitions for ADL_FEATURE_PROPERTIES_XXX"]
     pub iFeatureProperties: ::std::os::raw::c_int,
-    #[doc = " Apperance of the User-Controlled Boolean."]
+    #[doc = " Appearance of the User-Controlled Boolean."]
     pub iControlType: ::std::os::raw::c_int,
     #[doc = " Style of the User-Controlled Boolean."]
     pub iControlStyle: ::std::os::raw::c_int,
-    #[doc = " Apperance of the Adjustment Controls."]
+    #[doc = " Appearance of the Adjustment Controls."]
     pub iAdjustmentType: ::std::os::raw::c_int,
     #[doc = " Style of the Adjustment Controls."]
     pub iAdjustmentStyle: ::std::os::raw::c_int,

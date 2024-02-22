@@ -4076,13 +4076,13 @@ typedef struct ADLFeatureCaps
     /// Feature Property Values. See definitions for ADL_FEATURE_PROPERTIES_XXX
     int  iFeatureProperties;
 
-    /// Apperance of the User-Controlled Boolean.
+    /// Appearance of the User-Controlled Boolean.
     int  iControlType;
 
     /// Style of the User-Controlled Boolean.
     int  iControlStyle;
 
-    /// Apperance of the Adjustment Controls.
+    /// Appearance of the Adjustment Controls.
     int  iAdjustmentType;
 
     /// Style of the Adjustment Controls.
