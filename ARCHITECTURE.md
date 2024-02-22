@@ -79,7 +79,7 @@ In addition, CUDA applications rely on various NVIDIA-provided libraries: NVML, 
 
 ## CUDA GPU code compiler
 
-A CUDA application ships with GPU code. This code can be either compiled into PTX or into SASS. The difference is that PTX is a textual assembly not specific to a particular NVIDIA GPU architecture (it is still specific to NVIDIA GPU hardware capabilities) while SASS is a binary asssembly specific to a given a particular NVIDIA GPU architecture. PTX is documented here: [https://docs.nvidia.com/cuda/parallel-thread-execution/index.html](https://docs.nvidia.com/cuda/parallel-thread-execution/index.html). SASS is undocumented.  
+A CUDA application ships with GPU code. This code can be either compiled into PTX or into SASS. The difference is that PTX is a textual assembly not specific to a particular NVIDIA GPU architecture (it is still specific to NVIDIA GPU hardware capabilities) while SASS is a binary assembly specific to a given a particular NVIDIA GPU architecture. PTX is documented here: [https://docs.nvidia.com/cuda/parallel-thread-execution/index.html](https://docs.nvidia.com/cuda/parallel-thread-execution/index.html). SASS is undocumented.  
 Majority of applications ship their GPU code in PTX. PTX is forward compatible with future GPU architectures. For all those reasons, currently, our compiler only supports PTX.
 The compiler accepts PTX and outputs AMD GPU binary code. It is structured into a sequence of passes. Output of each pass is the input to the next one. Following sections contain description of the current compilation passes.
 
