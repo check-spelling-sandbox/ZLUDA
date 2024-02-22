@@ -234,7 +234,7 @@ fn is_builtin_function_name(name: &str) -> bool {
 //     * Symbol occurences must be equivalent under following rules:
 //         * For data, symbol occurences must be of the same size. Alignment is ignored
 //         * For functions, symbol occurences are strictly type-checked.
-//           Number, type and alignmnt of input and return parameters must all match
+//           Number, type and alignment of input and return parameters must all match
 //     * There are 3 classes of directives:
 //         * Declarations. Only valid on functions
 //             .func foobar();
