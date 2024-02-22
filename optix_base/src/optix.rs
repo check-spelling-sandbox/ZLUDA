@@ -2261,7 +2261,7 @@ extern "C" {
     #[doc = " - Windows: %LOCALAPPDATA%\\\\NVIDIA\\\\OptixCache"]
     #[doc = " - Linux:   /var/tmp/OptixCache_\\<username\\> (or /tmp/OptixCache_\\<username\\> if the first choice is not usable),"]
     #[doc = "            the underscore and username suffix are omitted if the username cannot be obtained"]
-    #[doc = " - MacOS X: /Library/Application Support/NVIDIA/OptixCache"]
+    #[doc = " - macOS: /Library/Application Support/NVIDIA/OptixCache"]
     #[doc = ""]
     #[doc = " \\param[in] context  the device context"]
     #[doc = " \\param[in] location directory of disk cache"]

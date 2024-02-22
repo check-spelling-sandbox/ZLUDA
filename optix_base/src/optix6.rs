@@ -2921,7 +2921,7 @@ extern "C" {
     #[doc = "   - Linux:   /var/tmp/OptixCache_\\<username\\> (or /tmp/OptixCache_\\<username\\> if the first"]
     #[doc = "              choice is not usable), the underscore and username suffix are omitted if the"]
     #[doc = "              username cannot be obtained"]
-    #[doc = "   - MacOS X: /Library/Application Support/NVIDIA/OptixCache"]
+    #[doc = "   - macOS: /Library/Application Support/NVIDIA/OptixCache"]
     #[doc = ""]
     #[doc = " @ref RT_CONTEXT_ATTRIBUTE_DISK_CACHE_MEMORY_LIMITS sets the low and high watermarks"]
     #[doc = " for disk cache garbage collection.  The limits must be passed in as a two-element"]
