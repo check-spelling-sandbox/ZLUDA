@@ -201,7 +201,7 @@ impl ContextData {
             .into_iter()
             .map(|_| unsafe { mem::zeroed::<DeviceBuffer>() })
             .collect::<Vec<_>>();
-        // We allocate this additional buffer for bug compatiblity with OptiX
+        // We allocate this additional buffer for bug compatibility with OptiX
         // Arnold has a bug where it tries to access buffer with id = 0
         // On OptiX this returns NULL pointer. Furthermore, in OptiX, dereferencing
         // an invalid pointer returns zeros. We emulate this behavior by returning
