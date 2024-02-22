@@ -973,7 +973,7 @@ pub union miopenConvAlgoPerf_t__bindgen_ty_1 {
 #[repr(C)]
 #[derive(Copy, Clone)]
 pub struct miopenConvSolution_t {
-    #[doc = "< Represents the approximate time required to execute this solution on the GPU,\nin milliseconds. This value may either be based on an acutal kernel run or an\nestimate based on a heuristic."]
+    #[doc = "< Represents the approximate time required to execute this solution on the GPU,\nin milliseconds. This value may either be based on an actual kernel run or an\nestimate based on a heuristic."]
     pub time: f32,
     #[doc = "< Workspace required to run the selected algorithm represented in the\nunion"]
     pub workspace_size: usize,
