@@ -1124,7 +1124,7 @@ pub const RT_VISIBILITY_ALL: _bindgen_ty_1 = _bindgen_ty_1(255);
 #[derive(Debug, Copy, Clone, Hash, PartialEq, Eq)]
 pub struct _bindgen_ty_1(pub ::std::os::raw::c_uint);
 impl RTbufferidnull {
-    #[doc = "< sentinel for describing a non-existent buffer id"]
+    #[doc = "< sentinel for describing a nonexistent buffer id"]
     pub const RT_BUFFER_ID_NULL: RTbufferidnull = RTbufferidnull(0);
 }
 #[repr(transparent)]
@@ -1132,28 +1132,28 @@ impl RTbufferidnull {
 #[derive(Debug, Copy, Clone, Hash, PartialEq, Eq)]
 pub struct RTbufferidnull(pub ::std::os::raw::c_uint);
 impl RTprogramidnull {
-    #[doc = "< sentinel for describing a non-existent program id"]
+    #[doc = "< sentinel for describing a nonexistent program id"]
     pub const RT_PROGRAM_ID_NULL: RTprogramidnull = RTprogramidnull(0);
 }
 #[repr(transparent)]
 #[derive(Debug, Copy, Clone, Hash, PartialEq, Eq)]
 pub struct RTprogramidnull(pub ::std::os::raw::c_uint);
 impl RTtextureidnull {
-    #[doc = "< sentinel for describing a non-existent texture id"]
+    #[doc = "< sentinel for describing a nonexistent texture id"]
     pub const RT_TEXTURE_ID_NULL: RTtextureidnull = RTtextureidnull(0);
 }
 #[repr(transparent)]
 #[derive(Debug, Copy, Clone, Hash, PartialEq, Eq)]
 pub struct RTtextureidnull(pub ::std::os::raw::c_uint);
 impl RTcommandlistidnull {
-    #[doc = "< sentinel for describing a non-existent command list id"]
+    #[doc = "< sentinel for describing a nonexistent command list id"]
     pub const RT_COMMAND_LIST_ID_NULL: RTcommandlistidnull = RTcommandlistidnull(0);
 }
 #[repr(transparent)]
 #[derive(Debug, Copy, Clone, Hash, PartialEq, Eq)]
 pub struct RTcommandlistidnull(pub ::std::os::raw::c_uint);
 impl RTpostprocessingstagenull {
-    #[doc = "< sentinel for describing a non-existent post-processing stage id"]
+    #[doc = "< sentinel for describing a nonexistent post-processing stage id"]
     pub const RT_POSTPROCESSING_STAGE_ID_NULL: RTpostprocessingstagenull =
         RTpostprocessingstagenull(0);
 }
@@ -5109,7 +5109,7 @@ extern "C" {
     #[doc = " @ref rtProgramGetId returns an ID for the provided program.  The returned ID is used"]
     #[doc = " to reference \\a program from device code.  If \\a programId is \\a NULL or the \\a"]
     #[doc = " program is not a valid \\a RTprogram, returns @ref RT_ERROR_INVALID_VALUE."]
-    #[doc = " @ref RT_PROGRAM_ID_NULL can be used as a sentinel for a non-existent program, since"]
+    #[doc = " @ref RT_PROGRAM_ID_NULL can be used as a sentinel for a nonexistent program, since"]
     #[doc = " this value will never be returned as a valid program id."]
     #[doc = ""]
     #[doc = " @param[in]   program      The program to be queried for its id"]
@@ -13060,7 +13060,7 @@ extern "C" {
     #[doc = " RT_FORMAT_BUFFER_ID or used in a @ref rtBufferId object.. If \\a *bufferId is \\a NULL"]
     #[doc = " or the \\a buffer is not a valid RTbuffer, returns @ref"]
     #[doc = " RT_ERROR_INVALID_VALUE.  @ref RT_BUFFER_ID_NULL can be used as a sentinel for a"]
-    #[doc = " non-existent buffer, since this value will never be returned as a valid buffer id."]
+    #[doc = " nonexistent buffer, since this value will never be returned as a valid buffer id."]
     #[doc = ""]
     #[doc = " @param[in]   buffer      The buffer to be queried for its id"]
     #[doc = " @param[out]  bufferId    The returned ID of the buffer"]

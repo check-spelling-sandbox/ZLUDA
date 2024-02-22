@@ -18,7 +18,7 @@ use std::{
 };
 
 const ZLUDA_SUFFIX: &'static [u8] = b" [ZLUDA]\0";
-// We report the highest non-existent compute capability mainly to fool Blender.
+// We report the highest nonexistent compute capability mainly to fool Blender.
 // Blender will look for known compute capabilities and give them ELF.
 // If the compute capability is unknown it gives them PTX
 pub const COMPUTE_CAPABILITY_MAJOR: u32 = 8;
