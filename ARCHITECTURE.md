@@ -16,7 +16,7 @@ This document will avoid referring to specific files, structures or functions. T
 ### Top-level design assumptions
 If you are reading the code or even the rest of this document, you should be aware of assumptions made when developing the project:  
 * ZLUDA itself is written in Rust  
-  C or C++ source dependencies are fine if they are are impossible to avoid (LLVM). GPU code in HIP/OpenCL C is fine - Rust support for writing GPU code is pitiful
+  C or C++ source dependencies are fine if they are impossible to avoid (LLVM). GPU code in HIP/OpenCL C is fine - Rust support for writing GPU code is pitiful
 * ZLUDA is focused on end users  
   By user we mean someone who uses a CUDA program, e.g. a 3D artist using Blender. Developer developing a CUDA application is not an. While we would like to support developers in the future, right now the time constraints do not allow it
 * Building the project should require just `cargo build` (if possible)  

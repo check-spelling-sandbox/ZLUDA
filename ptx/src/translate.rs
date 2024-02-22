@@ -258,7 +258,7 @@ fn is_builtin_function_name(name: &str) -> bool {
 //       is not visible to othe modules during linking, but is accessible
 //       by CUDA runtime after linking
 //     * Non-kernel functions are never accessible by cuModuleGetGlobal(...)
-//     * There are are four linking specifiers:
+//     * There are four linking specifiers:
 //         * (empty): static linking, a symbol is only visible inside a module
 //             * For functions; separate functions with the same name in multiple, separate modules behave as expected
 //             * For data, compiler selects the first symbol with the given name for access from cuModuleGetGlobal(...)
