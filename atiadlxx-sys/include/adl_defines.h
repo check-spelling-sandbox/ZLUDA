@@ -1428,7 +1428,7 @@ typedef enum ADL_VIRTUALDISPLAY_TYPE
 
 ///describes whether the coefficients are from EDID or custom user values.
 #define ADL_EDID_REGAMMA_COEFFICIENTS          (1 << 0)
-///Used for struct ADLRegamma. Feature if set use gamma ramp, if missing use regamma coefficents
+///Used for struct ADLRegamma. Feature if set use gamma ramp, if missing use regamma coefficients
 #define ADL_USE_GAMMA_RAMP                     (1 << 4)
 ///Used for struct ADLRegamma. If the gamma ramp flag is used then the driver could apply de gamma corretion to the supplied curve and this depends on this flag
 #define ADL_APPLY_DEGAMMA                      (1 << 5)
