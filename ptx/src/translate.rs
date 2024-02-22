@@ -252,7 +252,7 @@ fn is_builtin_function_name(name: &str) -> bool {
 //     * There can be multiple declarations of a symbol in a module
 //       * Declarations must all be the same: same linking specifier,
 //         same argument list, same return list
-//     * Data (.global and .const) is alwas accessible by cuModuleGetGlobal(...),
+//     * Data (.global and .const) is always accessible by cuModuleGetGlobal(...),
 //       no matter the linking specifier. So this definition:
 //         .global .u32 foobar1[1] = {1}
 //       is not visible to othe modules during linking, but is accessible
