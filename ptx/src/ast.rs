@@ -169,7 +169,7 @@ pub enum Type {
             ld.param.ptr<.b32.shared> temp, [shared_mem];
           note, we don't support non-.shared extern pointers, because there's
           zero use for them in the ptxas
-        - artifical pointers created by stateful conversion, which work
+        - artificial pointers created by stateful conversion, which work
           similiarly to the above
         - function parameters:
             foobar(.param .align 4 .b8 numbers[])
