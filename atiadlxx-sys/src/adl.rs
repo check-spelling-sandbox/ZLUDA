@@ -916,7 +916,7 @@ impl ADLPurposeCode {
     pub const ADL_PURPOSECODE_MODE_SWITCH: ADLPurposeCode = ADLPurposeCode(2);
 }
 impl ADLPurposeCode {
-    pub const ADL_PURPOSECODE_ATTATCH_DEVICE: ADLPurposeCode = ADLPurposeCode(3);
+    pub const ADL_PURPOSECODE_ATTACH_DEVICE: ADLPurposeCode = ADLPurposeCode(3);
 }
 impl ADLPurposeCode {
     pub const ADL_PURPOSECODE_DETACH_DEVICE: ADLPurposeCode = ADLPurposeCode(4);
