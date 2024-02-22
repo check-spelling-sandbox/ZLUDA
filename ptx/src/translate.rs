@@ -3395,7 +3395,7 @@ fn to_llvm_module_impl2<'a, 'input>(
 // From "Performance Tips for Frontend Authors" (https://llvm.org/docs/Frontend/PerformanceTips.html):
 // "The SROA (Scalar Replacement Of Aggregates) and Mem2Reg passes only attempt to eliminate alloca
 // instructions that are in the entry basic block. Given SSA is the canonical form expected by much
-// of the optimizer; if allocas can not be eliminated by Mem2Reg or SROA, the optimizer is likely to
+// of the optimizer; if allocas cannot be eliminated by Mem2Reg or SROA, the optimizer is likely to
 // be less effective than it could be."
 // Empirically, this is true. Moving allocas to the start gives us less spill-happy assembly
 fn move_variables_to_start<'input, P: ast::ArgParams<Id = Id>>(

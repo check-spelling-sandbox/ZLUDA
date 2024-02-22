@@ -69,7 +69,7 @@ static inline HRESULT StringCchCopyA(
     HRESULT hr = S_OK;
 
     if (cchDest == 0) {
-        // can not null terminate a zero-byte dest buffer
+        // cannot null terminate a zero-byte dest buffer
         hr = ERROR_INVALID_PARAMETER;
     }
     else {

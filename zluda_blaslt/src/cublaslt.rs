@@ -4952,22 +4952,22 @@ impl cublasLtMatmulPreferenceAttributes_t {
         cublasLtMatmulPreferenceAttributes_t(4);
 }
 impl cublasLtMatmulPreferenceAttributes_t {
-    #[doc = " Minimum buffer alignment for matrix A (in bytes).\n\n Selecting a smaller value will exclude algorithms that can not work with matrix A that is not as strictly aligned\n as they need.\n\n uint32_t, default: 256"]
+    #[doc = " Minimum buffer alignment for matrix A (in bytes).\n\n Selecting a smaller value will exclude algorithms that cannot work with matrix A that is not as strictly aligned\n as they need.\n\n uint32_t, default: 256"]
     pub const CUBLASLT_MATMUL_PREF_MIN_ALIGNMENT_A_BYTES: cublasLtMatmulPreferenceAttributes_t =
         cublasLtMatmulPreferenceAttributes_t(5);
 }
 impl cublasLtMatmulPreferenceAttributes_t {
-    #[doc = " Minimum buffer alignment for matrix B (in bytes).\n\n Selecting a smaller value will exclude algorithms that can not work with matrix B that is not as strictly aligned\n as they need.\n\n uint32_t, default: 256"]
+    #[doc = " Minimum buffer alignment for matrix B (in bytes).\n\n Selecting a smaller value will exclude algorithms that cannot work with matrix B that is not as strictly aligned\n as they need.\n\n uint32_t, default: 256"]
     pub const CUBLASLT_MATMUL_PREF_MIN_ALIGNMENT_B_BYTES: cublasLtMatmulPreferenceAttributes_t =
         cublasLtMatmulPreferenceAttributes_t(6);
 }
 impl cublasLtMatmulPreferenceAttributes_t {
-    #[doc = " Minimum buffer alignment for matrix C (in bytes).\n\n Selecting a smaller value will exclude algorithms that can not work with matrix C that is not as strictly aligned\n as they need.\n\n uint32_t, default: 256"]
+    #[doc = " Minimum buffer alignment for matrix C (in bytes).\n\n Selecting a smaller value will exclude algorithms that cannot work with matrix C that is not as strictly aligned\n as they need.\n\n uint32_t, default: 256"]
     pub const CUBLASLT_MATMUL_PREF_MIN_ALIGNMENT_C_BYTES: cublasLtMatmulPreferenceAttributes_t =
         cublasLtMatmulPreferenceAttributes_t(7);
 }
 impl cublasLtMatmulPreferenceAttributes_t {
-    #[doc = " Minimum buffer alignment for matrix D (in bytes).\n\n Selecting a smaller value will exclude algorithms that can not work with matrix D that is not as strictly aligned\n as they need.\n\n uint32_t, default: 256"]
+    #[doc = " Minimum buffer alignment for matrix D (in bytes).\n\n Selecting a smaller value will exclude algorithms that cannot work with matrix D that is not as strictly aligned\n as they need.\n\n uint32_t, default: 256"]
     pub const CUBLASLT_MATMUL_PREF_MIN_ALIGNMENT_D_BYTES: cublasLtMatmulPreferenceAttributes_t =
         cublasLtMatmulPreferenceAttributes_t(8);
 }

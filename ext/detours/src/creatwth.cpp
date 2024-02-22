@@ -223,7 +223,7 @@ static inline HRESULT ReplaceOptionalSizeA(_Inout_z_count_(cchDest) LPSTR pszDes
     if (cchDest == 0 || pszDest == NULL || pszSize == NULL ||
         pszSize[0] == '\0' || pszSize[1] == '\0' || pszSize[2] != '\0') {
 
-        // can not write into empty buffer or with string other than two chars.
+        // cannot write into empty buffer or with string other than two chars.
         return ERROR_INVALID_PARAMETER;
     }
 
@@ -1211,7 +1211,7 @@ BOOL WINAPI DetourProcessViaHelperDllsA(_In_ DWORD dwTargetPid,
         goto Cleanup;
     }
 
-    //for East Asia languages and so on, like Chinese, print format with "%hs" can not work fine before user call _tsetlocale(LC_ALL,_T(".ACP"));
+    //for East Asia languages and so on, like Chinese, print format with "%hs" cannot work fine before user call _tsetlocale(LC_ALL,_T(".ACP"));
     //so we can't use "%hs" in format string, because the dll that contain this code would inject to any process, even not call _tsetlocale(LC_ALL,_T(".ACP")) before
     hr = StringCchPrintfA(szCommand, ARRAYSIZE(szCommand),
                           "rundll32.exe \"%s\",#1", &helper->rDlls[0]);
@@ -1311,7 +1311,7 @@ BOOL WINAPI DetourProcessViaHelperDllsW(_In_ DWORD dwTargetPid,
         goto Cleanup;
     }
 
-    //for East Asia languages and so on, like Chinese, print format with "%hs" can not work fine before user call _tsetlocale(LC_ALL,_T(".ACP"));
+    //for East Asia languages and so on, like Chinese, print format with "%hs" cannot work fine before user call _tsetlocale(LC_ALL,_T(".ACP"));
     //so we can't use "%hs" in format string, because the dll that contain this code would inject to any process, even not call _tsetlocale(LC_ALL,_T(".ACP")) before
     
     cchWrittenWideChar = MultiByteToWideChar(CP_ACP, 0, &helper->rDlls[0], -1, szDllName, ARRAYSIZE(szDllName));
