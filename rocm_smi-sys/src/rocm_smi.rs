@@ -1651,7 +1651,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = "  @brief Return P2P availability status between 2 GPUs\n\n  @details Given a source device index @p dv_ind_src and\n  a destination device index @p dv_ind_dst, and a pointer to a\n  bool @accessible, this function will write the P2P connection status\n  between the device @p dv_ind_src and @p dv_ind_dst to the memory\n  pointed to by @p accessible.\n\n  @param[in] dv_ind_src the source device index\n\n  @param[in] dv_ind_dst the destination device index\n\n  @param[inout] accessible A pointer to a bool to which the status for\n  the P2P connection availablity should be written.\n\n  @retval ::RSMI_STATUS_SUCCESS call was successful\n  @retval ::RSMI_STATUS_INVALID_ARGS the provided arguments are not valid\n"]
+    #[doc = "  @brief Return P2P availability status between 2 GPUs\n\n  @details Given a source device index @p dv_ind_src and\n  a destination device index @p dv_ind_dst, and a pointer to a\n  bool @accessible, this function will write the P2P connection status\n  between the device @p dv_ind_src and @p dv_ind_dst to the memory\n  pointed to by @p accessible.\n\n  @param[in] dv_ind_src the source device index\n\n  @param[in] dv_ind_dst the destination device index\n\n  @param[inout] accessible A pointer to a bool to which the status for\n  the P2P connection availability should be written.\n\n  @retval ::RSMI_STATUS_SUCCESS call was successful\n  @retval ::RSMI_STATUS_INVALID_ARGS the provided arguments are not valid\n"]
     pub fn rsmi_is_P2P_accessible(
         dv_ind_src: u32,
         dv_ind_dst: u32,
