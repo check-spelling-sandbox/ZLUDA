@@ -5004,7 +5004,7 @@ pub struct ADLSGApplicationInfo {
     pub strVersion: [u16; 256usize],
     #[doc = " Timestamp at which application has run"]
     pub timeStamp: ::std::os::raw::c_longlong,
-    #[doc = " Holds whether the applicaition profile exists or not"]
+    #[doc = " Holds whether the application profile exists or not"]
     pub iProfileExists: ::std::os::raw::c_uint,
     #[doc = " The GPU on which application runs"]
     pub iGPUAffinity: ::std::os::raw::c_uint,

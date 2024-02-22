@@ -3502,7 +3502,7 @@ typedef struct ADLSGApplicationInfo
     wchar_t strVersion[ADL_MAX_PATH];
     /// Timestamp at which application has run
     long long int timeStamp;
-    /// Holds whether the applicaition profile exists or not
+    /// Holds whether the application profile exists or not
     unsigned int iProfileExists;
     /// The GPU on which application runs
     unsigned int iGPUAffinity;
