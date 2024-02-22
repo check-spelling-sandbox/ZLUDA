@@ -163,9 +163,9 @@ impl KernelCache {
     fn serialize_input_attributes(
         attributes: &FxHashMap<CString, hip_common::raytracing::Variable>,
     ) -> serde_json::Result<String> {
-        let sorted_attrbutes = attributes.iter().collect::<BTreeMap<_, _>>();
+        let sorted_attributes = attributes.iter().collect::<BTreeMap<_, _>>();
         serde_json::to_string(&serialize::VariablesMapSerialize2 {
-            variables: sorted_attrbutes,
+            variables: sorted_attributes,
         })
     }
 }
