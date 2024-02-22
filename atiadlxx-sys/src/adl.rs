@@ -3093,11 +3093,11 @@ pub struct ADLODClockSetting {
     pub iDefaultClock: ::std::os::raw::c_int,
     #[doc = " Current clock"]
     pub iCurrentClock: ::std::os::raw::c_int,
-    #[doc = " Maximum clcok"]
+    #[doc = " Maximum clock"]
     pub iMaxClock: ::std::os::raw::c_int,
     #[doc = " Minimum clock"]
     pub iMinClock: ::std::os::raw::c_int,
-    #[doc = " Requested clcock"]
+    #[doc = " Requested clock"]
     pub iRequestedClock: ::std::os::raw::c_int,
     #[doc = " Step"]
     pub iStepClock: ::std::os::raw::c_int,

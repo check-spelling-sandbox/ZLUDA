@@ -1052,11 +1052,11 @@ typedef struct ADLODClockSetting
     int iDefaultClock;
 /// Current clock
     int iCurrentClock;
-/// Maximum clcok
+/// Maximum clock
     int iMaxClock;
 /// Minimum clock
     int iMinClock;
-/// Requested clcock
+/// Requested clock
     int iRequestedClock;
 /// Step
     int iStepClock;
