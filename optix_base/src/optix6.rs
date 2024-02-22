@@ -14039,7 +14039,7 @@ extern "C" {
     #[doc = " precise invocation time should be made."]
     #[doc = " The default attribute program provides the attribute rtTriangleBarycentrics of type float2."]
     #[doc = ""]
-    #[doc = " Names are case sensitive and types must match.  To use the attribute, declare the following"]
+    #[doc = " Names are case-sensitive and types must match.  To use the attribute, declare the following"]
     #[doc = "    rtDeclareVariable( float2, barycentrics, attribute rtTriangleBarycentrics, );"]
     #[doc = ""]
     #[doc = " If you provide an attribute program, the following device side functions will be available:"]
