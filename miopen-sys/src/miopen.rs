@@ -55,7 +55,7 @@ impl miopenStatus_t {
     pub const miopenStatusGpuOperationsSkipped: miopenStatus_t = miopenStatus_t(9);
 }
 impl miopenStatus_t {
-    #[doc = "< Version mismatch of the supplied binary data argment."]
+    #[doc = "< Version mismatch of the supplied binary data argument."]
     pub const miopenStatusVersionMismatch: miopenStatus_t = miopenStatus_t(10);
 }
 #[repr(transparent)]
