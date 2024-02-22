@@ -684,7 +684,7 @@
 #define ADL_XFIREX_STATE_P2P_APERTURE_MAPPING        ( 1 << 25 )    /* P2P mapping was through peer aperture */
 #define ADL_XFIREX_STATE_P2PFLUSH_REQUIRED        ADL_XFIREX_STATE_P2P_APERTURE_MAPPING    /* For back compatible */
 #define ADL_XFIREX_STATE_XSP_CONNECTED            ( 1 << 26 )    /* There is CrossfireX side port connection between GPUs */
-#define ADL_XFIREX_STATE_ENABLE_CF_REBOOT_REQUIRED    ( 1 << 27 )    /* System needs a reboot bofore enable CrossfireX */
+#define ADL_XFIREX_STATE_ENABLE_CF_REBOOT_REQUIRED    ( 1 << 27 )    /* System needs a reboot before enable CrossfireX */
 #define ADL_XFIREX_STATE_DISABLE_CF_REBOOT_REQUIRED    ( 1 << 28 )    /* System needs a reboot after disable CrossfireX */
 #define ADL_XFIREX_STATE_DRV_HANDLE_DOWNGRADE_KEY    ( 1 << 29 )    /* Indicate base driver handles the downgrade key updating */
 #define ADL_XFIREX_STATE_CF_RECONFIG_REQUIRED        ( 1 << 30 )    /* CrossfireX need to be reconfigured by CCC because of a LDA chain broken */
