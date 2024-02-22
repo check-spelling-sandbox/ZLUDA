@@ -255,7 +255,7 @@ fn is_builtin_function_name(name: &str) -> bool {
 //     * Data (.global and .const) is always accessible by cuModuleGetGlobal(...),
 //       no matter the linking specifier. So this definition:
 //         .global .u32 foobar1[1] = {1}
-//       is not visible to othe modules during linking, but is accessible
+//       is not visible to the modules during linking, but is accessible
 //       by CUDA runtime after linking
 //     * Non-kernel functions are never accessible by cuModuleGetGlobal(...)
 //     * There are four linking specifiers:

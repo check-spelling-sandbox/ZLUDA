@@ -455,7 +455,7 @@ impl cudaError {
     pub const cudaErrorMpsMaxClientsReached: cudaError = cudaError(808);
 }
 impl cudaError {
-    #[doc = " This error indicates the the hardware resources required to device connections have been exhausted."]
+    #[doc = " This error indicates the hardware resources required to device connections have been exhausted."]
     pub const cudaErrorMpsMaxConnectionsReached: cudaError = cudaError(809);
 }
 impl cudaError {
