@@ -1693,39 +1693,39 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @addtogroup activation\n\n  @{\n/\n/*! @brief Creates the Activation descriptor object\n\n @param activDesc Pointer to an activation tensor descriptor type\n @return          miopenStatus_t"]
+    #[doc = " @addtogroup activation\n\n  @{\n/\n/*! @brief Creates the Activation descriptor object\n\n @param activeDesc Pointer to an activation tensor descriptor type\n @return          miopenStatus_t"]
     pub fn miopenCreateActivationDescriptor(
-        activDesc: *mut miopenActivationDescriptor_t,
+        activeDesc: *mut miopenActivationDescriptor_t,
     ) -> miopenStatus_t;
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Sets the activation layer descriptor details\n\n Sets all of the descriptor details for the activation layer\n\n @param activDesc    Pointer to a activation layer descriptor (output)\n @param mode         Activation mode enum (input)\n @param activAlpha   Alpha value for some activation modes (input)\n @param activBeta    Beta value for some activation modes (input)\n @param activGamma   Gamma value for some activation modes (input)\n @return             miopenStatus_t"]
+    #[doc = " @brief Sets the activation layer descriptor details\n\n Sets all of the descriptor details for the activation layer\n\n @param activeDesc    Pointer to a activation layer descriptor (output)\n @param mode         Activation mode enum (input)\n @param activeAlpha   Alpha value for some activation modes (input)\n @param activeBeta    Beta value for some activation modes (input)\n @param activeGamma   Gamma value for some activation modes (input)\n @return             miopenStatus_t"]
     pub fn miopenSetActivationDescriptor(
-        activDesc: miopenActivationDescriptor_t,
+        activeDesc: miopenActivationDescriptor_t,
         mode: miopenActivationMode_t,
-        activAlpha: f64,
-        activBeta: f64,
-        activGamma: f64,
+        activeAlpha: f64,
+        activeBeta: f64,
+        activeGamma: f64,
     ) -> miopenStatus_t;
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Gets the activation layer descriptor details\n\n Retrieves all of the descriptor details for the activation layer.\n\n @param activDesc    Pointer to a activation layer descriptor (input)\n @param mode         Activation mode enum (output)\n @param activAlpha   Alpha value for some activation modes (output)\n @param activBeta    Beta value for some activation modes (output)\n @param activGamma   Gamma value for some activation modes (output)\n @return             miopenStatus_t"]
+    #[doc = " @brief Gets the activation layer descriptor details\n\n Retrieves all of the descriptor details for the activation layer.\n\n @param activeDesc    Pointer to a activation layer descriptor (input)\n @param mode         Activation mode enum (output)\n @param activeAlpha   Alpha value for some activation modes (output)\n @param activeBeta    Beta value for some activation modes (output)\n @param activeGamma   Gamma value for some activation modes (output)\n @return             miopenStatus_t"]
     pub fn miopenGetActivationDescriptor(
-        activDesc: miopenActivationDescriptor_t,
+        activeDesc: miopenActivationDescriptor_t,
         mode: *mut miopenActivationMode_t,
-        activAlpha: *mut f64,
-        activBeta: *mut f64,
-        activGamma: *mut f64,
+        activeAlpha: *mut f64,
+        activeBeta: *mut f64,
+        activeGamma: *mut f64,
     ) -> miopenStatus_t;
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Execute an activation forward layer\n\n @param handle         MIOpen handle (input)\n @param activDesc      Descriptor for activation layer (input)\n @param alpha          Floating point scaling factor, allocated on the host (input)\n @param xDesc          Tensor descriptor for data input tensor x (input)\n @param x              Data tensor x (input)\n @param beta           Floating point shift factor, allocated on the host (input)\n @param yDesc          Tensor descriptor for output data tensor y (input)\n @param y              Data tensor y (output)\n @return               miopenStatus_t"]
+    #[doc = " @brief Execute an activation forward layer\n\n @param handle         MIOpen handle (input)\n @param activeDesc      Descriptor for activation layer (input)\n @param alpha          Floating point scaling factor, allocated on the host (input)\n @param xDesc          Tensor descriptor for data input tensor x (input)\n @param x              Data tensor x (input)\n @param beta           Floating point shift factor, allocated on the host (input)\n @param yDesc          Tensor descriptor for output data tensor y (input)\n @param y              Data tensor y (output)\n @return               miopenStatus_t"]
     pub fn miopenActivationForward(
         handle: miopenHandle_t,
-        activDesc: miopenActivationDescriptor_t,
+        activeDesc: miopenActivationDescriptor_t,
         alpha: *const ::std::os::raw::c_void,
         xDesc: miopenTensorDescriptor_t,
         x: *const ::std::os::raw::c_void,
@@ -1736,10 +1736,10 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Execute a activation backwards layer\n\n @param handle         MIOpen handle (input)\n @param activDesc      Descriptor for activation layer (input)\n @param alpha          Floating point scaling factor, allocated on the host (input)\n @param yDesc          Tensor descriptor for input data tensor y (input)\n @param y              Data tensor y (input)\n @param dyDesc         Tensor descriptor for input data tensor dy (input)\n @param dy             Data delta tensor dy (input)\n @param xDesc          Tensor descriptor for data input tensor x (input)\n @param x              Data tensor x (input)\n @param beta           Floating point shift factor, allocated on the host (input)\n @param dxDesc         Tensor descriptor for data output tensor dx (input)\n @param dx             Output data delta tensor dx (output)\n @return               miopenStatus_t"]
+    #[doc = " @brief Execute a activation backwards layer\n\n @param handle         MIOpen handle (input)\n @param activeDesc      Descriptor for activation layer (input)\n @param alpha          Floating point scaling factor, allocated on the host (input)\n @param yDesc          Tensor descriptor for input data tensor y (input)\n @param y              Data tensor y (input)\n @param dyDesc         Tensor descriptor for input data tensor dy (input)\n @param dy             Data delta tensor dy (input)\n @param xDesc          Tensor descriptor for data input tensor x (input)\n @param x              Data tensor x (input)\n @param beta           Floating point shift factor, allocated on the host (input)\n @param dxDesc         Tensor descriptor for data output tensor dx (input)\n @param dx             Output data delta tensor dx (output)\n @return               miopenStatus_t"]
     pub fn miopenActivationBackward(
         handle: miopenHandle_t,
-        activDesc: miopenActivationDescriptor_t,
+        activeDesc: miopenActivationDescriptor_t,
         alpha: *const ::std::os::raw::c_void,
         yDesc: miopenTensorDescriptor_t,
         y: *const ::std::os::raw::c_void,
@@ -1754,9 +1754,9 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Destroys the activation descriptor object\n\n @param activDesc   Activation tensor descriptor type (input)\n @return            miopenStatus_t"]
+    #[doc = " @brief Destroys the activation descriptor object\n\n @param activeDesc   Activation tensor descriptor type (input)\n @return            miopenStatus_t"]
     pub fn miopenDestroyActivationDescriptor(
-        activDesc: miopenActivationDescriptor_t,
+        activeDesc: miopenActivationDescriptor_t,
     ) -> miopenStatus_t;
 }
 extern "C" {
@@ -1915,19 +1915,19 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Creates a forward activation operator.\n\n @param fusePlanDesc    A fusion plan descriptor (input)\n @param activFwdOp         Pointer to an operator type (output)\n @param mode            Activation version (input)\n @return                miopenStatus_t"]
+    #[doc = " @brief Creates a forward activation operator.\n\n @param fusePlanDesc    A fusion plan descriptor (input)\n @param activeFwdOp         Pointer to an operator type (output)\n @param mode            Activation version (input)\n @return                miopenStatus_t"]
     pub fn miopenCreateOpActivationForward(
         fusePlanDesc: miopenFusionPlanDescriptor_t,
-        activFwdOp: *mut miopenFusionOpDescriptor_t,
+        activeFwdOp: *mut miopenFusionOpDescriptor_t,
         mode: miopenActivationMode_t,
     ) -> miopenStatus_t;
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Creates a backward activation operator.\n\n @param fusePlanDesc    A fusion plan descriptor (input)\n @param activBwdOp         Pointer to an operator type (output)\n @param mode            Activation version (input)\n @return                miopenStatus_t"]
+    #[doc = " @brief Creates a backward activation operator.\n\n @param fusePlanDesc    A fusion plan descriptor (input)\n @param activeBwdOp         Pointer to an operator type (output)\n @param mode            Activation version (input)\n @return                miopenStatus_t"]
     pub fn miopenCreateOpActivationBackward(
         fusePlanDesc: miopenFusionPlanDescriptor_t,
-        activBwdOp: *mut miopenFusionOpDescriptor_t,
+        activeBwdOp: *mut miopenFusionOpDescriptor_t,
         mode: miopenActivationMode_t,
     ) -> miopenStatus_t;
 }
@@ -1992,30 +1992,30 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Sets the arguments for forward activation op\n\n @param args    An arguments object type (output)\n @param activFwdOp   Activation backwards operator (input)\n @param alpha   Floating point scaling factor, allocated on the host (input)\n @param beta    Floating point shift factor, allocated on the host (input)\n @param activAlpha  Double precision activation parameter which depends on activation mode (input)\n @param activBeta   Double precision activation parameter which depends on activation mode (input)\n @param activGamma  Double precision activation parameter which depends on activation mode (input)\n @return        miopenStatus_t"]
+    #[doc = " @brief Sets the arguments for forward activation op\n\n @param args    An arguments object type (output)\n @param activeFwdOp   Activation backwards operator (input)\n @param alpha   Floating point scaling factor, allocated on the host (input)\n @param beta    Floating point shift factor, allocated on the host (input)\n @param activeAlpha  Double precision activation parameter which depends on activation mode (input)\n @param activeBeta   Double precision activation parameter which depends on activation mode (input)\n @param activeGamma  Double precision activation parameter which depends on activation mode (input)\n @return        miopenStatus_t"]
     pub fn miopenSetOpArgsActivForward(
         args: miopenOperatorArgs_t,
-        activFwdOp: miopenFusionOpDescriptor_t,
+        activeFwdOp: miopenFusionOpDescriptor_t,
         alpha: *const ::std::os::raw::c_void,
         beta: *const ::std::os::raw::c_void,
-        activAlpha: f64,
-        activBeta: f64,
-        activGamma: f64,
+        activeAlpha: f64,
+        activeBeta: f64,
+        activeGamma: f64,
     ) -> miopenStatus_t;
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Sets the arguments for backward activation op\n\n @param args    An arguments object type (output)\n @param activBwdOp   Activation backwards operator (input)\n @param alpha   Floating point scaling factor, allocated on the host (input)\n @param beta    Floating point shift factor, allocated on the host (input)\n @param y        Data tensor y, output of activations in the forward direction (input)\n @param reserved    Data tensor reserved memory space; currently should be nullptr (input)\n @param activAlpha  Double precision activation parameter which depends on activation mode (input)\n @param activBeta   Double precision activation parameter which depends on activation mode (input)\n @param activGamma  Double precision activation parameter which depends on activation mode (input)\n @return        miopenStatus_t"]
+    #[doc = " @brief Sets the arguments for backward activation op\n\n @param args    An arguments object type (output)\n @param activeBwdOp   Activation backwards operator (input)\n @param alpha   Floating point scaling factor, allocated on the host (input)\n @param beta    Floating point shift factor, allocated on the host (input)\n @param y        Data tensor y, output of activations in the forward direction (input)\n @param reserved    Data tensor reserved memory space; currently should be nullptr (input)\n @param activeAlpha  Double precision activation parameter which depends on activation mode (input)\n @param activeBeta   Double precision activation parameter which depends on activation mode (input)\n @param activeGamma  Double precision activation parameter which depends on activation mode (input)\n @return        miopenStatus_t"]
     pub fn miopenSetOpArgsActivBackward(
         args: miopenOperatorArgs_t,
-        activBwdOp: miopenFusionOpDescriptor_t,
+        activeBwdOp: miopenFusionOpDescriptor_t,
         alpha: *const ::std::os::raw::c_void,
         beta: *const ::std::os::raw::c_void,
         y: *const ::std::os::raw::c_void,
         reserved: *const ::std::os::raw::c_void,
-        activAlpha: f64,
-        activBeta: f64,
-        activGamma: f64,
+        activeAlpha: f64,
+        activeBeta: f64,
+        activeGamma: f64,
     ) -> miopenStatus_t;
 }
 extern "C" {
