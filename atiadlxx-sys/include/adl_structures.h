@@ -2411,7 +2411,7 @@ typedef struct ADLAppInterceptionInfoX3
     wchar_t                     AppName[ADL_MAX_PATH]; // the file name of the application or env var
     unsigned int                ProcessId;
     unsigned int                WaitForResumeNeeded;
-    unsigned int                RayTracingStatus; // returns the Ray Tracing status if it is enabled atleast once in session.
+    unsigned int                RayTracingStatus; // returns the Ray Tracing status if it is enabled at least once in session.
     wchar_t                     CommandLine[ADL_MAX_PATH]; // The command line on app start/stop event
     ADLAppInterceptionListType  AppFormat;
     ADLAppProcessState          AppState;
