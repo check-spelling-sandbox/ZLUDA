@@ -3606,7 +3606,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Returns a value for attribute of link between two devices\n @param [out] value Pointer of the value for the attrubute\n @param [in] attr enum of hipDeviceP2PAttr to query\n @param [in] srcDevice The source device of the link\n @param [in] dstDevice The destination device of the link\n\n @returns #hipSuccess, #hipErrorInvalidDevice"]
+    #[doc = " @brief Returns a value for attribute of link between two devices\n @param [out] value Pointer of the value for the attribute\n @param [in] attr enum of hipDeviceP2PAttr to query\n @param [in] srcDevice The source device of the link\n @param [in] dstDevice The destination device of the link\n\n @returns #hipSuccess, #hipErrorInvalidDevice"]
     pub fn hipDeviceGetP2PAttribute(
         value: *mut ::std::os::raw::c_int,
         attr: hipDeviceP2PAttr,
@@ -4040,7 +4040,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = "  @brief Sets information on the specified pointer.[BETA]\n\n  @param [in]      value     sets pointer attribute value\n  @param [in]      atribute attribute to set\n  @param [in]      ptr      pointer to set attributes for\n\n  @return #hipSuccess, #hipErrorInvalidDevice, #hipErrorInvalidValue\n\n  @beta This API is marked as beta, meaning, while this is feature complete,\n  it is still open to changes and may have outstanding issues.\n"]
+    #[doc = "  @brief Sets information on the specified pointer.[BETA]\n\n  @param [in]      value     sets pointer attribute value\n  @param [in]      attribute attribute to set\n  @param [in]      ptr      pointer to set attributes for\n\n  @return #hipSuccess, #hipErrorInvalidDevice, #hipErrorInvalidValue\n\n  @beta This API is marked as beta, meaning, while this is feature complete,\n  it is still open to changes and may have outstanding issues.\n"]
     pub fn hipPointerSetAttribute(
         value: *const ::std::os::raw::c_void,
         attribute: hipPointer_attribute,
@@ -4057,7 +4057,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = "  @brief Returns information about the specified pointer.[BETA]\n\n  @param [in, out] data     returned pointer attribute value\n  @param [in]      atribute attribute to query for\n  @param [in]      ptr      pointer to get attributes for\n\n  @return #hipSuccess, #hipErrorInvalidDevice, #hipErrorInvalidValue\n\n  @beta This API is marked as beta, meaning, while this is feature complete,\n  it is still open to changes and may have outstanding issues.\n\n  @see hipPointerGetAttributes"]
+    #[doc = "  @brief Returns information about the specified pointer.[BETA]\n\n  @param [in, out] data     returned pointer attribute value\n  @param [in]      attribute attribute to query for\n  @param [in]      ptr      pointer to get attributes for\n\n  @return #hipSuccess, #hipErrorInvalidDevice, #hipErrorInvalidValue\n\n  @beta This API is marked as beta, meaning, while this is feature complete,\n  it is still open to changes and may have outstanding issues.\n\n  @see hipPointerGetAttributes"]
     pub fn hipPointerGetAttribute(
         data: *mut ::std::os::raw::c_void,
         attribute: hipPointer_attribute,
