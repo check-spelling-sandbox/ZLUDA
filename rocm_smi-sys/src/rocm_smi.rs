@@ -412,7 +412,7 @@ impl rsmi_temperature_metric_t {
     pub const RSMI_TEMP_LAST: rsmi_temperature_metric_t = rsmi_temperature_metric_t(13);
 }
 #[repr(transparent)]
-#[doc = " @brief Temperature Metrics.  This enum is used to identify various\n temperature metrics. Corresponding values will be in millidegress\n Celsius."]
+#[doc = " @brief Temperature Metrics.  This enum is used to identify various\n temperature metrics. Corresponding values will be in millidegrees\n Celsius."]
 #[derive(Copy, Clone, Hash, PartialEq, Eq)]
 pub struct rsmi_temperature_metric_t(pub ::std::os::raw::c_uint);
 impl rsmi_voltage_metric_t {
