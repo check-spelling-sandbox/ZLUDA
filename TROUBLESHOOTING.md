@@ -41,7 +41,7 @@ On Linux, ZLUDA depends on the presence of `libamdhip64.so` and `libamd_comgr.so
 
 #### Windows
 
-On Windows, ZLUDA depends on the rpesence of `amdhip64.dll` and `amd_comgr.dll` being present in the system library search paths (usually `C:\Windows\System32`). If they are not present consider reinstalling your Radeon GPU driver.
+On Windows, ZLUDA depends on the presence of `amdhip64.dll` and `amd_comgr.dll` being present in the system library search paths (usually `C:\Windows\System32`). If they are not present consider reinstalling your Radeon GPU driver.
 
 ## (Linux only) Trace CUDA calls
 
