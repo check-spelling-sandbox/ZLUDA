@@ -3341,7 +3341,7 @@ pub struct ADLMVPUCaps {
     #[doc = " Registry path for each adapter."]
     pub cAdapterPath: [[::std::os::raw::c_char; 256usize]; 4usize],
 }
-#[doc = "\n \\brief Structure containing information about MultiVPU status.\n\n This structure is used to store information about MultiVPU status.\n Ths structure is used by the ADL_Display_MVPUStatus_Get() function.\n \\nosubgrouping\n"]
+#[doc = "\n \\brief Structure containing information about MultiVPU status.\n\n This structure is used to store information about MultiVPU status.\n This structure is used by the ADL_Display_MVPUStatus_Get() function.\n \\nosubgrouping\n"]
 #[repr(C)]
 #[derive(Copy, Clone)]
 pub struct ADLMVPUStatus {

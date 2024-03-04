@@ -1406,7 +1406,7 @@ typedef struct ADLMVPUCaps
 /// \brief Structure containing information about MultiVPU status.
 ///
 /// This structure is used to store information about MultiVPU status.
-/// Ths structure is used by the ADL_Display_MVPUStatus_Get() function.
+/// This structure is used by the ADL_Display_MVPUStatus_Get() function.
 /// \nosubgrouping
 ////////////////////////////////////////////////////////////////////////////////////////////
 typedef struct ADLMVPUStatus
