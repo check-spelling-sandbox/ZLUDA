@@ -1906,7 +1906,7 @@ fn emit_inst_not_impl(
 // Looking at the docs (https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#memory-fence-functions):
 // * __threadfence_block() compiles to membar.cta
 // * __threadfence_system() compiles to membar.sys
-// Additionally, they are dfined as:
+// Additionally, they are defined as:
 //      "also ensures that no writes to *all* memory made by the calling thread after the call to ..."
 fn emit_inst_membar(ctx: &mut EmitContext, level: ast::MemScope) {
     let scope = get_llvm_scope_for_membar(level);

@@ -522,7 +522,7 @@ fn to_spmv_alg(alg: cusparseSpMVAlg_t) -> rocsparse_spmv_alg {
         cusparseSpMVAlg_t::CUSPARSE_SPMV_COO_ALG2 => {
             rocsparse_spmv_alg::rocsparse_spmv_alg_coo_atomic
         }
-        // other vlaues definied by cuSPARSE are aliases
+        // other vlaues defined by cuSPARSE are aliases
         _ => panic!(),
     }
 }
