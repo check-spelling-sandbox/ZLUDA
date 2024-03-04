@@ -5826,7 +5826,7 @@ extern "C" {
     #[doc = " <B>Description</B>"]
     #[doc = ""]
     #[doc = " @ref rtSelectorGetVisitProgram returns in \\a program a handle of the"]
-    #[doc = " visit program curently bound to \\a selector."]
+    #[doc = " visit program currently bound to \\a selector."]
     #[doc = ""]
     #[doc = " @param[in]   selector   Selector node handle"]
     #[doc = " @param[out]  program    Current visit progam assigned to \\a selector"]

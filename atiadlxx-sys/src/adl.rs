@@ -3362,9 +3362,9 @@ pub struct ADLActivatableSource {
     pub iAdapterIndex: ::std::os::raw::c_int,
     #[doc = " The number of Activatable Sources."]
     pub iNumActivatableSources: ::std::os::raw::c_int,
-    #[doc = " The bit mask identifies the number of bits ActivatableSourceValue is using. (Not currnetly used)"]
+    #[doc = " The bit mask identifies the number of bits ActivatableSourceValue is using. (Not currently used)"]
     pub iActivatableSourceMask: ::std::os::raw::c_int,
-    #[doc = " The bit mask identifies the status.  (Not currnetly used)"]
+    #[doc = " The bit mask identifies the status.  (Not currently used)"]
     pub iActivatableSourceValue: ::std::os::raw::c_int,
 }
 #[doc = "\n \\brief Structure containing information about display mode.\n\n This structure is used to store the display mode for the current adapter\n such as X, Y positions, screen resolutions, orientation,\n color depth, refresh rate, progressive or interlace mode, etc.\n \\nosubgrouping\n"]
