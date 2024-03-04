@@ -914,7 +914,7 @@ pub struct OptixAccelBufferSizes {
     #[doc = " The size in bytes required for the outputBuffer parameter to optixAccelBuild when"]
     #[doc = " doing a build (OPTIX_BUILD_OPERATION_BUILD)."]
     pub outputSizeInBytes: usize,
-    #[doc = " The size in bytes required for the tempBuffer paramter to optixAccelBuild when"]
+    #[doc = " The size in bytes required for the tempBuffer parameter to optixAccelBuild when"]
     #[doc = " doing a build (OPTIX_BUILD_OPERATION_BUILD)."]
     pub tempSizeInBytes: usize,
     #[doc = " The size in bytes required for the tempBuffer parameter to optixAccelBuild"]

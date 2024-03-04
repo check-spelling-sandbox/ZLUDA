@@ -104,7 +104,7 @@ pub(crate) trait ZludaObject: Sized {
     // This function exists to support "drop-with-return-value"
     // By default Drop returns nothing, while we want to signal that e.g.
     // cuCtxDestroy returned an error destroying underlying resources
-    // * by_owner patameter tells us if the drop comes from CUDA owner
+    // * by_owner parameter tells us if the drop comes from CUDA owner
     //   (typically context), in this cane we must skip deregistration
     fn drop_with_result(&mut self, by_owner: bool) -> Result<(), CUresult>;
 }
