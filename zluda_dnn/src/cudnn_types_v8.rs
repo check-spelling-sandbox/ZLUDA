@@ -2338,7 +2338,7 @@ impl cudnnBackendAttributeType_t {
     pub const CUDNN_TYPE_KNOB_TYPE: cudnnBackendAttributeType_t = cudnnBackendAttributeType_t(9);
 }
 impl cudnnBackendAttributeType_t {
-    pub const CUDNN_TYPE_NAN_PROPOGATION: cudnnBackendAttributeType_t =
+    pub const CUDNN_TYPE_NAN_PROPAGATION: cudnnBackendAttributeType_t =
         cudnnBackendAttributeType_t(10);
 }
 impl cudnnBackendAttributeType_t {
