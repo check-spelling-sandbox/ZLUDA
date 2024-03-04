@@ -2202,7 +2202,7 @@ typedef struct ADLOD6CurrentStatus
 } ADLOD6CurrentStatus;
 
 /////////////////////////////////////////////////////////////////////////////////////////////
-///\brief Structure containing information about Overdrive 6 thermal contoller capabilities
+///\brief Structure containing information about Overdrive 6 thermal controller capabilities
 ///
 /// This structure is used to store information about Overdrive 6 thermal controller capabilities
 /// \nosubgrouping

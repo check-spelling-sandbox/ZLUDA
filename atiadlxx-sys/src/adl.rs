@@ -3872,7 +3872,7 @@ pub struct ADLOD6CurrentStatus {
     #[doc = " Mask for future extension"]
     pub iExtMask: ::std::os::raw::c_int,
 }
-#[doc = "\n\\brief Structure containing information about Overdrive 6 thermal contoller capabilities\n\n This structure is used to store information about Overdrive 6 thermal controller capabilities\n \\nosubgrouping\n"]
+#[doc = "\n\\brief Structure containing information about Overdrive 6 thermal controller capabilities\n\n This structure is used to store information about Overdrive 6 thermal controller capabilities\n \\nosubgrouping\n"]
 #[repr(C)]
 #[derive(Copy, Clone)]
 pub struct ADLOD6ThermalControllerCaps {
