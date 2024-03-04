@@ -3174,7 +3174,7 @@ fn replace_shfl_with_pred<'input>(
 }
 
 // HACK ALERT!
-// This function is a "good enough" heuristic of whetever to mark f16/f32 operations
+// This function is a "good enough" heuristic of whether to mark f16/f32 operations
 // in the kernel as flushing denorms to zero or preserving them
 // PTX support per-instruction ftz information. Unfortunately LLVM has no
 // such capability, so instead we guesstimate which use is more common in a
