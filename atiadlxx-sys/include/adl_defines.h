@@ -1167,7 +1167,7 @@ enum ADLGraphicCoreGeneration
 #define ADL_ASIC_FIREGL  ADL_ASIC_WORKSTATION
 /// @}
 
-///\defgroup define_detailed_timing_flags Detailed Timimg Flags
+///\defgroup define_detailed_timing_flags Detailed Timing Flags
 /// Defines for ADLDetailedTiming.sTimingFlags field
 /// @{
 #define ADL_DL_TIMINGFLAG_DOUBLE_SCAN              0x0001
