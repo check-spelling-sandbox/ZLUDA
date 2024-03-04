@@ -6770,7 +6770,7 @@ extern "C" {
     pub fn ADL2_Display_Capabilities_Get(
         context: ADL_CONTEXT_HANDLE,
         iAdapterIndex: ::std::os::raw::c_int,
-        lpNumberOfControlers: *mut ::std::os::raw::c_int,
+        lpNumberOfControllers: *mut ::std::os::raw::c_int,
         lpNumberOfDisplays: *mut ::std::os::raw::c_int,
     ) -> ::std::os::raw::c_int;
 }

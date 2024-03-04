@@ -105,9 +105,9 @@ ADL_EXTERNC int EXPOSED ADL2_Display_AdjustCaps_Get(ADL_CONTEXT_HANDLE context,i
 
 ADL_EXTERNC int EXPOSED ADL_Display_AdjustCaps_Get(int iAdapterIndex, int iDisplayIndex, int* lpInfo);
 
-ADL_EXTERNC int EXPOSED ADL2_Display_Capabilities_Get(ADL_CONTEXT_HANDLE context,int iAdapterIndex, int* lpNumberOfControlers, int* lpNumberOfDisplays);
+ADL_EXTERNC int EXPOSED ADL2_Display_Capabilities_Get(ADL_CONTEXT_HANDLE context,int iAdapterIndex, int* lpNumberOfControllers, int* lpNumberOfDisplays);
 
-ADL_EXTERNC int EXPOSED ADL_Display_Capabilities_Get(int iAdapterIndex, int* lpNumberOfControlers, int* lpNumberOfDisplays);
+ADL_EXTERNC int EXPOSED ADL_Display_Capabilities_Get(int iAdapterIndex, int* lpNumberOfControllers, int* lpNumberOfDisplays);
 
 ADL_EXTERNC int EXPOSED ADL2_Display_ConnectedDisplays_Get(ADL_CONTEXT_HANDLE context,int iAdapterIndex, int * lpConnections);
 
