@@ -1671,7 +1671,7 @@ pub struct OptixModuleCompileOptions {
     pub optLevel: OptixCompileOptimizationLevel,
     #[doc = " Generate debug information."]
     pub debugLevel: OptixCompileDebugLevel,
-    #[doc = " Ingored if numBoundValues is set to 0"]
+    #[doc = " Ignored if numBoundValues is set to 0"]
     pub boundValues: *const OptixModuleCompileBoundValueEntry,
     #[doc = " set to 0 if unused"]
     pub numBoundValues: ::std::os::raw::c_uint,
