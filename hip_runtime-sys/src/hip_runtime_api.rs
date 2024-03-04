@@ -3712,7 +3712,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Gets resource limits of current device\n The function querys the size of limit value, as required input enum hipLimit_t, can be either\n hipLimitStackSize, or hipLimitMallocHeapSize.\n\n @param [out] pValue returns the size of the limit in bytes\n @param [in]  limit the limit to query\n\n @returns #hipSuccess, #hipErrorUnsupportedLimit, #hipErrorInvalidValue\n"]
+    #[doc = " @brief Gets resource limits of current device\n The function queries the size of limit value, as required input enum hipLimit_t, can be either\n hipLimitStackSize, or hipLimitMallocHeapSize.\n\n @param [out] pValue returns the size of the limit in bytes\n @param [in]  limit the limit to query\n\n @returns #hipSuccess, #hipErrorUnsupportedLimit, #hipErrorInvalidValue\n"]
     pub fn hipDeviceGetLimit(pValue: *mut usize, limit: hipLimit_t) -> hipError_t;
 }
 extern "C" {
