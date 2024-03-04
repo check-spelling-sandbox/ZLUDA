@@ -125,7 +125,7 @@ unsafe fn test(ptx_txt: &str, llvm_ir: &[u8], llvm_file_name: &str, fn_name: &st
             (&mut rt_program) as *mut _ as _,
         ) == hiprtError(0)
     );
-    // It would be intresting to compile into a relocatable to check for
+    // It would be interesting to compile into a relocatable to check for
     // fn declaration implementation mismatch between C++ wrapper and emitted
     // bitcode, but unfortunately in case of mismatches LLVM linker just
     // bitcasts incompatible function (which makes sense to a certain degree)
