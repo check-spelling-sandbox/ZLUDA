@@ -2920,9 +2920,9 @@ pub struct cudaCGScope(pub ::std::os::raw::c_uint);
 pub struct cudaLaunchParams {
     #[doc = "< Device function symbol"]
     pub func: *mut ::std::os::raw::c_void,
-    #[doc = "< Grid dimentions"]
+    #[doc = "< Grid dimensions"]
     pub gridDim: dim3,
-    #[doc = "< Block dimentions"]
+    #[doc = "< Block dimensions"]
     pub blockDim: dim3,
     #[doc = "< Arguments"]
     pub args: *mut *mut ::std::os::raw::c_void,
@@ -3250,9 +3250,9 @@ pub type cudaLaunchAttribute = cudaLaunchAttribute_st;
 #[repr(C)]
 #[derive(Copy, Clone)]
 pub struct cudaLaunchConfig_st {
-    #[doc = "< Grid dimentions"]
+    #[doc = "< Grid dimensions"]
     pub gridDim: dim3,
-    #[doc = "< Block dimentions"]
+    #[doc = "< Block dimensions"]
     pub blockDim: dim3,
     #[doc = "< Dynamic shared-memory size per thread block in bytes"]
     pub dynamicSmemBytes: usize,

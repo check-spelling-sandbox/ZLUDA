@@ -2804,9 +2804,9 @@ pub struct dim3 {
 pub struct hipLaunchParams_t {
     #[doc = "< Device function symbol"]
     pub func: *mut ::std::os::raw::c_void,
-    #[doc = "< Grid dimentions"]
+    #[doc = "< Grid dimensions"]
     pub gridDim: dim3,
-    #[doc = "< Block dimentions"]
+    #[doc = "< Block dimensions"]
     pub blockDim: dim3,
     #[doc = "< Arguments"]
     pub args: *mut *mut ::std::os::raw::c_void,
