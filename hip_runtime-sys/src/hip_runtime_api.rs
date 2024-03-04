@@ -6530,7 +6530,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Creates a external semaphor wait node and adds it to a graph.\n\n @param [out] pGraphNode - pointer to the graph node to create.\n @param [in] graph - instance of the graph to add the created node.\n @param [in] pDependencies - const pointer to the dependencies on the memset execution node.\n @param [in] numDependencies - the number of the dependencies.\n @param [in] nodeParams -pointer to the parameters.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Creates a external semaphore wait node and adds it to a graph.\n\n @param [out] pGraphNode - pointer to the graph node to create.\n @param [in] graph - instance of the graph to add the created node.\n @param [in] pDependencies - const pointer to the dependencies on the memset execution node.\n @param [in] numDependencies - the number of the dependencies.\n @param [in] nodeParams -pointer to the parameters.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipGraphAddExternalSemaphoresWaitNode(
         pGraphNode: *mut hipGraphNode_t,
         graph: hipGraph_t,
@@ -6541,7 +6541,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Creates a external semaphor signal node and adds it to a graph.\n\n @param [out] pGraphNode - pointer to the graph node to create.\n @param [in] graph - instance of the graph to add the created node.\n @param [in] pDependencies - const pointer to the dependencies on the memset execution node.\n @param [in] numDependencies - the number of the dependencies.\n @param [in] nodeParams -pointer to the parameters.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Creates a external semaphore signal node and adds it to a graph.\n\n @param [out] pGraphNode - pointer to the graph node to create.\n @param [in] graph - instance of the graph to add the created node.\n @param [in] pDependencies - const pointer to the dependencies on the memset execution node.\n @param [in] numDependencies - the number of the dependencies.\n @param [in] nodeParams -pointer to the parameters.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipGraphAddExternalSemaphoresSignalNode(
         pGraphNode: *mut hipGraphNode_t,
         graph: hipGraph_t,
