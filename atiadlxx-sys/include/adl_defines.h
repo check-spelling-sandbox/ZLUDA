@@ -1076,7 +1076,7 @@ enum ADLGraphicCoreGeneration
 ///\defgroup define_display_packet Display Data Packet Types
 /// @{
 #define ADL_DL_DISPLAY_DATA_PACKET__TYPE__AVI              0x00000001
-#define ADL_DL_DISPLAY_DATA_PACKET__TYPE__GAMMUT           0x00000002
+#define ADL_DL_DISPLAY_DATA_PACKET__TYPE__GAMUT            0x00000002
 #define ADL_DL_DISPLAY_DATA_PACKET__TYPE__VENDORINFO       0x00000004
 #define ADL_DL_DISPLAY_DATA_PACKET__TYPE__HDR              0x00000008
 #define ADL_DL_DISPLAY_DATA_PACKET__TYPE__SPD              0x00000010
