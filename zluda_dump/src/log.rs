@@ -34,7 +34,7 @@ pub(crate) struct Factory {
     // care). In addition of normal logs it emits errors from fallible emitter
     infallible_emitter: Box<dyn WriteTrailingZeroAware>,
     write_buffer: WriteBuffer,
-    // another shared buffer, so we dont't reallocate on every function call
+    // another shared buffer, so we don't reallocate on every function call
     log_queue: Vec<LogEntry>,
     log_enable: bool,
 }
