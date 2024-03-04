@@ -2032,7 +2032,7 @@ int iStepValue;
 ////////////////////////////////////////////////////////////////////////////////////////////
 typedef struct ADLControllerMode
 {
-    /// This falg indicates actions that will be applied by set viewport
+    /// This flag indicates actions that will be applied by set viewport
     /// The value can be a combination of ADL_CONTROLLERMODE_CM_MODIFIER_VIEW_POSITION,
     /// ADL_CONTROLLERMODE_CM_MODIFIER_VIEW_PANLOCK and ADL_CONTROLLERMODE_CM_MODIFIER_VIEW_SIZE
     int iModifiers;

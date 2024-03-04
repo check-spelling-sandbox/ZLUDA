@@ -3765,7 +3765,7 @@ pub struct ADLPowerControlInfo {
 #[repr(C)]
 #[derive(Copy, Clone)]
 pub struct ADLControllerMode {
-    #[doc = " This falg indicates actions that will be applied by set viewport\n The value can be a combination of ADL_CONTROLLERMODE_CM_MODIFIER_VIEW_POSITION,\n ADL_CONTROLLERMODE_CM_MODIFIER_VIEW_PANLOCK and ADL_CONTROLLERMODE_CM_MODIFIER_VIEW_SIZE"]
+    #[doc = " This flag indicates actions that will be applied by set viewport\n The value can be a combination of ADL_CONTROLLERMODE_CM_MODIFIER_VIEW_POSITION,\n ADL_CONTROLLERMODE_CM_MODIFIER_VIEW_PANLOCK and ADL_CONTROLLERMODE_CM_MODIFIER_VIEW_SIZE"]
     pub iModifiers: ::std::os::raw::c_int,
     #[doc = " Horizontal view starting position"]
     pub iViewPositionCx: ::std::os::raw::c_int,
