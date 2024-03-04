@@ -636,7 +636,7 @@ impl LibComgr {
     #[must_use]
     #[doc = " @brief Set the name associated with a data object."]
     #[doc = ""]
-    #[doc = " When compiling, the fle name of an include directive is used to"]
+    #[doc = " When compiling, the file name of an include directive is used to"]
     #[doc = " reference the contents of the include data object with the same"]
     #[doc = " name. The name may also be used for other data objects in log and"]
     #[doc = " diagnostic output."]
