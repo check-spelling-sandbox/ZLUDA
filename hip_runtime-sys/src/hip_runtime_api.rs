@@ -2463,7 +2463,7 @@ impl hipLimit_t {
 #[derive(Copy, Clone, Hash, PartialEq, Eq)]
 pub struct hipLimit_t(pub ::std::os::raw::c_int);
 impl hipMemoryAdvise {
-    #[doc = "< Data will mostly be read and only occassionally\n< be written to"]
+    #[doc = "< Data will mostly be read and only occasionally\n< be written to"]
     pub const hipMemAdviseSetReadMostly: hipMemoryAdvise = hipMemoryAdvise(1);
 }
 impl hipMemoryAdvise {
@@ -2518,7 +2518,7 @@ impl hipMemRangeCoherencyMode {
 #[derive(Copy, Clone, Hash, PartialEq, Eq)]
 pub struct hipMemRangeCoherencyMode(pub ::std::os::raw::c_int);
 impl hipMemRangeAttribute {
-    #[doc = "< Whether the range will mostly be read and\n< only occassionally be written to"]
+    #[doc = "< Whether the range will mostly be read and\n< only occasionally be written to"]
     pub const hipMemRangeAttributeReadMostly: hipMemRangeAttribute = hipMemRangeAttribute(1);
 }
 impl hipMemRangeAttribute {

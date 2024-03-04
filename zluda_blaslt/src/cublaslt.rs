@@ -1531,7 +1531,7 @@ impl cudaLimit {
 #[derive(Copy, Clone, Hash, PartialEq, Eq)]
 pub struct cudaLimit(pub ::std::os::raw::c_uint);
 impl cudaMemoryAdvise {
-    #[doc = "< Data will mostly be read and only occassionally be written to"]
+    #[doc = "< Data will mostly be read and only occasionally be written to"]
     pub const cudaMemAdviseSetReadMostly: cudaMemoryAdvise = cudaMemoryAdvise(1);
 }
 impl cudaMemoryAdvise {
@@ -1559,7 +1559,7 @@ impl cudaMemoryAdvise {
 #[derive(Copy, Clone, Hash, PartialEq, Eq)]
 pub struct cudaMemoryAdvise(pub ::std::os::raw::c_uint);
 impl cudaMemRangeAttribute {
-    #[doc = "< Whether the range will mostly be read and only occassionally be written to"]
+    #[doc = "< Whether the range will mostly be read and only occasionally be written to"]
     pub const cudaMemRangeAttributeReadMostly: cudaMemRangeAttribute = cudaMemRangeAttribute(1);
 }
 impl cudaMemRangeAttribute {
