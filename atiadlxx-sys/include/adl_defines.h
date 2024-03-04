@@ -2388,7 +2388,7 @@ typedef enum ADL_PMLOG_SENSORS
 
 /// \defgroup define_Adapter_CloneTypes_Get
 /// @{
-/// Indicates there is crossGPU clone with non-AMD dispalys
+/// Indicates there is crossGPU clone with non-AMD displays
 #define ADL_CROSSGPUDISPLAYCLONE_AMD_WITH_NONAMD                 0x1
 /// Indicates there is crossGPU clone
 #define ADL_CROSSGPUDISPLAYCLONE                  0x2
