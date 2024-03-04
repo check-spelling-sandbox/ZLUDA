@@ -2978,7 +2978,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Reads the amount of workspace required to exectute the solution.\n\n @param solution      Solution to get required workspace size\n @param workspaceSize Pointer to a location where to write the workspace size\n @return              miopenStatus_t"]
+    #[doc = " @brief Reads the amount of workspace required to execute the solution.\n\n @param solution      Solution to get required workspace size\n @param workspaceSize Pointer to a location where to write the workspace size\n @return              miopenStatus_t"]
     pub fn miopenGetSolutionWorkspaceSize(
         solution: miopenSolution_t,
         workspaceSize: *mut usize,
