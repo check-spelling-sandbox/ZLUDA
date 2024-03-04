@@ -31,7 +31,7 @@ pub enum PtxError {
     #[error("")]
     ArrayInitializer,
     #[error("")]
-    ScalarInitalizer,
+    ScalarInitializer,
     #[error("")]
     NonScalarArray,
     #[error("")]

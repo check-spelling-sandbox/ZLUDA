@@ -2683,13 +2683,13 @@ VariableScalarUnitialized<T>: (Option<u32>, T, &'input str) = {
 }
 
 VariableScalar<T>: (Option<u32>, T, &'input str, Vec<u8>) = {
-    <align:Align?> <type_:T> <name:ExtendedID> <init:VariableInitalizer?> => {
+    <align:Align?> <type_:T> <name:ExtendedID> <init:VariableInitializer?> => {
         let initializer = init.map(ast::ImmediateValue::to_bytes).unwrap_or(Vec::new());
         (align, type_, name, initializer)
     }
 }
 
-VariableInitalizer: ast::ImmediateValue = {
+VariableInitializer: ast::ImmediateValue = {
     "=" <v:ImmediateValue> => v
 }
 
