@@ -3159,11 +3159,11 @@ pub struct ADLPMActivity {
 pub struct ADLThermalControllerInfo {
     #[doc = " Must be set to the size of the structure"]
     pub iSize: ::std::os::raw::c_int,
-    #[doc = " Possible valies: \\ref ADL_DL_THERMAL_DOMAIN_OTHER or \\ref ADL_DL_THERMAL_DOMAIN_GPU."]
+    #[doc = " Possible values: \\ref ADL_DL_THERMAL_DOMAIN_OTHER or \\ref ADL_DL_THERMAL_DOMAIN_GPU."]
     pub iThermalDomain: ::std::os::raw::c_int,
     #[doc = "    GPU 0, 1, etc."]
     pub iDomainIndex: ::std::os::raw::c_int,
-    #[doc = " Possible valies: \\ref ADL_DL_THERMAL_FLAG_INTERRUPT or \\ref ADL_DL_THERMAL_FLAG_FANCONTROL"]
+    #[doc = " Possible values: \\ref ADL_DL_THERMAL_FLAG_INTERRUPT or \\ref ADL_DL_THERMAL_FLAG_FANCONTROL"]
     pub iFlags: ::std::os::raw::c_int,
 }
 #[doc = "\n\\brief Structure containing information about thermal controller temperature.\n\n This structure is used to store information about thermal controller temperature.\n This structure is used by the ADL_PM_Temperature_Get() function.\n \\nosubgrouping\n"]
@@ -3198,7 +3198,7 @@ pub struct ADLFanSpeedInfo {
 pub struct ADLFanSpeedValue {
     #[doc = " Must be set to the size of the structure"]
     pub iSize: ::std::os::raw::c_int,
-    #[doc = " Possible valies: \\ref ADL_DL_FANCTRL_SPEED_TYPE_PERCENT or \\ref ADL_DL_FANCTRL_SPEED_TYPE_RPM"]
+    #[doc = " Possible values: \\ref ADL_DL_FANCTRL_SPEED_TYPE_PERCENT or \\ref ADL_DL_FANCTRL_SPEED_TYPE_RPM"]
     pub iSpeedType: ::std::os::raw::c_int,
     #[doc = " Fan speed value"]
     pub iFanSpeed: ::std::os::raw::c_int,
