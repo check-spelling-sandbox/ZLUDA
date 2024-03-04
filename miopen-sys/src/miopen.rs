@@ -2965,7 +2965,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Saves a solution object as binary data.\n\n @param solution   Solution to save\n @param data       Pointer to a buffer to save soltuion to\n @return           miopenStatus_t"]
+    #[doc = " @brief Saves a solution object as binary data.\n\n @param solution   Solution to save\n @param data       Pointer to a buffer to save solution to\n @return           miopenStatus_t"]
     pub fn miopenSaveSolution(
         solution: miopenSolution_t,
         data: *mut ::std::os::raw::c_char,
