@@ -178,14 +178,14 @@ unsafe fn get_convolution_nd_forward_output_dim(
     input_tensor_desc: cudnnTensorDescriptor_t,
     filter_desc: cudnnFilterDescriptor_t,
     mut nb_dims: i32,
-    tensor_ouput_dim_a: *mut i32,
+    tensor_output_dim_a: *mut i32,
 ) -> cudnnStatus_t {
     to_cudnn(miopen_sys::miopenGetConvolutionNdForwardOutputDim(
         conv_desc as _,
         input_tensor_desc as _,
         filter_desc as _,
         &mut nb_dims as *mut _,
-        tensor_ouput_dim_a,
+        tensor_output_dim_a,
     ))
 }
 
