@@ -6796,7 +6796,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Create a surface object.\n\n @param [out] pSurfObject  Pointer of surface object to be created.\n @param [in] pResDesc  Pointer of suface object descriptor.\n\n @returns #hipSuccess, #hipErrorInvalidValue\n"]
+    #[doc = " @brief Create a surface object.\n\n @param [out] pSurfObject  Pointer of surface object to be created.\n @param [in] pResDesc  Pointer of surface object descriptor.\n\n @returns #hipSuccess, #hipErrorInvalidValue\n"]
     pub fn hipCreateSurfaceObject(
         pSurfObject: *mut hipSurfaceObject_t,
         pResDesc: *const hipResourceDesc,
