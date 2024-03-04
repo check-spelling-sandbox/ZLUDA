@@ -2299,7 +2299,7 @@ typedef struct code_object_info_s {
 
 /**
  * @ brief Given a bundled code object and list of target id strings, extract
- * correponding code object information.
+ * corresponding code object information.
  *
  * @param[in] data The data object for bundled code object. This should be
  * of kind AMD_COMGR_DATA_KIND_FATBIN or AMD_COMGR_DATA_KIND_EXECUTABLE or
