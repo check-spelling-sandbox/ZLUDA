@@ -454,7 +454,7 @@ impl rsmi_voltage_metric_t {
     pub const RSMI_VOLT_LAST: rsmi_voltage_metric_t = rsmi_voltage_metric_t(7);
 }
 #[repr(transparent)]
-#[doc = " @brief Voltage Metrics.  This enum is used to identify various\n Volatge metrics. Corresponding values will be in millivolt.\n"]
+#[doc = " @brief Voltage Metrics.  This enum is used to identify various\n Voltage metrics. Corresponding values will be in millivolt.\n"]
 #[derive(Copy, Clone, Hash, PartialEq, Eq)]
 pub struct rsmi_voltage_metric_t(pub ::std::os::raw::c_uint);
 impl rsmi_voltage_type_t {
