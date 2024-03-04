@@ -891,7 +891,7 @@ impl cudaAccessProperty {
     pub const cudaAccessPropertyNormal: cudaAccessProperty = cudaAccessProperty(0);
 }
 impl cudaAccessProperty {
-    #[doc = "< Streaming access is less likely to persit from cache."]
+    #[doc = "< Streaming access is less likely to persist from cache."]
     pub const cudaAccessPropertyStreaming: cudaAccessProperty = cudaAccessProperty(1);
 }
 impl cudaAccessProperty {
