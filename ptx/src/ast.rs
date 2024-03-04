@@ -56,7 +56,7 @@ pub enum PtxError {
     ExternDefinition,
 }
 
-// For some weird reson this is illegal:
+// For some weird reason this is illegal:
 //   .param .f16x2 foobar;
 // but this is legal:
 //   .param .f16x2 foobar[1];
