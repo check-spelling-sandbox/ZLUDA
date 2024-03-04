@@ -376,11 +376,11 @@ impl OptixVertexFormat {
     pub const OPTIX_VERTEX_FORMAT_FLOAT2: OptixVertexFormat = OptixVertexFormat(8482);
 }
 impl OptixVertexFormat {
-    #[doc = "< Vertices are represented by three halfs"]
+    #[doc = "< Vertices are represented by three halves"]
     pub const OPTIX_VERTEX_FORMAT_HALF3: OptixVertexFormat = OptixVertexFormat(8483);
 }
 impl OptixVertexFormat {
-    #[doc = "< Vertices are represented by two halfs"]
+    #[doc = "< Vertices are represented by two halves"]
     pub const OPTIX_VERTEX_FORMAT_HALF2: OptixVertexFormat = OptixVertexFormat(8484);
 }
 impl OptixVertexFormat {
@@ -1131,15 +1131,15 @@ impl OptixTraversableType {
 #[derive(Debug, Copy, Clone, Hash, PartialEq, Eq)]
 pub struct OptixTraversableType(pub ::std::os::raw::c_uint);
 impl OptixPixelFormat {
-    #[doc = "< two halfs, XY"]
+    #[doc = "< two halves, XY"]
     pub const OPTIX_PIXEL_FORMAT_HALF2: OptixPixelFormat = OptixPixelFormat(8711);
 }
 impl OptixPixelFormat {
-    #[doc = "< three halfs, RGB"]
+    #[doc = "< three halves, RGB"]
     pub const OPTIX_PIXEL_FORMAT_HALF3: OptixPixelFormat = OptixPixelFormat(8705);
 }
 impl OptixPixelFormat {
-    #[doc = "< four halfs, RGBA"]
+    #[doc = "< four halves, RGBA"]
     pub const OPTIX_PIXEL_FORMAT_HALF4: OptixPixelFormat = OptixPixelFormat(8706);
 }
 impl OptixPixelFormat {
