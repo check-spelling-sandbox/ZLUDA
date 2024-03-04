@@ -5960,7 +5960,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Creates an executable graph from a graph\n\n @param [out] pGraphExec - pointer to instantiated executable graph that is created.\n @param [in] graph - instance of graph to instantiate.\n @param [out] pErrorNode - pointer to error node in case error occured in graph instantiation,\n  it could modify the corresponding node.\n @param [out] pLogBuffer - pointer to log buffer.\n @param [out] bufferSize - the size of log buffer.\n\n @returns #hipSuccess, #hipErrorOutOfMemory\n\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues.\n"]
+    #[doc = " @brief Creates an executable graph from a graph\n\n @param [out] pGraphExec - pointer to instantiated executable graph that is created.\n @param [in] graph - instance of graph to instantiate.\n @param [out] pErrorNode - pointer to error node in case error occurred in graph instantiation,\n  it could modify the corresponding node.\n @param [out] pLogBuffer - pointer to log buffer.\n @param [out] bufferSize - the size of log buffer.\n\n @returns #hipSuccess, #hipErrorOutOfMemory\n\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues.\n"]
     pub fn hipGraphInstantiate(
         pGraphExec: *mut hipGraphExec_t,
         graph: hipGraph_t,
