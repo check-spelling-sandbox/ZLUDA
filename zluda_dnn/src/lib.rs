@@ -244,7 +244,7 @@ unsafe fn find_convolution_forward_algorithm(
         workspace_size,
         true,
     ));
-    // TODO: propagaate error codes
+    // TODO: propagate error codes
     drop(hipFree(x));
     drop(hipFree(w));
     drop(hipFree(y));
