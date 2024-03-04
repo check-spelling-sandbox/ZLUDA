@@ -507,7 +507,7 @@ impl miopenNanPropagation_t {
 #[derive(Copy, Clone, Hash, PartialEq, Eq)]
 pub struct miopenNanPropagation_t(pub ::std::os::raw::c_uint);
 impl miopenReduceTensorIndices_t {
-    #[doc = "< Does not compuate indices"]
+    #[doc = "< Does not compute indices"]
     pub const MIOPEN_REDUCE_TENSOR_NO_INDICES: miopenReduceTensorIndices_t =
         miopenReduceTensorIndices_t(0);
 }
