@@ -178,7 +178,7 @@ struct hiprtHit
 	float t;
 };
 
-/** \brief Insersection function for custom primitives.
+/** \brief Intersection function for custom primitives.
  *
  * \param ray Ray.
  * \param primID Primtive ID.
