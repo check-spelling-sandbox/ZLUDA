@@ -5341,7 +5341,7 @@ pub struct ADL_RADEON_LED_PATTERN_CONFIG {
 #[repr(C)]
 #[derive(Copy, Clone)]
 pub union ADL_RADEON_LED_PATTERN_CONFIG__bindgen_ty_1 {
-    pub genericPararmeters: ADL_RADEON_LED_PATTERN_CONFIG_GENERIC,
+    pub genericParameters: ADL_RADEON_LED_PATTERN_CONFIG_GENERIC,
     pub customGridConfig: ADL_RADEON_LED_CUSTOM_GRID_LED_CONFIG,
 }
 #[doc = "\n\\brief Structure containing information about the graphics adapter with extended caps\n\n This structure is used to store various information about the graphics adapter.  This\n information can be returned to the user. Alternatively, it can be used to access various driver calls to set\n or fetch various settings upon the user's request.\n This AdapterInfoX2 struct extends the AdapterInfo struct in adl_structures.h\n \\nosubgrouping\n"]

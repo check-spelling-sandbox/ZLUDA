@@ -3801,7 +3801,7 @@ typedef struct ADL_RADEON_LED_PATTERN_CONFIG
 
     union
     {
-		ADL_RADEON_LED_PATTERN_CONFIG_GENERIC genericPararmeters; //Requested pattern configuration settings
+		ADL_RADEON_LED_PATTERN_CONFIG_GENERIC genericParameters; //Requested pattern configuration settings
 		ADL_RADEON_LED_CUSTOM_GRID_LED_CONFIG customGridConfig; //Requested custom grid configuration settings
     };
 }ADL_RADEON_LED_PATTERN_CONFIG;
