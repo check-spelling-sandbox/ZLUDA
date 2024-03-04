@@ -89,7 +89,7 @@ impl rsmi_status_t {
     pub const RSMI_STATUS_UNKNOWN_ERROR: rsmi_status_t = rsmi_status_t(4294967295);
 }
 #[repr(transparent)]
-#[doc = " @brief Error codes retured by rocm_smi_lib functions"]
+#[doc = " @brief Error codes returned by rocm_smi_lib functions"]
 #[must_use]
 #[derive(Copy, Clone, Hash, PartialEq, Eq)]
 pub struct rsmi_status_t(pub ::std::os::raw::c_uint);

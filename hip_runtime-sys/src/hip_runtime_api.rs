@@ -3777,7 +3777,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Close memory mapped with hipIpcOpenMemHandle\n\n Unmaps memory returnd by hipIpcOpenMemHandle. The original allocation\n in the exporting process as well as imported mappings in other processes\n will be unaffected.\n\n Any resources used to enable peer access will be freed if this is the\n last mapping using them.\n\n @param devPtr - Device pointer returned by hipIpcOpenMemHandle\n\n @returns\n #hipSuccess,\n #hipErrorMapFailed,\n #hipErrorInvalidHandle\n\n @note This IPC memory related feature API on Windows may behave differently from Linux.\n"]
+    #[doc = " @brief Close memory mapped with hipIpcOpenMemHandle\n\n Unmaps memory returned by hipIpcOpenMemHandle. The original allocation\n in the exporting process as well as imported mappings in other processes\n will be unaffected.\n\n Any resources used to enable peer access will be freed if this is the\n last mapping using them.\n\n @param devPtr - Device pointer returned by hipIpcOpenMemHandle\n\n @returns\n #hipSuccess,\n #hipErrorMapFailed,\n #hipErrorInvalidHandle\n\n @note This IPC memory related feature API on Windows may behave differently from Linux.\n"]
     pub fn hipIpcCloseMemHandle(devPtr: *mut ::std::os::raw::c_void) -> hipError_t;
 }
 extern "C" {
