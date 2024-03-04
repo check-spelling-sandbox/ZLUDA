@@ -76,7 +76,7 @@ enum class CompilationMode : uint8_t
 // * Not a problem, HIP supports it. Haha, no. This is HIP implementation right now:
 //      __device__ static inline float __double2float_rz(double x) { return (double)x; }
 // * Not a problem, ROCm-Device-Libs supports it. Haha, Somewhat:
-//      * Only when building for OpenCL (that's why we pass opencl.bc and related explictly). There's no non-deprecated way to convince comgr to link it
+//      * Only when building for OpenCL (that's why we pass opencl.bc and related explicitly). There's no non-deprecated way to convince comgr to link it
 //      * To top it all, by default, OpenCL `half` type gets mangled differently than HIP `half` or Clang `_Float16`
 //          * There's __fp16, but by default it can't be passed as an argument. Thankfully there's a hidden flag to fix this
 #include "cvt.h"
