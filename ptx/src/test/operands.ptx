@@ -25,7 +25,7 @@
     add.u32 %reg0, 1, %reg2;
     // reg with offset
     add.u32 %reg0, %reg1+1, %reg2+-1;
-    // suprisingly, setp accepts all forms
+    // surprisingly, setp accepts all forms
     setp.eq.and.u32 p, %reg1+1, %reg2+-1, 2;
 
     // vector index - only supported by mov (maybe: ld, st, tex)
