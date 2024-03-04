@@ -231,9 +231,9 @@ fn is_builtin_function_name(name: &str) -> bool {
 
 // PTX linking rules are fairly convoluted. Here's my understanding:
 // * For normal data (.global, .const) and non-kernel functions (.func)
-//     * Symbol occurences must be equivalent under following rules:
-//         * For data, symbol occurences must be of the same size. Alignment is ignored
-//         * For functions, symbol occurences are strictly type-checked.
+//     * Symbol occurrences must be equivalent under following rules:
+//         * For data, symbol occurrences must be of the same size. Alignment is ignored
+//         * For functions, symbol occurrences are strictly type-checked.
 //           Number, type and alignment of input and return parameters must all match
 //     * There are 3 classes of directives:
 //         * Declarations. Only valid on functions
@@ -274,13 +274,13 @@ fn is_builtin_function_name(name: &str) -> bool {
 //                 * it's a non-linking compilation
 //                 * initializer is not present
 //         * .visible: symbol is strong (overrides .weak) and globally visible.
-//           Multiple .visible symbol occurences during linking compilation are illegal
+//           Multiple .visible symbol occurrences during linking compilation are illegal
 //         * .weak: symbol is weak and globally visible.
-//           If there's no strong symbol occurence, first weak symbol occurence gets selected
+//           If there's no strong symbol occurrence, first weak symbol occurrence gets selected
 //         * .common: symbol is strong (overrides .weak) and globally visible with some additional rules:
 //             * applies only to .global
-//             * selects the first occurence from the largest symbol occurences
-//             * explicit initializer is only allowed on symbol occurences with the largest size
+//             * selects the first occurrence from the largest symbol occurrences
+//             * explicit initializer is only allowed on symbol occurrences with the largest size
 fn resolve_linking<'a, 'input>(
     ast_modules: &'a [ast::Module<'input>],
     is_raytracing: bool,
