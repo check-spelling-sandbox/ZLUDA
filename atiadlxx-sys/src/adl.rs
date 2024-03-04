@@ -4968,7 +4968,7 @@ pub struct ADLRASResetErrorCounts {
 #[doc = "\n\\brief Structure containing information related RAS Error Injection information\n\n This structure is used to store RAS Error Injection input information\n \\nosubgrouping\n"]
 #[repr(C)]
 #[derive(Copy, Clone)]
-pub struct ADLRASErrorInjectonInput {
+pub struct ADLRASErrorInjectionInput {
     pub Address: ::std::os::raw::c_ulonglong,
     pub Value: ADL_RAS_INJECTION_METHOD,
     pub BlockId: ADL_RAS_BLOCK_ID,
@@ -4988,7 +4988,7 @@ pub struct ADLRASErrorInjectionOutput {
 #[derive(Copy, Clone)]
 pub struct ADLRASErrorInjection {
     pub InputSize: ::std::os::raw::c_uint,
-    pub Input: ADLRASErrorInjectonInput,
+    pub Input: ADLRASErrorInjectionInput,
     pub OutputSize: ::std::os::raw::c_uint,
     pub Output: ADLRASErrorInjectionOutput,
 }

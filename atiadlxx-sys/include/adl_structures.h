@@ -3448,7 +3448,7 @@ typedef struct ADLRASResetErrorCounts
 /// \nosubgrouping
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-typedef struct ADLRASErrorInjectonInput
+typedef struct ADLRASErrorInjectionInput
 {
     unsigned long long Address;
     ADL_RAS_INJECTION_METHOD Value;
@@ -3456,7 +3456,7 @@ typedef struct ADLRASErrorInjectonInput
     ADL_RAS_ERROR_TYPE InjectErrorType;
     ADL_MEM_SUB_BLOCK_ID SubBlockIndex;
     unsigned int padding[9];
-} ADLRASErrorInjectonInput;
+} ADLRASErrorInjectionInput;
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 ///\brief Structure containing information related RAS Error Injection information
@@ -3481,7 +3481,7 @@ typedef struct ADLRASErrorInjectionOutput
 typedef struct ADLRASErrorInjection
 {
     unsigned int                           InputSize;
-    ADLRASErrorInjectonInput               Input;
+    ADLRASErrorInjectionInput               Input;
     unsigned int                           OutputSize;
     ADLRASErrorInjectionOutput             Output;
 } ADLRASErrorInjection;
