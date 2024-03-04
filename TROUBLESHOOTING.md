@@ -66,7 +66,7 @@ Look for the call with a non-zero return value. In our case `cuModuleGetFunction
 
 In addition to the "normal" implementation of CUDA API, ZLUDA ships with debugging implementation (sometimes called ZLUDA dumper). This implementation does the following:
 - Intercept any call to CUDA APIs.
-- Log imortant information: function name, arguments to console output and log file.
+- Log important information: function name, arguments to console output and log file.
 - On GPU code load, saves the GPU code input (PTX assembly or compiled binary code).
 - Passes the CUDA API call for the execution to a real implementation (either ZLUDA or original CUDA).
 
