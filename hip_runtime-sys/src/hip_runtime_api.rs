@@ -637,7 +637,7 @@ impl hipError_t {
     pub const hipErrorProfilerAlreadyStopped: hipError_t = hipError_t(8);
 }
 impl hipError_t {
-    #[doc = "< Invalide configuration"]
+    #[doc = "< Invalid configuration"]
     pub const hipErrorInvalidConfiguration: hipError_t = hipError_t(9);
 }
 impl hipError_t {
@@ -760,7 +760,7 @@ impl hipError_t {
     pub const hipErrorOperatingSystem: hipError_t = hipError_t(304);
 }
 impl hipError_t {
-    #[doc = "< Invalide handle"]
+    #[doc = "< Invalid handle"]
     pub const hipErrorInvalidHandle: hipError_t = hipError_t(400);
 }
 impl hipError_t {
