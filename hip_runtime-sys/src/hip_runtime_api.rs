@@ -5794,7 +5794,7 @@ extern "C" {
     pub fn hipKernelNameRef(f: hipFunction_t) -> *const ::std::os::raw::c_char;
 }
 extern "C" {
-    #[doc = " @brief Retrives kernel for a given host pointer, unless stated otherwise.\n\n @param [in] hostFunction Pointer of host function.\n @param [in] stream stream the kernel is executed on.\n\n @returns hipSuccess, hipErrorInvalidValue\n"]
+    #[doc = " @brief Retrieves kernel for a given host pointer, unless stated otherwise.\n\n @param [in] hostFunction Pointer of host function.\n @param [in] stream stream the kernel is executed on.\n\n @returns hipSuccess, hipErrorInvalidValue\n"]
     pub fn hipKernelNameRefByPtr(
         hostFunction: *const ::std::os::raw::c_void,
         stream: hipStream_t,
