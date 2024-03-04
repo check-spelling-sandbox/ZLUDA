@@ -5829,7 +5829,7 @@ extern "C" {
     #[doc = " visit program currently bound to \\a selector."]
     #[doc = ""]
     #[doc = " @param[in]   selector   Selector node handle"]
-    #[doc = " @param[out]  program    Current visit progam assigned to \\a selector"]
+    #[doc = " @param[out]  program    Current visit program assigned to \\a selector"]
     #[doc = ""]
     #[doc = " <B>Return values</B>"]
     #[doc = ""]
