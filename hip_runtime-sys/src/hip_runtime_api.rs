@@ -4501,7 +4501,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = "  @brief Gets device pointer associated with symbol on the device.\n\n  @param[out]  devPtr  pointer to the device associated the symbole\n  @param[in]   symbol  pointer to the symbole of the device\n\n  @return #hipSuccess, #hipErrorInvalidValue\n"]
+    #[doc = "  @brief Gets device pointer associated with symbol on the device.\n\n  @param[out]  devPtr  pointer to the device associated the symbol\n  @param[in]   symbol  pointer to the symbol of the device\n\n  @return #hipSuccess, #hipErrorInvalidValue\n"]
     pub fn hipGetSymbolAddress(
         devPtr: *mut *mut ::std::os::raw::c_void,
         symbol: *const ::std::os::raw::c_void,
@@ -4509,12 +4509,12 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = "  @brief Gets the size of the given symbol on the device.\n\n  @param[in]   symbol  pointer to the device symbole\n  @param[out]  size  pointer to the size\n\n  @return #hipSuccess, #hipErrorInvalidValue\n"]
+    #[doc = "  @brief Gets the size of the given symbol on the device.\n\n  @param[in]   symbol  pointer to the device symbol\n  @param[out]  size  pointer to the size\n\n  @return #hipSuccess, #hipErrorInvalidValue\n"]
     pub fn hipGetSymbolSize(size: *mut usize, symbol: *const ::std::os::raw::c_void) -> hipError_t;
 }
 extern "C" {
     #[must_use]
-    #[doc = "  @brief Copies data to the given symbol on the device.\n Symbol HIP APIs allow a kernel to define a device-side data symbol which can be accessed on\n the host side. The symbol can be in __constant or device space.\n Note that the symbol name needs to be encased in the HIP_SYMBOL macro.\n This also applies to hipMemcpyFromSymbol, hipGetSymbolAddress, and hipGetSymbolSize.\n For detail usage, see the example at\n https://github.com/ROCm-Developer-Tools/HIP/blob/rocm-5.0.x/docs/markdown/hip_porting_guide.md\n\n  @param[out]  symbol  pointer to the device symbole\n  @param[in]   src  pointer to the source address\n  @param[in]   sizeBytes  size in bytes to copy\n  @param[in]   offset  offset in bytes from start of symbole\n  @param[in]   kind  type of memory transfer\n\n  @return #hipSuccess, #hipErrorInvalidValue\n"]
+    #[doc = "  @brief Copies data to the given symbol on the device.\n Symbol HIP APIs allow a kernel to define a device-side data symbol which can be accessed on\n the host side. The symbol can be in __constant or device space.\n Note that the symbol name needs to be encased in the HIP_SYMBOL macro.\n This also applies to hipMemcpyFromSymbol, hipGetSymbolAddress, and hipGetSymbolSize.\n For detail usage, see the example at\n https://github.com/ROCm-Developer-Tools/HIP/blob/rocm-5.0.x/docs/markdown/hip_porting_guide.md\n\n  @param[out]  symbol  pointer to the device symbol\n  @param[in]   src  pointer to the source address\n  @param[in]   sizeBytes  size in bytes to copy\n  @param[in]   offset  offset in bytes from start of symbol\n  @param[in]   kind  type of memory transfer\n\n  @return #hipSuccess, #hipErrorInvalidValue\n"]
     pub fn hipMemcpyToSymbol(
         symbol: *const ::std::os::raw::c_void,
         src: *const ::std::os::raw::c_void,
@@ -4525,7 +4525,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = "  @brief Copies data to the given symbol on the device asynchronously.\n\n  @param[out]  symbol  pointer to the device symbole\n  @param[in]   src  pointer to the source address\n  @param[in]   sizeBytes  size in bytes to copy\n  @param[in]   offset  offset in bytes from start of symbole\n  @param[in]   kind  type of memory transfer\n  @param[in]   stream  stream identifier\n\n  @return #hipSuccess, #hipErrorInvalidValue\n"]
+    #[doc = "  @brief Copies data to the given symbol on the device asynchronously.\n\n  @param[out]  symbol  pointer to the device symbol\n  @param[in]   src  pointer to the source address\n  @param[in]   sizeBytes  size in bytes to copy\n  @param[in]   offset  offset in bytes from start of symbol\n  @param[in]   kind  type of memory transfer\n  @param[in]   stream  stream identifier\n\n  @return #hipSuccess, #hipErrorInvalidValue\n"]
     pub fn hipMemcpyToSymbolAsync(
         symbol: *const ::std::os::raw::c_void,
         src: *const ::std::os::raw::c_void,
@@ -4537,7 +4537,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = "  @brief Copies data from the given symbol on the device.\n\n  @param[out]  dptr  Returns pointer to destination memory address\n  @param[in]   symbol  pointer to the symbole address on the device\n  @param[in]   sizeBytes  size in bytes to copy\n  @param[in]   offset  offset in bytes from the start of symbole\n  @param[in]   kind  type of memory transfer\n\n  @return #hipSuccess, #hipErrorInvalidValue\n"]
+    #[doc = "  @brief Copies data from the given symbol on the device.\n\n  @param[out]  dptr  Returns pointer to destination memory address\n  @param[in]   symbol  pointer to the symbol address on the device\n  @param[in]   sizeBytes  size in bytes to copy\n  @param[in]   offset  offset in bytes from the start of symbol\n  @param[in]   kind  type of memory transfer\n\n  @return #hipSuccess, #hipErrorInvalidValue\n"]
     pub fn hipMemcpyFromSymbol(
         dst: *mut ::std::os::raw::c_void,
         symbol: *const ::std::os::raw::c_void,
@@ -4548,7 +4548,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = "  @brief Copies data from the given symbol on the device asynchronously.\n\n  @param[out]  dptr  Returns pointer to destination memory address\n  @param[in]   symbol  pointer to the symbole address on the device\n  @param[in]   sizeBytes  size in bytes to copy\n  @param[in]   offset  offset in bytes from the start of symbole\n  @param[in]   kind  type of memory transfer\n  @param[in]   stream  stream identifier\n\n  @return #hipSuccess, #hipErrorInvalidValue\n"]
+    #[doc = "  @brief Copies data from the given symbol on the device asynchronously.\n\n  @param[out]  dptr  Returns pointer to destination memory address\n  @param[in]   symbol  pointer to the symbol address on the device\n  @param[in]   sizeBytes  size in bytes to copy\n  @param[in]   offset  offset in bytes from the start of symbol\n  @param[in]   kind  type of memory transfer\n  @param[in]   stream  stream identifier\n\n  @return #hipSuccess, #hipErrorInvalidValue\n"]
     pub fn hipMemcpyFromSymbolAsync(
         dst: *mut ::std::os::raw::c_void,
         symbol: *const ::std::os::raw::c_void,
