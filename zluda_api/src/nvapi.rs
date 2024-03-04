@@ -12694,7 +12694,7 @@ pub struct NvAPI_D3D11_RASTERIZER_DESC_EX {
     pub PostZCoverageEnable: bool,
     pub CoverageToColorEnable: bool,
     pub CoverageToColorRTIndex: NvU8,
-    pub TargetIndepentRasterWithDepth: bool,
+    pub TargetIndependentRasterWithDepth: bool,
     pub reserved: [NvU8; 63usize],
 }
 impl _NVAPI_ANSEL_FEATURE {
@@ -13125,7 +13125,7 @@ pub struct NVAPI_D3D12_PSO_RASTERIZER_STATE_DESC_V1 {
     pub PostZCoverageEnable: bool,
     pub CoverageToColorEnable: bool,
     pub CoverageToColorRTIndex: NvU8,
-    pub TargetIndepentRasterWithDepth: bool,
+    pub TargetIndependentRasterWithDepth: bool,
     pub ForcedSampleCount: NvU8,
     pub reserved: [NvU8; 62usize],
 }
