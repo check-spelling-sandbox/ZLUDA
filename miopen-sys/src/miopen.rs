@@ -2986,6 +2986,6 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Reads the time spent to execute the solution the last it was run.\n\n @param solution Solution to get exection time\n @param time     Pointer to a location where to write the execution time\n @return         miopenStatus_t"]
+    #[doc = " @brief Reads the time spent to execute the solution the last it was run.\n\n @param solution Solution to get execution time\n @param time     Pointer to a location where to write the execution time\n @return         miopenStatus_t"]
     pub fn miopenGetSolutionTime(solution: miopenSolution_t, time: *mut f32) -> miopenStatus_t;
 }
