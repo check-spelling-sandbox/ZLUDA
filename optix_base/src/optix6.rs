@@ -8711,7 +8711,7 @@ extern "C" {
     #[doc = " <B>Description</B>"]
     #[doc = ""]
     #[doc = " @ref rtGeometryGetPrimitiveCount returns for \\a geometry the number of set primitives. The"]
-    #[doc = " number of primitvies can be set with @ref rtGeometryGetPrimitiveCount."]
+    #[doc = " number of primitives can be set with @ref rtGeometryGetPrimitiveCount."]
     #[doc = ""]
     #[doc = " @param[in]   geometry         Geometry node to query from the number of primitives"]
     #[doc = " @param[out]  primitiveCount   Number of primitives"]
