@@ -1150,7 +1150,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = "/\n/** @defgroup PCIeQuer PCIe Queries\n  These functions provide information about PCIe.\n  @{\n/\n/**\n  @brief Get the list of possible PCIe bandwidths that are available.\n\n  @details Given a device index @p dv_ind and a pointer to a to an\n  ::rsmi_pcie_bandwidth_t structure @p bandwidth, this function will fill in\n  @p bandwidth with the possible T/s values and associated number of lanes,\n  and indication of the current selection.\n\n  @param[in] dv_ind a device index\n\n  @param[inout] bandwidth a pointer to a caller provided\n  ::rsmi_pcie_bandwidth_t structure to which the frequency information will be\n  written\n\n  @retval ::RSMI_STATUS_SUCCESS is returned upon successful call.\n"]
+    #[doc = "/\n/** @defgroup PCIeQueries PCIe Queries\n  These functions provide information about PCIe.\n  @{\n/\n/**\n  @brief Get the list of possible PCIe bandwidths that are available.\n\n  @details Given a device index @p dv_ind and a pointer to a to an\n  ::rsmi_pcie_bandwidth_t structure @p bandwidth, this function will fill in\n  @p bandwidth with the possible T/s values and associated number of lanes,\n  and indication of the current selection.\n\n  @param[in] dv_ind a device index\n\n  @param[inout] bandwidth a pointer to a caller provided\n  ::rsmi_pcie_bandwidth_t structure to which the frequency information will be\n  written\n\n  @retval ::RSMI_STATUS_SUCCESS is returned upon successful call.\n"]
     pub fn rsmi_dev_pci_bandwidth_get(
         dv_ind: u32,
         bandwidth: *mut rsmi_pcie_bandwidth_t,
