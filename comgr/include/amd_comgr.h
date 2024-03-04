@@ -1211,7 +1211,7 @@ amd_comgr_action_info_set_options(
  * @param[out] options If not NULL, then the first @p size characters of
  * the options are copied. If the options are not set then an empty
  * string is copied. If NULL, options is not copied, and only @p size
- * is updated (useful inorder to find the size of buffer required to
+ * is updated (useful in order to find the size of buffer required to
  * copy the options).
  *
  * @retval ::AMD_COMGR_STATUS_SUCCESS The function has
