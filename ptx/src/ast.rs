@@ -1391,7 +1391,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn array_fails_multiple_0_dmiensions() {
+    fn array_fails_multiple_0_dimensions() {
         let inp = NumsOrArrays::Nums(Vec::new());
         assert!(inp.to_vec(ScalarType::B8, &mut vec![0, 0]).is_err());
     }
