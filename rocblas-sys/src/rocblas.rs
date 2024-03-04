@@ -318,7 +318,7 @@ impl rocblas_gemm_flags_ {
     pub const rocblas_gemm_flags_none: rocblas_gemm_flags_ = rocblas_gemm_flags_(0);
 }
 impl rocblas_gemm_flags_ {
-    #[doc = " \\brief Before ROCm 4.2, this flags is not implemented and rocblas uses packed-Int8x4 by default.\n After ROCm 4.2, set flag is neccesary if we want packed-Int8x4. Default (0x0) uses unpacked."]
+    #[doc = " \\brief Before ROCm 4.2, this flags is not implemented and rocblas uses packed-Int8x4 by default.\n After ROCm 4.2, set flag is necessary if we want packed-Int8x4. Default (0x0) uses unpacked."]
     pub const rocblas_gemm_flags_pack_int8x4: rocblas_gemm_flags_ = rocblas_gemm_flags_(1);
 }
 impl rocblas_gemm_flags_ {
