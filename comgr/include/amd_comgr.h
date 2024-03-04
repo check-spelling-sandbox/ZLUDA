@@ -803,7 +803,7 @@ amd_comgr_destroy_symbolizer_info(
  * @param[in] is_code if true, the symbolizer symbolize the address as code
  * and the symbolization result contains filename, function name, line number
  * and column number, else the symbolizer symbolize the address as data and
- * the symbolizaion result contains symbol name, symbol's starting address
+ * the symbolization result contains symbol name, symbol's starting address
  * and symbol size.
  *
  * @param[in] user_data Arbitrary user-data passed to @p print_symbol_callback
