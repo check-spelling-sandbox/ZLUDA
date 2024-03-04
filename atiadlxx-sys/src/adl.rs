@@ -4915,7 +4915,7 @@ pub union ADLPMLogStartOutput__bindgen_ty_1 {
     pub pLoggingAddress: *mut ::std::os::raw::c_void,
     pub ptr_LoggingAddress: ::std::os::raw::c_ulonglong,
 }
-#[doc = "\n\\brief Structure containing information to query limts of power management logging.\n\n This structure is returned as output from ADL2_Adapter_PMLog_SensorLimits_Get\n \\nosubgrouping\n"]
+#[doc = "\n\\brief Structure containing information to query limits of power management logging.\n\n This structure is returned as output from ADL2_Adapter_PMLog_SensorLimits_Get\n \\nosubgrouping\n"]
 #[repr(C)]
 #[derive(Copy, Clone)]
 pub struct ADLPMLogSensorLimits {

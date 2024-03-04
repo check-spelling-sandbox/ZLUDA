@@ -3351,7 +3351,7 @@ typedef struct ADLPMLogStartOutput
 } ADLPMLogStartOutput;
 
 /////////////////////////////////////////////////////////////////////////////////////////////
-///\brief Structure containing information to query limts of power management logging.
+///\brief Structure containing information to query limits of power management logging.
 ///
 /// This structure is returned as output from ADL2_Adapter_PMLog_SensorLimits_Get
 /// \nosubgrouping
