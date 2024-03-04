@@ -94,7 +94,7 @@ extern "C" {
  * passed to operations must be disjoint, together with all the @p
  * amd_comgr_data_t handles that have been added to it. The exception is that
  * the default device library data object handles can be non-disjoint as they
- * are imutable.
+ * are immutable.
  *
  * The library supports generating and inspecting code objects that
  * contain machine code for a certain set of instruction set
