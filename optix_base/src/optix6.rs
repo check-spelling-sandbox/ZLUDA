@@ -15791,7 +15791,7 @@ extern "C" {
     #[doc = " texture formats."]
     #[doc = ""]
     #[doc = " @param[in]   context          The context to create the buffer in"]
-    #[doc = " @param[in]   glId             The OpenGL image object resoure handle for use in OptiX"]
+    #[doc = " @param[in]   glId             The OpenGL image object resource handle for use in OptiX"]
     #[doc = " @param[in]   target           The OpenGL target"]
     #[doc = " @param[out]  textureSampler   The return handle for the texture sampler object"]
     #[doc = ""]

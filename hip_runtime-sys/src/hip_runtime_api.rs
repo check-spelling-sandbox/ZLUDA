@@ -1544,7 +1544,7 @@ impl hipResourceType {
 #[derive(Copy, Clone, Hash, PartialEq, Eq)]
 pub struct hipResourceType(pub ::std::os::raw::c_int);
 impl HIPresourcetype_enum {
-    #[doc = "< Array resoure"]
+    #[doc = "< Array resource"]
     pub const HIP_RESOURCE_TYPE_ARRAY: HIPresourcetype_enum = HIPresourcetype_enum(0);
 }
 impl HIPresourcetype_enum {
