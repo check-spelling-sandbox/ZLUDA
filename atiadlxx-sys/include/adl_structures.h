@@ -3885,7 +3885,7 @@ typedef struct ADLGamutInfo
 /////////////////////////////////////////////////////////////////////////////////////////////
 ///\brief Structure containing information about driver point coordinates
 ///
-/// This structure is used to store the driver point coodinates for gamut and white point
+/// This structure is used to store the driver point coordinates for gamut and white point
 /// \nosubgrouping
 ////////////////////////////////////////////////////////////////////////////////////////////
 

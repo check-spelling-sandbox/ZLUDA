@@ -5399,7 +5399,7 @@ pub struct ADLGamutInfo {
     #[doc = "Any combination of following ADL_WHITE_POINT_5000K - ADL_WHITE_POINT_CUSTOM"]
     pub SupportedWhitePoint: ::std::os::raw::c_int,
 }
-#[doc = "\n\\brief Structure containing information about driver point coordinates\n\n This structure is used to store the driver point coodinates for gamut and white point\n \\nosubgrouping\n"]
+#[doc = "\n\\brief Structure containing information about driver point coordinates\n\n This structure is used to store the driver point coordinates for gamut and white point\n \\nosubgrouping\n"]
 #[repr(C)]
 #[derive(Copy, Clone)]
 pub struct ADLPoint {
