@@ -1638,7 +1638,7 @@ typedef enum amd_comgr_action_kind_s {
    * Disassemble each bytes data object in @p input in order. For each
    * successful disassembly add a source data object to @p
    * result. Only simple assembly language commands are generate that
-   * corresponf to raw bytes are supported, not any directives that
+   * correspond to raw bytes are supported, not any directives that
    * control the code object layout, or symbolic branch targets or
    * names.
    *

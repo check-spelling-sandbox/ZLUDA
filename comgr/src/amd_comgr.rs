@@ -362,7 +362,7 @@ impl amd_comgr_action_kind_s {
     #[doc = " Disassemble each bytes data object in @p input in order. For each"]
     #[doc = " successful disassembly add a source data object to @p"]
     #[doc = " result. Only simple assembly language commands are generate that"]
-    #[doc = " corresponf to raw bytes are supported, not any directives that"]
+    #[doc = " correspond to raw bytes are supported, not any directives that"]
     #[doc = " control the code object layout, or symbolic branch targets or"]
     #[doc = " names."]
     #[doc = ""]
