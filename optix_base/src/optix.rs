@@ -2316,7 +2316,7 @@ extern "C" {
 }
 extern "C" {
     #[doc = " Returns the location of the disk cache.  If the cache has been disabled by setting the environment"]
-    #[doc = " variable OPTIX_CACHE_MAXSIZE=0, this function will return an empy string."]
+    #[doc = " variable OPTIX_CACHE_MAXSIZE=0, this function will return an empty string."]
     #[doc = ""]
     #[doc = " \\param[in] context      the device context"]
     #[doc = " \\param[out] location    directory of disk cache, null terminated if locationSize > 0"]
