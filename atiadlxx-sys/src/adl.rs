@@ -4895,7 +4895,7 @@ pub struct ADLPMLogData {
     pub ulActiveSampleRate: ::std::os::raw::c_uint,
     #[doc = " Timestamp of last update"]
     pub ulLastUpdated: ::std::os::raw::c_ulonglong,
-    #[doc = " 2D array of senesor and values"]
+    #[doc = " 2D array of sensor and values"]
     pub ulValues: [[::std::os::raw::c_uint; 2usize]; 256usize],
     #[doc = " Reserved"]
     pub ulReserved: [::std::os::raw::c_uint; 256usize],

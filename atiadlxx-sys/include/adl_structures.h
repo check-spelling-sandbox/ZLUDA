@@ -3326,7 +3326,7 @@ typedef struct ADLPMLogData
     unsigned int ulActiveSampleRate;
     /// Timestamp of last update
     unsigned long long ulLastUpdated;
-    /// 2D array of senesor and values
+    /// 2D array of sensor and values
     unsigned int ulValues[ADL_PMLOG_MAX_SUPPORTED_SENSORS][2];
     /// Reserved
     unsigned int ulReserved[256];
