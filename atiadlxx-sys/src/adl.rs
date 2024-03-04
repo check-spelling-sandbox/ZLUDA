@@ -3089,7 +3089,7 @@ pub struct ADLAVIInfoPacket {
 #[repr(C)]
 #[derive(Copy, Clone)]
 pub struct ADLODClockSetting {
-    #[doc = " Deafult clock"]
+    #[doc = " Default clock"]
     pub iDefaultClock: ::std::os::raw::c_int,
     #[doc = " Current clock"]
     pub iCurrentClock: ::std::os::raw::c_int,
@@ -7380,7 +7380,7 @@ extern "C" {
         iAdapterIndex: ::std::os::raw::c_int,
         iDisplayIndex: ::std::os::raw::c_int,
         lpCurrent: *mut ::std::os::raw::c_int,
-        lpDefualt: *mut ::std::os::raw::c_int,
+        lpDefault: *mut ::std::os::raw::c_int,
         lpMin: *mut ::std::os::raw::c_int,
         lpMax: *mut ::std::os::raw::c_int,
         lpStep: *mut ::std::os::raw::c_int,

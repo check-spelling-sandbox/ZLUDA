@@ -407,9 +407,9 @@ ADL_EXTERNC int EXPOSED ADL_Display_Overscan_Set(int iAdapterIndex, int iDisplay
 
 
 
-ADL_EXTERNC int EXPOSED ADL2_Display_Overscan_Get(ADL_CONTEXT_HANDLE context,int iAdapterIndex, int iDisplayIndex, int *lpCurrent, int *lpDefualt, int *lpMin, int *lpMax, int *lpStep);
+ADL_EXTERNC int EXPOSED ADL2_Display_Overscan_Get(ADL_CONTEXT_HANDLE context,int iAdapterIndex, int iDisplayIndex, int *lpCurrent, int *lpDefault, int *lpMin, int *lpMax, int *lpStep);
 
-ADL_EXTERNC int EXPOSED ADL_Display_Overscan_Get(int iAdapterIndex, int iDisplayIndex, int *lpCurrent, int *lpDefualt, int *lpMin, int *lpMax, int *lpStep);
+ADL_EXTERNC int EXPOSED ADL_Display_Overscan_Get(int iAdapterIndex, int iDisplayIndex, int *lpCurrent, int *lpDefault, int *lpMin, int *lpMax, int *lpStep);
 
 
 

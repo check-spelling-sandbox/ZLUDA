@@ -1048,7 +1048,7 @@ typedef struct ADLAVIInfoPacket  //Valid user defined data/
 ////////////////////////////////////////////////////////////////////////////////////////////
 typedef struct ADLODClockSetting
 {
-/// Deafult clock
+/// Default clock
     int iDefaultClock;
 /// Current clock
     int iCurrentClock;
