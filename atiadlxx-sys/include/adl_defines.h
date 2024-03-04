@@ -1430,7 +1430,7 @@ typedef enum ADL_VIRTUALDISPLAY_TYPE
 #define ADL_EDID_REGAMMA_COEFFICIENTS          (1 << 0)
 ///Used for struct ADLRegamma. Feature if set use gamma ramp, if missing use regamma coefficients
 #define ADL_USE_GAMMA_RAMP                     (1 << 4)
-///Used for struct ADLRegamma. If the gamma ramp flag is used then the driver could apply de gamma corretion to the supplied curve and this depends on this flag
+///Used for struct ADLRegamma. If the gamma ramp flag is used then the driver could apply de gamma correction to the supplied curve and this depends on this flag
 #define ADL_APPLY_DEGAMMA                      (1 << 5)
 ///specifies that standard SRGB gamma should be applied
 #define ADL_EDID_REGAMMA_PREDEFINED_SRGB       (1 << 1)
