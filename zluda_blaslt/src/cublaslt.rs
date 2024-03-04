@@ -5209,7 +5209,7 @@ impl cublasLtMatmulAlgoCapAttributes_t {
         cublasLtMatmulAlgoCapAttributes_t(13);
 }
 impl cublasLtMatmulAlgoCapAttributes_t {
-    #[doc = " support for nagative ld for all of the matrices\n\n int32_t 0 means no support, supported otherwise"]
+    #[doc = " support for negative ld for all of the matrices\n\n int32_t 0 means no support, supported otherwise"]
     pub const CUBLASLT_ALGO_CAP_LD_NEGATIVE: cublasLtMatmulAlgoCapAttributes_t =
         cublasLtMatmulAlgoCapAttributes_t(14);
 }
