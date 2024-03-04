@@ -118,7 +118,7 @@
 /// Invalid controller index passed
 #define ADL_ERR_INVALID_CONTROLLER_IDX        -6
 /// Invalid display index passed
-#define ADL_ERR_INVALID_DIPLAY_IDX        -7
+#define ADL_ERR_INVALID_DISPLAY_IDX        -7
 /// Function  not supported by the driver
 #define ADL_ERR_NOT_SUPPORTED            -8
 /// Null Pointer error

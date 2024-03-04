@@ -2538,7 +2538,7 @@ typedef struct ADLConnectorInfo
 {
     ///index of the connector(0-based)
     int iConnectorIndex;
-    ///used for disply identification/ordering
+    ///used for display identification/ordering
     int iConnectorId;
     ///index of the slot, 0-based index.
     int iSlotIndex;

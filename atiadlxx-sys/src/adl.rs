@@ -108,7 +108,7 @@ pub const ADL_ERR_INVALID_PARAM: i32 = -3;
 pub const ADL_ERR_INVALID_PARAM_SIZE: i32 = -4;
 pub const ADL_ERR_INVALID_ADL_IDX: i32 = -5;
 pub const ADL_ERR_INVALID_CONTROLLER_IDX: i32 = -6;
-pub const ADL_ERR_INVALID_DIPLAY_IDX: i32 = -7;
+pub const ADL_ERR_INVALID_DISPLAY_IDX: i32 = -7;
 pub const ADL_ERR_NOT_SUPPORTED: i32 = -8;
 pub const ADL_ERR_NULL_POINTER: i32 = -9;
 pub const ADL_ERR_DISABLED_ADAPTER: i32 = -10;
@@ -4135,7 +4135,7 @@ pub struct ADLOD6MaxClockAdjust {
 pub struct ADLConnectorInfo {
     #[doc = "index of the connector(0-based)"]
     pub iConnectorIndex: ::std::os::raw::c_int,
-    #[doc = "used for disply identification/ordering"]
+    #[doc = "used for display identification/ordering"]
     pub iConnectorId: ::std::os::raw::c_int,
     #[doc = "index of the slot, 0-based index."]
     pub iSlotIndex: ::std::os::raw::c_int,
