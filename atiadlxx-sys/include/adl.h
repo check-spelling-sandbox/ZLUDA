@@ -46,19 +46,19 @@ ADL_EXTERNC EXPOSED void* ADL2_Main_Control_GetProcAddress (ADL_CONTEXT_HANDLE c
 ADL_EXTERNC EXPOSED void* ADL_Main_Control_GetProcAddress ( void* lpModule, char* lpProcName );
 
 
-ADL_EXTERNC int EXPOSED ADL2_RegisterEvent(ADL_CONTEXT_HANDLE context, int eventID, void* evntHandle);
+ADL_EXTERNC int EXPOSED ADL2_RegisterEvent(ADL_CONTEXT_HANDLE context, int eventID, void* eventHandle);
 
-ADL_EXTERNC int EXPOSED ADL2_UnRegisterEvent(ADL_CONTEXT_HANDLE context, int eventID, void* evntHandle);
+ADL_EXTERNC int EXPOSED ADL2_UnRegisterEvent(ADL_CONTEXT_HANDLE context, int eventID, void* eventHandle);
 
 
 
-ADL_EXTERNC int EXPOSED ADL2_RegisterEventX2(ADL_CONTEXT_HANDLE context, int iAdapterIndex, int clientID, int eventID, void* evntHandle);
+ADL_EXTERNC int EXPOSED ADL2_RegisterEventX2(ADL_CONTEXT_HANDLE context, int iAdapterIndex, int clientID, int eventID, void* eventHandle);
 
-ADL_EXTERNC int EXPOSED ADL2_UnRegisterEventX2(ADL_CONTEXT_HANDLE context, int iAdapterIndex, int clientID, int eventID, void* evntHandle);
+ADL_EXTERNC int EXPOSED ADL2_UnRegisterEventX2(ADL_CONTEXT_HANDLE context, int iAdapterIndex, int clientID, int eventID, void* eventHandle);
 
-ADL_EXTERNC int EXPOSED ADL2_PerGPU_GDEvent_Register(ADL_CONTEXT_HANDLE context, int iAdapterIndex, int clientID, int eventID, void* evntHandle);
+ADL_EXTERNC int EXPOSED ADL2_PerGPU_GDEvent_Register(ADL_CONTEXT_HANDLE context, int iAdapterIndex, int clientID, int eventID, void* eventHandle);
 
-ADL_EXTERNC int EXPOSED ADL2_PerGPU_GDEvent_UnRegister(ADL_CONTEXT_HANDLE context, int iAdapterIndex, int clientID, int eventID, void* evntHandle);
+ADL_EXTERNC int EXPOSED ADL2_PerGPU_GDEvent_UnRegister(ADL_CONTEXT_HANDLE context, int iAdapterIndex, int clientID, int eventID, void* eventHandle);
 
 
 #endif /* ADL_H_ */

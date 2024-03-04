@@ -1036,8 +1036,8 @@ pub union id {
 pub union id__bindgen_ty_1 {
     pub memory_type: rsmi_memory_type_t,
     pub temp_metric: rsmi_temperature_metric_t,
-    pub evnt_type: rsmi_event_type_t,
-    pub evnt_group: rsmi_event_group_t,
+    pub event_type: rsmi_event_type_t,
+    pub event_group: rsmi_event_group_t,
     pub clk_type: rsmi_clk_type_t,
     pub fw_block: rsmi_fw_block_t,
     pub gpu_block_type: rsmi_gpu_block_t,
@@ -1534,17 +1534,17 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = "  @brief Create a performance counter object\n\n  @details Create a performance counter object of type @p type for the device\n  with a device index of @p dv_ind, and write a handle to the object to the\n  memory location pointed to by @p evnt_handle. @p evnt_handle can be used\n  with other performance event operations. The handle should be deallocated\n  with ::rsmi_dev_counter_destroy() when no longer needed.\n\n  @param[in] dv_ind a device index\n\n  @param[in] type the ::rsmi_event_type_t of performance event to create\n\n  @param[inout] evnt_handle A pointer to a ::rsmi_event_handle_t which will be\n  associated with a newly allocated counter\n  If this parameter is nullptr, this function will return\n  ::RSMI_STATUS_INVALID_ARGS if the function is supported with the provided,\n  arguments and ::RSMI_STATUS_NOT_SUPPORTED if it is not supported with the\n  provided arguments.\n\n  @retval ::RSMI_STATUS_SUCCESS call was successful\n  @retval ::RSMI_STATUS_NOT_SUPPORTED installed software or hardware does not\n  support this function with the given arguments\n  @retval ::RSMI_STATUS_INVALID_ARGS the provided arguments are not valid\n  @retval ::RSMI_STATUS_OUT_OF_RESOURCES unable to allocate memory for counter\n  @retval ::RSMI_STATUS_PERMISSION function requires root access\n"]
+    #[doc = "  @brief Create a performance counter object\n\n  @details Create a performance counter object of type @p type for the device\n  with a device index of @p dv_ind, and write a handle to the object to the\n  memory location pointed to by @p event_handle. @p event_handle can be used\n  with other performance event operations. The handle should be deallocated\n  with ::rsmi_dev_counter_destroy() when no longer needed.\n\n  @param[in] dv_ind a device index\n\n  @param[in] type the ::rsmi_event_type_t of performance event to create\n\n  @param[inout] event_handle A pointer to a ::rsmi_event_handle_t which will be\n  associated with a newly allocated counter\n  If this parameter is nullptr, this function will return\n  ::RSMI_STATUS_INVALID_ARGS if the function is supported with the provided,\n  arguments and ::RSMI_STATUS_NOT_SUPPORTED if it is not supported with the\n  provided arguments.\n\n  @retval ::RSMI_STATUS_SUCCESS call was successful\n  @retval ::RSMI_STATUS_NOT_SUPPORTED installed software or hardware does not\n  support this function with the given arguments\n  @retval ::RSMI_STATUS_INVALID_ARGS the provided arguments are not valid\n  @retval ::RSMI_STATUS_OUT_OF_RESOURCES unable to allocate memory for counter\n  @retval ::RSMI_STATUS_PERMISSION function requires root access\n"]
     pub fn rsmi_dev_counter_create(
         dv_ind: u32,
         type_: rsmi_event_type_t,
-        evnt_handle: *mut rsmi_event_handle_t,
+        event_handle: *mut rsmi_event_handle_t,
     ) -> rsmi_status_t;
 }
 extern "C" {
     #[must_use]
-    #[doc = "  @brief Deallocate a performance counter object\n\n  @details Deallocate the performance counter object with the provided\n  ::rsmi_event_handle_t @p evnt_handle\n\n  @param[in] evnt_handle handle to event object to be deallocated\n\n  @retval ::RSMI_STATUS_SUCCESS is returned upon successful call\n  @retval ::RSMI_STATUS_INVALID_ARGS the provided arguments are not valid\n  @retval ::RSMI_STATUS_PERMISSION function requires root access\n"]
-    pub fn rsmi_dev_counter_destroy(evnt_handle: rsmi_event_handle_t) -> rsmi_status_t;
+    #[doc = "  @brief Deallocate a performance counter object\n\n  @details Deallocate the performance counter object with the provided\n  ::rsmi_event_handle_t @p event_handle\n\n  @param[in] event_handle handle to event object to be deallocated\n\n  @retval ::RSMI_STATUS_SUCCESS is returned upon successful call\n  @retval ::RSMI_STATUS_INVALID_ARGS the provided arguments are not valid\n  @retval ::RSMI_STATUS_PERMISSION function requires root access\n"]
+    pub fn rsmi_dev_counter_destroy(event_handle: rsmi_event_handle_t) -> rsmi_status_t;
 }
 extern "C" {
     #[must_use]

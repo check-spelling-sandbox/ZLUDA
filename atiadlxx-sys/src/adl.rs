@@ -7738,14 +7738,14 @@ extern "C" {
     pub fn ADL2_RegisterEvent(
         context: ADL_CONTEXT_HANDLE,
         eventID: ::std::os::raw::c_int,
-        evntHandle: *mut ::std::os::raw::c_void,
+        eventHandle: *mut ::std::os::raw::c_void,
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
     pub fn ADL2_UnRegisterEvent(
         context: ADL_CONTEXT_HANDLE,
         eventID: ::std::os::raw::c_int,
-        evntHandle: *mut ::std::os::raw::c_void,
+        eventHandle: *mut ::std::os::raw::c_void,
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
@@ -7754,7 +7754,7 @@ extern "C" {
         iAdapterIndex: ::std::os::raw::c_int,
         clientID: ::std::os::raw::c_int,
         eventID: ::std::os::raw::c_int,
-        evntHandle: *mut ::std::os::raw::c_void,
+        eventHandle: *mut ::std::os::raw::c_void,
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
@@ -7763,7 +7763,7 @@ extern "C" {
         iAdapterIndex: ::std::os::raw::c_int,
         clientID: ::std::os::raw::c_int,
         eventID: ::std::os::raw::c_int,
-        evntHandle: *mut ::std::os::raw::c_void,
+        eventHandle: *mut ::std::os::raw::c_void,
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
@@ -7772,7 +7772,7 @@ extern "C" {
         iAdapterIndex: ::std::os::raw::c_int,
         clientID: ::std::os::raw::c_int,
         eventID: ::std::os::raw::c_int,
-        evntHandle: *mut ::std::os::raw::c_void,
+        eventHandle: *mut ::std::os::raw::c_void,
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
@@ -7781,7 +7781,7 @@ extern "C" {
         iAdapterIndex: ::std::os::raw::c_int,
         clientID: ::std::os::raw::c_int,
         eventID: ::std::os::raw::c_int,
-        evntHandle: *mut ::std::os::raw::c_void,
+        eventHandle: *mut ::std::os::raw::c_void,
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
