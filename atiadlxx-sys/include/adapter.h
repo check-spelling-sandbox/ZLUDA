@@ -74,7 +74,7 @@ ADL_EXTERNC int EXPOSED ADL_Flush_Driver_Data(int iAdapterIndex);
 ADL_EXTERNC int EXPOSED ADL2_Adapter_AdapterInfo_Get (ADL_CONTEXT_HANDLE context,LPAdapterInfo lpInfo, int iInputSize);
 
 
-ADL_EXTERNC int EXPOSED ADL2_Adapter_VerndorID_Int_get(ADL_CONTEXT_HANDLE context, int iAdapterIndex);
+ADL_EXTERNC int EXPOSED ADL2_Adapter_VendorID_Int_get(ADL_CONTEXT_HANDLE context, int iAdapterIndex);
 
 ADL_EXTERNC int EXPOSED ADL_Adapter_AdapterInfo_Get (LPAdapterInfo lpInfo, int iInputSize);
 

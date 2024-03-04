@@ -4172,7 +4172,7 @@ typedef struct ADLMantleAppInfo
 	int   apiVersion;
 	/// mantle driver version
 	long   driverVersion;
-	/// mantle vendroe id
+	/// mantle vendor id
 	long   vendorId;
 	/// mantle device id
 	long   deviceId;

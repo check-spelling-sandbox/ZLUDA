@@ -5596,7 +5596,7 @@ pub struct ADLMantleAppInfo {
     pub apiVersion: ::std::os::raw::c_int,
     #[doc = " mantle driver version"]
     pub driverVersion: ::std::os::raw::c_long,
-    #[doc = " mantle vendroe id"]
+    #[doc = " mantle vendor id"]
     pub vendorId: ::std::os::raw::c_long,
     #[doc = " mantle device id"]
     pub deviceId: ::std::os::raw::c_long,
@@ -5822,7 +5822,7 @@ extern "C" {
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    pub fn ADL2_Adapter_VerndorID_Int_get(
+    pub fn ADL2_Adapter_VendorID_Int_get(
         context: ADL_CONTEXT_HANDLE,
         iAdapterIndex: ::std::os::raw::c_int,
     ) -> ::std::os::raw::c_int;
