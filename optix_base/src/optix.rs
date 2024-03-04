@@ -2451,7 +2451,7 @@ extern "C" {
 extern "C" {
     #[doc = " All OptixTask objects associated with a given OptixModule will be cleaned up when"]
     #[doc = " #optixModuleDestroy() is called regardless of whether the compilation was successful"]
-    #[doc = " or not. If the compilation state is OPTIX_MODULE_COMPILE_STATE_IMPENDIND_FAILURE, any"]
+    #[doc = " or not. If the compilation state is OPTIX_MODULE_COMPILE_STATE_IMPENDING_FAILURE, any"]
     #[doc = " unstarted OptixTask objects do not need to be executed though there is no harm doing"]
     #[doc = " so."]
     #[doc = ""]
