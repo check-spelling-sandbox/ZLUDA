@@ -6223,7 +6223,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Gets a memset node's parameters.\n\n @param [in] node - instane of the node to get parameters from.\n @param [out] pNodeParams - pointer to the parameters.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Gets a memset node's parameters.\n\n @param [in] node - instance of the node to get parameters from.\n @param [out] pNodeParams - pointer to the parameters.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipGraphMemsetNodeGetParams(
         node: hipGraphNode_t,
         pNodeParams: *mut hipMemsetParams,
@@ -6259,7 +6259,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Returns a host node's parameters.\n\n @param [in] node - instane of the node to get parameters from.\n @param [out] pNodeParams - pointer to the parameters.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Returns a host node's parameters.\n\n @param [in] node - instance of the node to get parameters from.\n @param [out] pNodeParams - pointer to the parameters.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipGraphHostNodeGetParams(
         node: hipGraphNode_t,
         pNodeParams: *mut hipHostNodeParams,
@@ -6295,7 +6295,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Gets a handle to the embedded graph of a child graph node.\n\n @param [in] node - instane of the node to get child graph.\n @param [out] pGraph - pointer to get the graph.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Gets a handle to the embedded graph of a child graph node.\n\n @param [in] node - instance of the node to get child graph.\n @param [out] pGraph - pointer to get the graph.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipGraphChildGraphNodeGetGraph(
         node: hipGraphNode_t,
         pGraph: *mut hipGraph_t,
@@ -6312,7 +6312,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Creates an empty node and adds it to a graph.\n\n @param [out] pGraphNode - pointer to the graph node to create and add to the graph.\n @param [in] graph - instane of the graph the node is add to.\n @param [in] pDependencies - const pointer to the node dependencies.\n @param [in] numDependencies - the number of dependencies.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Creates an empty node and adds it to a graph.\n\n @param [out] pGraphNode - pointer to the graph node to create and add to the graph.\n @param [in] graph - instance of the graph the node is add to.\n @param [in] pDependencies - const pointer to the node dependencies.\n @param [in] numDependencies - the number of dependencies.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipGraphAddEmptyNode(
         pGraphNode: *mut hipGraphNode_t,
         graph: hipGraph_t,
@@ -6322,7 +6322,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Creates an event record node and adds it to a graph.\n\n @param [out] pGraphNode - pointer to the graph node to create and add to the graph.\n @param [in] graph - instane of the graph the node to be added.\n @param [in] pDependencies - const pointer to the node dependencies.\n @param [in] numDependencies - the number of dependencies.\n @param [in] event - Event for the node.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Creates an event record node and adds it to a graph.\n\n @param [out] pGraphNode - pointer to the graph node to create and add to the graph.\n @param [in] graph - instance of the graph the node to be added.\n @param [in] pDependencies - const pointer to the node dependencies.\n @param [in] numDependencies - the number of dependencies.\n @param [in] event - Event for the node.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipGraphAddEventRecordNode(
         pGraphNode: *mut hipGraphNode_t,
         graph: hipGraph_t,
@@ -6333,7 +6333,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Returns the event associated with an event record node.\n\n @param [in] node -  instane of the node to get event from.\n @param [out] event_out - Pointer to return the event.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Returns the event associated with an event record node.\n\n @param [in] node -  instance of the node to get event from.\n @param [out] event_out - Pointer to return the event.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipGraphEventRecordNodeGetEvent(
         node: hipGraphNode_t,
         event_out: *mut hipEvent_t,
@@ -6341,7 +6341,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Sets an event record node's event.\n\n @param [in] node - instane of the node to set event to.\n @param [in] event - pointer to the event.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Sets an event record node's event.\n\n @param [in] node - instance of the node to set event to.\n @param [in] event - pointer to the event.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipGraphEventRecordNodeSetEvent(node: hipGraphNode_t, event: hipEvent_t) -> hipError_t;
 }
 extern "C" {
@@ -6355,7 +6355,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Creates an event wait node and adds it to a graph.\n\n @param [out] pGraphNode - pointer to the graph node to create and add to the graph.\n @param [in] graph - instane of the graph the node to be added.\n @param [in] pDependencies - const pointer to the node dependencies.\n @param [in] numDependencies - the number of dependencies.\n @param [in] event - Event for the node.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Creates an event wait node and adds it to a graph.\n\n @param [out] pGraphNode - pointer to the graph node to create and add to the graph.\n @param [in] graph - instance of the graph the node to be added.\n @param [in] pDependencies - const pointer to the node dependencies.\n @param [in] numDependencies - the number of dependencies.\n @param [in] event - Event for the node.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipGraphAddEventWaitNode(
         pGraphNode: *mut hipGraphNode_t,
         graph: hipGraph_t,
@@ -6366,7 +6366,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Returns the event associated with an event wait node.\n\n @param [in] node -  instane of the node to get event from.\n @param [out] event_out - Pointer to return the event.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Returns the event associated with an event wait node.\n\n @param [in] node -  instance of the node to get event from.\n @param [out] event_out - Pointer to return the event.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipGraphEventWaitNodeGetEvent(
         node: hipGraphNode_t,
         event_out: *mut hipEvent_t,
@@ -6374,7 +6374,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Sets an event wait node's event.\n\n @param [in] node - instane of the node to set event to.\n @param [in] event - pointer to the event.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Sets an event wait node's event.\n\n @param [in] node - instance of the node to set event to.\n @param [in] event - pointer to the event.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipGraphEventWaitNodeSetEvent(node: hipGraphNode_t, event: hipEvent_t) -> hipError_t;
 }
 extern "C" {
@@ -6388,7 +6388,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Creates a memory allocation node and adds it to a graph\n\n @param [out] pGraphNode      - Pointer to the graph node to create and add to the graph\n @param [in] graph            - Instane of the graph the node to be added\n @param [in] pDependencies    - Const pointer to the node dependencies\n @param [in] numDependencies  - The number of dependencies\n @param [in] pNodeParams      - Node parameters for memory allocation\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Creates a memory allocation node and adds it to a graph\n\n @param [out] pGraphNode      - Pointer to the graph node to create and add to the graph\n @param [in] graph            - Instance of the graph the node to be added\n @param [in] pDependencies    - Const pointer to the node dependencies\n @param [in] numDependencies  - The number of dependencies\n @param [in] pNodeParams      - Node parameters for memory allocation\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipGraphAddMemAllocNode(
         pGraphNode: *mut hipGraphNode_t,
         graph: hipGraph_t,
@@ -6407,7 +6407,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Creates a memory free node and adds it to a graph\n\n @param [out] pGraphNode      - Pointer to the graph node to create and add to the graph\n @param [in] graph            - Instane of the graph the node to be added\n @param [in] pDependencies    - Const pointer to the node dependencies\n @param [in] numDependencies  - The number of dependencies\n @param [in] dev_ptr          - Pointer to the memory to be freed\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Creates a memory free node and adds it to a graph\n\n @param [out] pGraphNode      - Pointer to the graph node to create and add to the graph\n @param [in] graph            - Instance of the graph the node to be added\n @param [in] pDependencies    - Const pointer to the node dependencies\n @param [in] numDependencies  - The number of dependencies\n @param [in] dev_ptr          - Pointer to the memory to be freed\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipGraphAddMemFreeNode(
         pGraphNode: *mut hipGraphNode_t,
         graph: hipGraph_t,
@@ -6449,7 +6449,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Create an instance of userObject to manage lifetime of a resource.\n\n @param [out] object_out - pointer to instace of userobj.\n @param [in] ptr - pointer to pass to destroy function.\n @param [in] destroy - destroy callback to remove resource.\n @param [in] initialRefcount - reference to resource.\n @param [in] flags - flags passed to API.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Create an instance of userObject to manage lifetime of a resource.\n\n @param [out] object_out - pointer to instance of userobj.\n @param [in] ptr - pointer to pass to destroy function.\n @param [in] destroy - destroy callback to remove resource.\n @param [in] initialRefcount - reference to resource.\n @param [in] flags - flags passed to API.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipUserObjectCreate(
         object_out: *mut hipUserObject_t,
         ptr: *mut ::std::os::raw::c_void,
@@ -6460,7 +6460,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Release number of references to resource.\n\n @param [in] object - pointer to instace of userobj.\n @param [in] count - reference to resource to be retained.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Release number of references to resource.\n\n @param [in] object - pointer to instance of userobj.\n @param [in] count - reference to resource to be retained.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipUserObjectRelease(
         object: hipUserObject_t,
         count: ::std::os::raw::c_uint,
@@ -6468,7 +6468,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Retain number of references to resource.\n\n @param [in] object - pointer to instace of userobj.\n @param [in] count - reference to resource to be retained.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Retain number of references to resource.\n\n @param [in] object - pointer to instance of userobj.\n @param [in] count - reference to resource to be retained.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipUserObjectRetain(
         object: hipUserObject_t,
         count: ::std::os::raw::c_uint,
@@ -6476,7 +6476,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Retain user object for graphs.\n\n @param [in] graph - pointer to graph to retain the user object for.\n @param [in] object - pointer to instace of userobj.\n @param [in] count - reference to resource to be retained.\n @param [in] flags - flags passed to API.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Retain user object for graphs.\n\n @param [in] graph - pointer to graph to retain the user object for.\n @param [in] object - pointer to instance of userobj.\n @param [in] count - reference to resource to be retained.\n @param [in] flags - flags passed to API.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipGraphRetainUserObject(
         graph: hipGraph_t,
         object: hipUserObject_t,
@@ -6486,7 +6486,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Release user object from graphs.\n\n @param [in] graph - pointer to graph to retain the user object for.\n @param [in] object - pointer to instace of userobj.\n @param [in] count - reference to resource to be retained.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Release user object from graphs.\n\n @param [in] graph - pointer to graph to retain the user object for.\n @param [in] object - pointer to instance of userobj.\n @param [in] count - reference to resource to be retained.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipGraphReleaseUserObject(
         graph: hipGraph_t,
         object: hipUserObject_t,
