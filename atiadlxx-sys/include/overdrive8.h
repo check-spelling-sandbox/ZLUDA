@@ -41,7 +41,7 @@
   
  ADL_EXTERNC int EXPOSED ADL2_Overdrive8_PMLog_ShareMemory_Support(ADL_CONTEXT_HANDLE context, int iAdapterIndex, int * lpSupported, int option);
   
- ADL_EXTERNC int EXPOSED ADL2_Overdrive8_PMLog_ShareMemory_Start(ADL_CONTEXT_HANDLE context, int iAdapterIndex, int iSampleRate, int iNumofPMLogSendorList, int* lpPMLogSendorList, ADL_D3DKMT_HANDLE* lpHDevice, void** lppSharedMemory, int iOption);
+ ADL_EXTERNC int EXPOSED ADL2_Overdrive8_PMLog_ShareMemory_Start(ADL_CONTEXT_HANDLE context, int iAdapterIndex, int iSampleRate, int iNumofPMLogSenderList, int* lpPMLogSenderList, ADL_D3DKMT_HANDLE* lpHDevice, void** lppSharedMemory, int iOption);
   
   
  ADL_EXTERNC int EXPOSED ADL2_Overdrive8_PMLog_ShareMemory_Read(ADL_CONTEXT_HANDLE context, int iAdapterIndex, int iNumSensor, int *lpSensorList, void** lppSharedMemory, ADLPMLogDataOutput* lpDataOutput);
