@@ -3580,9 +3580,9 @@ typedef struct ADL_DELAG_SETTINGS
 	int Hotkey; // Hotkey value
 	int GlobalEnable; //Global enable value
 	int GlobalLimitFPS; //Global Limit FPS
-	int GlobalLimitFPS_MinLimit; //Gloabl Limit FPS slider min limit value
-	int GlobalLimitFPS_MaxLimit; //Gloabl Limit FPS slider max limit value
-	int GlobalLimitFPS_Step; //Gloabl Limit FPS step  value
+	int GlobalLimitFPS_MinLimit; //Global Limit FPS slider min limit value
+	int GlobalLimitFPS_MaxLimit; //Global Limit FPS slider max limit value
+	int GlobalLimitFPS_Step; //Global Limit FPS step  value
 }ADL_DELAG_SETTINGS;
 
 /////////////////////////////////////////////////////////////////////////////////////////////
@@ -3608,10 +3608,10 @@ typedef struct ADL_BOOST_SETTINGS
 {
 	int Hotkey; // Hotkey value
 	int GlobalEnable; //Global enable value
-	int GlobalMinRes; //Gloabl Min Resolution value
-	int GlobalMinRes_MinLimit; //Gloabl Min Resolution slider min limit value
-	int GlobalMinRes_MaxLimit; //Gloabl Min Resolution slider max limit value
-	int GlobalMinRes_Step; //Gloabl Min Resolution step  value
+	int GlobalMinRes; //Global Min Resolution value
+	int GlobalMinRes_MinLimit; //Global Min Resolution slider min limit value
+	int GlobalMinRes_MaxLimit; //Global Min Resolution slider max limit value
+	int GlobalMinRes_Step; //Global Min Resolution step  value
 }ADL_BOOST_SETTINGS;
 
 
@@ -3687,9 +3687,9 @@ typedef struct ADL_RIS_SETTINGS
 {
 	int GlobalEnable; //Global enable value
 	int GlobalSharpeningDegree; //Global sharpening value
-	int GlobalSharpeningDegree_MinLimit; //Gloabl sharpening slider min limit value
-	int GlobalSharpeningDegree_MaxLimit; //Gloabl sharpening slider max limit value
-	int GlobalSharpeningDegree_Step; //Gloabl sharpening step  value
+	int GlobalSharpeningDegree_MinLimit; //Global sharpening slider min limit value
+	int GlobalSharpeningDegree_MaxLimit; //Global sharpening slider max limit value
+	int GlobalSharpeningDegree_Step; //Global sharpening step  value
 }ADL_RIS_SETTINGS;
 
 /////////////////////////////////////////////////////////////////////////////////////////////
@@ -3718,9 +3718,9 @@ typedef struct ADL_CHILL_SETTINGS
 	int GlobalEnable; //Global enable value
 	int GlobalMinFPS; //Global Min FPS value
 	int GlobalMaxFPS; //Global Max FPS value
-	int GlobalFPS_MinLimit; //Gloabl FPS slider min limit value
-	int GlobalFPS_MaxLimit; //Gloabl FPS slider max limit value
-	int GlobalFPS_Step; //Gloabl FPS Slider step  value
+	int GlobalFPS_MinLimit; //Global FPS slider min limit value
+	int GlobalFPS_MaxLimit; //Global FPS slider max limit value
+	int GlobalFPS_Step; //Global FPS Slider step  value
 }ADL_CHILL_SETTINGS;
 
 /////////////////////////////////////////////////////////////////////////////////////////////
