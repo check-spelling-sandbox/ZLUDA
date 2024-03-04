@@ -228,7 +228,7 @@ typedef enum amd_comgr_language_s {
    */
   AMD_COMGR_LANGUAGE_OPENCL_2_0 = 0x2,
   /**
-   * AMD Hetrogeneous C++ (HC).
+   * AMD Heterogeneous C++ (HC).
    */
   AMD_COMGR_LANGUAGE_HC = 0x3,
   /**

@@ -36,7 +36,7 @@ impl amd_comgr_language_s {
     pub const AMD_COMGR_LANGUAGE_OPENCL_2_0: amd_comgr_language_s = amd_comgr_language_s(2);
 }
 impl amd_comgr_language_s {
-    #[doc = " AMD Hetrogeneous C++ (HC)."]
+    #[doc = " AMD Heterogeneous C++ (HC)."]
     pub const AMD_COMGR_LANGUAGE_HC: amd_comgr_language_s = amd_comgr_language_s(3);
 }
 impl amd_comgr_language_s {
