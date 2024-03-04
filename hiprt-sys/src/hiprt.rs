@@ -194,7 +194,7 @@ pub struct hiprtHit {
     pub normal: hiprtFloat3,
     pub t: f32,
 }
-#[doc = " \\brief Intersection function for custom primitives.\n\n \\param ray Ray.\n \\param primID Primtive ID.\n \\param data User data.\n \\param payload Payload for additional outputs.\n \\param uv Output texture coordinates.\n \\param normal Output normal.\n \\param t Output distance.\n \\return A flag indicating hit."]
+#[doc = " \\brief Intersection function for custom primitives.\n\n \\param ray Ray.\n \\param primID Primitive ID.\n \\param data User data.\n \\param payload Payload for additional outputs.\n \\param uv Output texture coordinates.\n \\param normal Output normal.\n \\param t Output distance.\n \\return A flag indicating hit."]
 pub type hiprtIntersectFunc = ::std::option::Option<
     unsafe extern "C" fn(
         ray: *const hiprtRay,

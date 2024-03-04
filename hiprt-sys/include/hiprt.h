@@ -181,7 +181,7 @@ struct hiprtHit
 /** \brief Intersection function for custom primitives.
  *
  * \param ray Ray.
- * \param primID Primtive ID.
+ * \param primID Primitive ID.
  * \param data User data.
  * \param payload Payload for additional outputs.
  * \param uv Output texture coordinates.
