@@ -741,7 +741,7 @@ amd_comgr_get_data_isa_name(
  * ::AMD_COMGR_DATA_KIND_RELOCATABLE, ::AMD_COMGR_DATA_KIND_EXECUTABLE,
  * or ::AMD_COMGR_DATA_KIND_BYTES.
  *
- * @param[in] print_symbol_callback Function called by a successfull
+ * @param[in] print_symbol_callback Function called by a successful
  * symbolize query. @p symbol is a null-terminated string containing the
  * symbolization of the address and @p user_data is an arbitrary user data.
  * The callback does not own @p symbol, and it cannot be referenced once
