@@ -4537,7 +4537,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = "  @brief Copies data from the given symbol on the device.\n\n  @param[out]  dptr  Returns pointer to destinition memory address\n  @param[in]   symbol  pointer to the symbole address on the device\n  @param[in]   sizeBytes  size in bytes to copy\n  @param[in]   offset  offset in bytes from the start of symbole\n  @param[in]   kind  type of memory transfer\n\n  @return #hipSuccess, #hipErrorInvalidValue\n"]
+    #[doc = "  @brief Copies data from the given symbol on the device.\n\n  @param[out]  dptr  Returns pointer to destination memory address\n  @param[in]   symbol  pointer to the symbole address on the device\n  @param[in]   sizeBytes  size in bytes to copy\n  @param[in]   offset  offset in bytes from the start of symbole\n  @param[in]   kind  type of memory transfer\n\n  @return #hipSuccess, #hipErrorInvalidValue\n"]
     pub fn hipMemcpyFromSymbol(
         dst: *mut ::std::os::raw::c_void,
         symbol: *const ::std::os::raw::c_void,
@@ -4548,7 +4548,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = "  @brief Copies data from the given symbol on the device asynchronously.\n\n  @param[out]  dptr  Returns pointer to destinition memory address\n  @param[in]   symbol  pointer to the symbole address on the device\n  @param[in]   sizeBytes  size in bytes to copy\n  @param[in]   offset  offset in bytes from the start of symbole\n  @param[in]   kind  type of memory transfer\n  @param[in]   stream  stream identifier\n\n  @return #hipSuccess, #hipErrorInvalidValue\n"]
+    #[doc = "  @brief Copies data from the given symbol on the device asynchronously.\n\n  @param[out]  dptr  Returns pointer to destination memory address\n  @param[in]   symbol  pointer to the symbole address on the device\n  @param[in]   sizeBytes  size in bytes to copy\n  @param[in]   offset  offset in bytes from the start of symbole\n  @param[in]   kind  type of memory transfer\n  @param[in]   stream  stream identifier\n\n  @return #hipSuccess, #hipErrorInvalidValue\n"]
     pub fn hipMemcpyFromSymbolAsync(
         dst: *mut ::std::os::raw::c_void,
         symbol: *const ::std::os::raw::c_void,
