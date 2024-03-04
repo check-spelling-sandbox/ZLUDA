@@ -4344,7 +4344,7 @@ impl ast::ShflMode {
     }
 }
 struct VectorRepackVisitor<'a, 'input, V> {
-    extra_vistor: &'a mut V,
+    extra_visitor: &'a mut V,
     func: &'a mut Vec<TypedStatement>,
     id_def: &'a mut IdNameMapBuilder<'input>,
     post_stmts: Option<TypedStatement>,
@@ -4352,12 +4352,12 @@ struct VectorRepackVisitor<'a, 'input, V> {
 
 impl<'a, 'input, V> VectorRepackVisitor<'a, 'input, V> {
     fn new(
-        extra_vistor: &'a mut V,
+        extra_visitor: &'a mut V,
         func: &'a mut Vec<TypedStatement>,
         id_def: &'a mut IdNameMapBuilder<'input>,
     ) -> Self {
         VectorRepackVisitor {
-            extra_vistor,
+            extra_visitor,
             func,
             id_def,
             post_stmts: None,
@@ -4439,7 +4439,7 @@ impl<'a, 'b, V: ArgumentMapVisitor<TypedArgParams, TypedArgParams>>
         desc: ArgumentDescriptor<Id>,
         type_: Option<(&ast::Type, ast::StateSpace)>,
     ) -> Result<Id, TranslateError> {
-        self.extra_vistor.id(desc, type_)
+        self.extra_visitor.id(desc, type_)
     }
 
     fn operand(
@@ -4450,7 +4450,7 @@ impl<'a, 'b, V: ArgumentMapVisitor<TypedArgParams, TypedArgParams>>
     ) -> Result<TypedOperand, TranslateError> {
         Ok(match desc.op {
             ast::Operand::Reg(reg) => {
-                self.extra_vistor
+                self.extra_visitor
                     .operand(desc.new_op(TypedOperand::Reg(reg)), typ, state_space)?
             }
             ast::Operand::RegOffset(reg, offset) => TypedOperand::RegOffset(reg, offset),
