@@ -1122,7 +1122,7 @@ enum ADLGraphicCoreGeneration
 #define ADL_DL_THERMAL_FLAG_INTERRUPT    1
 #define ADL_DL_THERMAL_FLAG_FANCONTROL   2
 
-///\defgroup define_fanctrl Fan speed cotrol
+///\defgroup define_fanctrl Fan speed control
 /// Values for ADLFanSpeedInfo.iFlags
 /// @{
 #define ADL_DL_FANCTRL_SUPPORTS_PERCENT_READ     1
