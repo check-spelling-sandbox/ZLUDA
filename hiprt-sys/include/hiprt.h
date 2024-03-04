@@ -267,7 +267,7 @@ typedef struct
 /** \brief AABB list primitive.
  *
  * AABB list is an array of axis aligned bounding boxes, represented
- * by device memory pointer and stride between two consequetive boxes.
+ * by device memory pointer and stride between two consecutive boxes.
  * Each AABB is a pair of float4 values (xmin, ymin, zmin, unused), (xmax, ymax,
  * zmax, unused).
  */

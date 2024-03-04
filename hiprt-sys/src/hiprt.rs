@@ -248,7 +248,7 @@ pub struct hiprtTriangleMeshPrimitive {
     pub triangleCount: u32,
     pub triangleStride: u32,
 }
-#[doc = " \\brief AABB list primitive.\n\n AABB list is an array of axis aligned bounding boxes, represented\n by device memory pointer and stride between two consequetive boxes.\n Each AABB is a pair of float4 values (xmin, ymin, zmin, unused), (xmax, ymax,\n zmax, unused)."]
+#[doc = " \\brief AABB list primitive.\n\n AABB list is an array of axis aligned bounding boxes, represented\n by device memory pointer and stride between two consecutive boxes.\n Each AABB is a pair of float4 values (xmin, ymin, zmin, unused), (xmax, ymax,\n zmax, unused)."]
 #[repr(C)]
 #[derive(Copy, Clone)]
 pub struct hiprtAABBListPrimitive {
