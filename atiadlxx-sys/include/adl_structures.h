@@ -2737,7 +2737,7 @@ typedef struct ADLErrorRecord
     char StructureName[32]; // e.g. LDS, TCC, etc.
 
     // Time of error record creation (e.g. time of query, or time of poison interrupt)
-    char tiestamp[32];
+    char timestamp[32];
 
     unsigned int padding[3];
 }ADLErrorRecord;

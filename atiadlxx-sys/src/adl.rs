@@ -4324,7 +4324,7 @@ pub struct ADLErrorRecord {
     pub locationValid: ::std::os::raw::c_int,
     pub CU: ::std::os::raw::c_uint,
     pub StructureName: [::std::os::raw::c_char; 32usize],
-    pub tiestamp: [::std::os::raw::c_char; 32usize],
+    pub timestamp: [::std::os::raw::c_char; 32usize],
     pub padding: [::std::os::raw::c_uint; 3usize],
 }
 impl ADL_EDC_BLOCK_ID {
