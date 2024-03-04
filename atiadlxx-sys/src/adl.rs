@@ -1521,7 +1521,7 @@ impl ADLOD8SettingId {
     pub const OD8_FAN_ZERO_RPM_STOP_TEMPERATURE: ADLOD8SettingId = ADLOD8SettingId(35);
 }
 impl ADLOD8SettingId {
-    pub const OD8_OPTIMZED_POWER_MODE: ADLOD8SettingId = ADLOD8SettingId(36);
+    pub const OD8_OPTIMIZED_POWER_MODE: ADLOD8SettingId = ADLOD8SettingId(36);
 }
 impl ADLOD8SettingId {
     pub const OD8_OD_VOLTAGE: ADLOD8SettingId = ADLOD8SettingId(37);
