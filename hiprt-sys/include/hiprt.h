@@ -172,7 +172,7 @@ struct hiprtHit
 	uint32_t primID;
 	/*!< Texture coordinates */
 	hiprtFloat2 uv;
-	/*!< Geeometric normal (not normalized) */
+	/*!< Geometric normal (not normalized) */
 	hiprtFloat3 normal;
 	/*!< Distance */
 	float t;
