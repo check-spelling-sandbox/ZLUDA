@@ -267,8 +267,8 @@ typedef struct ADLVirtualSegmentSettingsOutput
 	int                      iMaxSizeInMB;              //maximum value
 	int                      icurrentSizeInMB;          //last configured otherwise same as factory default
 	int                      idefaultSizeInMB;          //factory default
-	int                      iMask;                     //fileds for extension in the future
-	int                      iValue;                    //fileds for extension in the future
+	int                      iMask;                     //fields for extension in the future
+	int                      iValue;                    //fields for extension in the future
 } ADLVirtualSegmentSettingsOutput;
 
 /////////////////////////////////////////////////////////////////////////////////////////////
