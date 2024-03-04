@@ -516,7 +516,7 @@ fn emit_function_variable(
             unsafe { LLVMBuildStore(builder, constant, value) };
         }
     }
-    // TODO: it shuld be possible to skip alignment of .param/.reg variables and get
+    // TODO: it should be possible to skip alignment of .param/.reg variables and get
     // minimally better assembly. See if this doesn't crash anything and measure impact
     emit_alignment(value, variable.align);
     Ok(())
