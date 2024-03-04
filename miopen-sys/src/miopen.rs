@@ -2888,7 +2888,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Sets the tuning find option. Default value is zero.\n\n @param options    Options object to upfate\n @param value      Value of zero means no tuning, value of one means tuning enabled\n @return           miopenStatus_t"]
+    #[doc = " @brief Sets the tuning find option. Default value is zero.\n\n @param options    Options object to update\n @param value      Value of zero means no tuning, value of one means tuning enabled\n @return           miopenStatus_t"]
     pub fn miopenSetFindOptionTuning(
         options: miopenFindOptions_t,
         value: ::std::os::raw::c_int,
@@ -2896,7 +2896,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Sets the results order find option. Default value is miopenFindResultsOrderByTime.\n\n @param options    Options object to upfate\n @param value      Specifies what order should find results have\n @return           miopenStatus_t"]
+    #[doc = " @brief Sets the results order find option. Default value is miopenFindResultsOrderByTime.\n\n @param options    Options object to update\n @param value      Specifies what order should find results have\n @return           miopenStatus_t"]
     pub fn miopenSetFindOptionResultsOrder(
         options: miopenFindOptions_t,
         value: miopenFindResultsOrder_t,
@@ -2904,7 +2904,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Sets the workspace limit find option. Default value is maximum of size_t\n\n @param options    Options object to upfate\n @param value      Specifies the workspace limit for find call. All solvers exceeding the limit\n would be ignored.\n @return           miopenStatus_t"]
+    #[doc = " @brief Sets the workspace limit find option. Default value is maximum of size_t\n\n @param options    Options object to update\n @param value      Specifies the workspace limit for find call. All solvers exceeding the limit\n would be ignored.\n @return           miopenStatus_t"]
     pub fn miopenSetFindOptionWorkspaceLimit(
         options: miopenFindOptions_t,
         value: usize,
