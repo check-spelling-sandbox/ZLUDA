@@ -5870,7 +5870,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Adds dependency edges to a graph.\n\n @param [in] graph - instance of the graph to add dependencies.\n @param [in] from - pointer to the graph nodes with dependenties to add from.\n @param [in] to - pointer to the graph nodes to add dependenties to.\n @param [in] numDependencies - the number of dependencies to add.\n @returns #hipSuccess, #hipErrorInvalidValue\n\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues.\n"]
+    #[doc = " @brief Adds dependency edges to a graph.\n\n @param [in] graph - instance of the graph to add dependencies.\n @param [in] from - pointer to the graph nodes with dependencies to add from.\n @param [in] to - pointer to the graph nodes to add dependencies to.\n @param [in] numDependencies - the number of dependencies to add.\n @returns #hipSuccess, #hipErrorInvalidValue\n\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues.\n"]
     pub fn hipGraphAddDependencies(
         graph: hipGraph_t,
         from: *const hipGraphNode_t,
@@ -6312,7 +6312,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Creates an empty node and adds it to a graph.\n\n @param [out] pGraphNode - pointer to the graph node to create and add to the graph.\n @param [in] graph - instane of the graph the node is add to.\n @param [in] pDependencies - const pointer to the node dependenties.\n @param [in] numDependencies - the number of dependencies.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Creates an empty node and adds it to a graph.\n\n @param [out] pGraphNode - pointer to the graph node to create and add to the graph.\n @param [in] graph - instane of the graph the node is add to.\n @param [in] pDependencies - const pointer to the node dependencies.\n @param [in] numDependencies - the number of dependencies.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipGraphAddEmptyNode(
         pGraphNode: *mut hipGraphNode_t,
         graph: hipGraph_t,
@@ -6322,7 +6322,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Creates an event record node and adds it to a graph.\n\n @param [out] pGraphNode - pointer to the graph node to create and add to the graph.\n @param [in] graph - instane of the graph the node to be added.\n @param [in] pDependencies - const pointer to the node dependenties.\n @param [in] numDependencies - the number of dependencies.\n @param [in] event - Event for the node.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Creates an event record node and adds it to a graph.\n\n @param [out] pGraphNode - pointer to the graph node to create and add to the graph.\n @param [in] graph - instane of the graph the node to be added.\n @param [in] pDependencies - const pointer to the node dependencies.\n @param [in] numDependencies - the number of dependencies.\n @param [in] event - Event for the node.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipGraphAddEventRecordNode(
         pGraphNode: *mut hipGraphNode_t,
         graph: hipGraph_t,
@@ -6355,7 +6355,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Creates an event wait node and adds it to a graph.\n\n @param [out] pGraphNode - pointer to the graph node to create and add to the graph.\n @param [in] graph - instane of the graph the node to be added.\n @param [in] pDependencies - const pointer to the node dependenties.\n @param [in] numDependencies - the number of dependencies.\n @param [in] event - Event for the node.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Creates an event wait node and adds it to a graph.\n\n @param [out] pGraphNode - pointer to the graph node to create and add to the graph.\n @param [in] graph - instane of the graph the node to be added.\n @param [in] pDependencies - const pointer to the node dependencies.\n @param [in] numDependencies - the number of dependencies.\n @param [in] event - Event for the node.\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipGraphAddEventWaitNode(
         pGraphNode: *mut hipGraphNode_t,
         graph: hipGraph_t,
@@ -6388,7 +6388,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Creates a memory allocation node and adds it to a graph\n\n @param [out] pGraphNode      - Pointer to the graph node to create and add to the graph\n @param [in] graph            - Instane of the graph the node to be added\n @param [in] pDependencies    - Const pointer to the node dependenties\n @param [in] numDependencies  - The number of dependencies\n @param [in] pNodeParams      - Node parameters for memory allocation\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Creates a memory allocation node and adds it to a graph\n\n @param [out] pGraphNode      - Pointer to the graph node to create and add to the graph\n @param [in] graph            - Instane of the graph the node to be added\n @param [in] pDependencies    - Const pointer to the node dependencies\n @param [in] numDependencies  - The number of dependencies\n @param [in] pNodeParams      - Node parameters for memory allocation\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipGraphAddMemAllocNode(
         pGraphNode: *mut hipGraphNode_t,
         graph: hipGraph_t,
@@ -6407,7 +6407,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Creates a memory free node and adds it to a graph\n\n @param [out] pGraphNode      - Pointer to the graph node to create and add to the graph\n @param [in] graph            - Instane of the graph the node to be added\n @param [in] pDependencies    - Const pointer to the node dependenties\n @param [in] numDependencies  - The number of dependencies\n @param [in] dev_ptr          - Pointer to the memory to be freed\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
+    #[doc = " @brief Creates a memory free node and adds it to a graph\n\n @param [out] pGraphNode      - Pointer to the graph node to create and add to the graph\n @param [in] graph            - Instane of the graph the node to be added\n @param [in] pDependencies    - Const pointer to the node dependencies\n @param [in] numDependencies  - The number of dependencies\n @param [in] dev_ptr          - Pointer to the memory to be freed\n @returns #hipSuccess, #hipErrorInvalidValue\n @warning : This API is marked as beta, meaning, while this is feature complete,\n it is still open to changes and may have outstanding issues."]
     pub fn hipGraphAddMemFreeNode(
         pGraphNode: *mut hipGraphNode_t,
         graph: hipGraph_t,
