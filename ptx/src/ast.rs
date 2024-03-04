@@ -170,7 +170,7 @@ pub enum Type {
           note, we don't support non-.shared extern pointers, because there's
           zero use for them in the ptxas
         - artificial pointers created by stateful conversion, which work
-          similiarly to the above
+          similarly to the above
         - function parameters:
             foobar(.param .align 4 .b8 numbers[])
           which get parsed to
