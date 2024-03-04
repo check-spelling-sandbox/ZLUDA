@@ -1603,7 +1603,7 @@ typedef enum ADL_VIRTUALDISPLAY_TYPE
 /// in Crossfire(TM) configuration, this bit would only be set on the adapter driving the display(s).
 #define ADL_ADAPTERCONFIGSTATE_REQUISITE_RENDER ( 1 << 0 )
 /// Indicates that the adapter is configured to be used to unload some of the rendering work for a particular
-/// requisite rendering adapter. For eample, for adapters in a Crossfire configuration, this bit would be set
+/// requisite rendering adapter. For example, for adapters in a Crossfire configuration, this bit would be set
 /// on all adapters that are currently not driving the display(s)
 #define ADL_ADAPTERCONFIGSTATE_ANCILLARY_RENDER ( 1 << 1 )
 /// Indicates that scatter gather feature enabled on the adapter
