@@ -5275,7 +5275,7 @@ impl<'a, 'b, 'input> StringIdResolverScope<'a, 'b, 'input> {
     const CROSS_MODULE: usize = 0;
     // Some items are not explicitly declared, but are anyway visible inside a module.
     // Currently this is the scope for raytracing function declarations
-    // TOOD: refactor special registers (activemask, etc.) to use this scope
+    // TODO: refactor special registers (activemask, etc.) to use this scope
     const IMPLICIT_GLOBALS: usize = 1;
     const CURRENT_MODULE: usize = 2;
 
