@@ -2069,7 +2069,7 @@ InstTex: ast::Instruction<ast::ParsedArgParams<'input>> = {
         ast::Instruction::Tex(details, args)
     },
     // We give a1d and a2d image operations distinctive treatment, because its
-    // coordintate argument is a fake vector. If you try to pass a vector to
+    // coordinate argument is a fake vector. If you try to pass a vector to
     // a1d/a2d image instructions on NVIDIA's compiler, it ICEs
     "tex" ".a1d" ".v4" <channel_type:TextureChannelType> <coordinate_type:TextureCoordinateType>
         <dst:DstOperandVec> "," "[" <image:SrcOperand> "," "{" <layer:SrcOperand> "," <x:RegOrImmediate> "}" "]" => {
