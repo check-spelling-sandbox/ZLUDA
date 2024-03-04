@@ -3810,7 +3810,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Set shared memory configuation for a specific function\n\n @param [in] func Pointer of the function\n @param [in] config Configuration\n\n @returns #hipSuccess, #hipErrorInvalidDeviceFunction, #hipErrorInvalidValue\n\n Note: AMD devices and some Nvidia GPUS do not support shared cache banking, and the hint is\n ignored on those architectures.\n"]
+    #[doc = " @brief Set shared memory configuration for a specific function\n\n @param [in] func Pointer of the function\n @param [in] config Configuration\n\n @returns #hipSuccess, #hipErrorInvalidDeviceFunction, #hipErrorInvalidValue\n\n Note: AMD devices and some Nvidia GPUS do not support shared cache banking, and the hint is\n ignored on those architectures.\n"]
     pub fn hipFuncSetSharedMemConfig(
         func: *const ::std::os::raw::c_void,
         config: hipSharedMemConfig,

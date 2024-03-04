@@ -5245,7 +5245,7 @@ impl ADL_RADEON_LED_COLOR_CONFIG {
         __bindgen_bitfield_unit
     }
 }
-#[doc = "\n\\brief Structure Containing All Generic LED configuration for user requested LED pattern. The driver will apply the confgiuration as requested\n\n  Elements of Radeon USB LED configuration.\n \\nosubgrouping\n"]
+#[doc = "\n\\brief Structure Containing All Generic LED configuration for user requested LED pattern. The driver will apply the configuration as requested\n\n  Elements of Radeon USB LED configuration.\n \\nosubgrouping\n"]
 #[repr(C)]
 #[derive(Copy, Clone)]
 pub struct ADL_RADEON_LED_PATTERN_CONFIG_GENERIC {
@@ -5297,7 +5297,7 @@ impl ADL_RADEON_LED_PATTERN_CONFIG_GENERIC {
         __bindgen_bitfield_unit
     }
 }
-#[doc = "\n\\brief Structure Containing All custom grid pattern LED configuration for user requested LED grid pattern. The driver will apply the confgiuration as requested\n\n  Elements of Radeon USB LED custom grid configuration.\n \\nosubgrouping\n"]
+#[doc = "\n\\brief Structure Containing All custom grid pattern LED configuration for user requested LED grid pattern. The driver will apply the configuration as requested\n\n  Elements of Radeon USB LED custom grid configuration.\n \\nosubgrouping\n"]
 #[repr(C)]
 #[derive(Copy, Clone)]
 pub struct ADL_RADEON_LED_CUSTOM_LED_CONFIG {
@@ -5329,7 +5329,7 @@ impl ADL_RADEON_LED_CUSTOM_LED_CONFIG {
         __bindgen_bitfield_unit
     }
 }
-#[doc = "\n\\brief Structure Containing All custom grid pattern LED configuration for user requested LED grid pattern. The driver will apply the confgiuration as requested\n\n  Elements of Radeon USB LED custom grid configuration.\n \\nosubgrouping\n"]
+#[doc = "\n\\brief Structure Containing All custom grid pattern LED configuration for user requested LED grid pattern. The driver will apply the configuration as requested\n\n  Elements of Radeon USB LED custom grid configuration.\n \\nosubgrouping\n"]
 pub type ADL_RADEON_LED_CUSTOM_GRID_LED_CONFIG = ADL_RADEON_LED_CUSTOM_LED_CONFIG;
 #[doc = "\n\\brief Structure Containing All Radeon USB LED requests and controls.\n\n Elements of Radeon USB LED Controls.\n \\nosubgrouping\n"]
 #[repr(C)]

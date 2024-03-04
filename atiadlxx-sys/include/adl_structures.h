@@ -3761,7 +3761,7 @@ typedef struct ADL_RADEON_LED_COLOR_CONFIG
 }ADL_RADEON_LED_COLOR_CONFIG;
 
 /////////////////////////////////////////////////////////////////////////////////////////////
-///\brief Structure Containing All Generic LED configuration for user requested LED pattern. The driver will apply the confgiuration as requested
+///\brief Structure Containing All Generic LED configuration for user requested LED pattern. The driver will apply the configuration as requested
 ///
 ///  Elements of Radeon USB LED configuration.
 /// \nosubgrouping
@@ -3778,7 +3778,7 @@ typedef struct ADL_RADEON_LED_PATTERN_CONFIG_GENERIC
 }ADL_RADEON_LED_PATTERN_CONFIG_GENERIC;
 
 /////////////////////////////////////////////////////////////////////////////////////////////
-///\brief Structure Containing All custom grid pattern LED configuration for user requested LED grid pattern. The driver will apply the confgiuration as requested
+///\brief Structure Containing All custom grid pattern LED configuration for user requested LED grid pattern. The driver will apply the configuration as requested
 ///
 ///  Elements of Radeon USB LED custom grid configuration.
 /// \nosubgrouping
