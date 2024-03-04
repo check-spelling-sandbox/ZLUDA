@@ -396,7 +396,7 @@ pub(crate) unsafe fn device_get_power_management_limit(
         &mut power_setting
     ));
     // This function does not actually work, so I'm not sure
-    // what it returns (watts, milliwats, something else?)
+    // what it returns (watts, milliwatts, something else?)
     *limit = (power_setting.iTDPLimit * 1000) as u32;
     Ok(())
 }
