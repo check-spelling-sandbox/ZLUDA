@@ -419,7 +419,7 @@ mod test {
     use super::*;
 
     #[test]
-    fn tabe_size() {
+    fn table_size() {
         assert_eq!(std::mem::size_of::<OptixFunctionTable>(), 0x158);
     }
 }
