@@ -921,7 +921,7 @@ fn emit_implicit_conversion(
                     });
                 }
             } else {
-                // This block is safe because it's illegal to implictly convert between floating point values
+                // This block is safe because it's illegal to implicitly convert between floating point values
                 let same_width_bit_type = get_llvm_type(
                     ctx,
                     &ast::Type::from_parts(TypeParts {

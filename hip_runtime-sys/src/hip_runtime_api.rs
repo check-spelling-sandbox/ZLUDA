@@ -3897,7 +3897,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Make the specified compute stream wait for an event\n\n @param[in] stream stream to make wait.\n @param[in] event event to wait on\n @param[in] flags control operation [must be 0]\n\n @return #hipSuccess, #hipErrorInvalidHandle\n\n This function inserts a wait operation into the specified stream.\n All future work submitted to @p stream will wait until @p event reports completion before\n beginning execution.\n\n This function only waits for commands in the current stream to complete.  Notably,, this function\n does not impliciy wait for commands in the default stream to complete, even if the specified\n stream is created with hipStreamNonBlocking = 0.\n\n @see hipStreamCreate, hipStreamCreateWithFlags, hipStreamCreateWithPriority, hipStreamSynchronize, hipStreamDestroy"]
+    #[doc = " @brief Make the specified compute stream wait for an event\n\n @param[in] stream stream to make wait.\n @param[in] event event to wait on\n @param[in] flags control operation [must be 0]\n\n @return #hipSuccess, #hipErrorInvalidHandle\n\n This function inserts a wait operation into the specified stream.\n All future work submitted to @p stream will wait until @p event reports completion before\n beginning execution.\n\n This function only waits for commands in the current stream to complete.  Notably,, this function\n does not implicitly wait for commands in the default stream to complete, even if the specified\n stream is created with hipStreamNonBlocking = 0.\n\n @see hipStreamCreate, hipStreamCreateWithFlags, hipStreamCreateWithPriority, hipStreamSynchronize, hipStreamDestroy"]
     pub fn hipStreamWaitEvent(
         stream: hipStream_t,
         event: hipEvent_t,

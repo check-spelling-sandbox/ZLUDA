@@ -59,7 +59,7 @@ pub(crate) struct Scene {
     exception_variable_blocks: Vec<Option<hipDeviceptr_t>>,
     entry_point_variable_blocks: Vec<Option<hipDeviceptr_t>>,
     global_state: GlobalState,
-    // _allocator is used implictly, it holds all the allocations used by the Scene object
+    // _allocator is used implicitly, it holds all the allocations used by the Scene object
     _allocator: Option<TrivialHIPAllocator>,
 }
 
