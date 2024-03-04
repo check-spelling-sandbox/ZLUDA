@@ -108,7 +108,7 @@ struct GlobalState {
     log_factory: log::Factory,
     // We split off fields that require a mutable reference to log factory to be
     // created, additionally creation of some fields in this struct can fail
-    // initalization (e.g. we passed path a non-existant path to libcuda)
+    // initialization (e.g. we passed path a non-existant path to libcuda)
     delayed_state: LateInit<GlobalDelayedState>,
 }
 

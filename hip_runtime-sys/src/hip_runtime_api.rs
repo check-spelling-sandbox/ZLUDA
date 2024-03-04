@@ -3563,7 +3563,7 @@ pub union hipArrayMapInfo__bindgen_ty_3 {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @}\n/\n/**\n  @defgroup API HIP API\n  @{\n\n  Defines the HIP API.  See the individual sections for more information.\n/\n/**\n  @defgroup Driver Initialization and Version\n  @{\n  This section describes the initializtion and version functions of HIP runtime API.\n\n/\n/**\n @brief Explicitly initializes the HIP runtime.\n\n Most HIP APIs implicitly initialize the HIP runtime.\n This API provides control over the timing of the initialization."]
+    #[doc = " @}\n/\n/**\n  @defgroup API HIP API\n  @{\n\n  Defines the HIP API.  See the individual sections for more information.\n/\n/**\n  @defgroup Driver Initialization and Version\n  @{\n  This section describes the initialization and version functions of HIP runtime API.\n\n/\n/**\n @brief Explicitly initializes the HIP runtime.\n\n Most HIP APIs implicitly initialize the HIP runtime.\n This API provides control over the timing of the initialization."]
     pub fn hipInit(flags: ::std::os::raw::c_uint) -> hipError_t;
 }
 extern "C" {
