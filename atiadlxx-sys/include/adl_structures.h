@@ -533,7 +533,7 @@ typedef struct ADLDisplayConfig
 /// HDTV capabilities.
   long ulDeviceData;
 /// Overridden HDTV capabilities.
-  long ulOverridedDeviceData;
+  long ulOverriddenDeviceData;
 /// Reserved field
   long ulReserved;
 } ADLDisplayConfig;

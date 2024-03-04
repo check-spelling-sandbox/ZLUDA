@@ -549,20 +549,20 @@ struct DetourDetachGuard {
     state: DetourUndoState,
     suspended_threads: Vec<*mut c_void>,
     // First element is the original fn, second is the new fn
-    overriden_non_cuda_fns: Vec<(*mut *mut c_void, *mut c_void)>,
+    overridden_non_cuda_fns: Vec<(*mut *mut c_void, *mut c_void)>,
 }
 
 impl DetourDetachGuard {
     // First element in the pair is ptr to original fn, second argument is the
     // new function. We accept *mut *mut c_void instead of *mut c_void as the
     // first element in the pair, because somehow otherwise original functions
-    // also get overriden, so for example ZludaLoadLibraryExW ends calling
+    // also get overridden, so for example ZludaLoadLibraryExW ends calling
     // itself recursively until stack overflow exception occurs
     unsafe fn new<'a>() -> Option<Self> {
         let mut result = DetourDetachGuard {
             state: DetourUndoState::DoNothing,
             suspended_threads: Vec::new(),
-            overriden_non_cuda_fns: Vec::new(),
+            overridden_non_cuda_fns: Vec::new(),
         };
         if DetourTransactionBegin() != NO_ERROR as i32 {
             return None;
@@ -576,7 +576,7 @@ impl DetourDetachGuard {
                 return None;
             }
         }
-        result.overriden_non_cuda_fns.extend_from_slice(&[
+        result.overridden_non_cuda_fns.extend_from_slice(&[
             (
                 &mut LOAD_LIBRARY_A as *mut _ as *mut *mut c_void,
                 ZludaLoadLibraryA as *mut c_void,
@@ -611,7 +611,7 @@ impl DetourDetachGuard {
                 ZludaCreateProcessWithTokenW as _,
             ),
         ]);
-        for (original_fn, new_fn) in result.overriden_non_cuda_fns.iter().copied() {
+        for (original_fn, new_fn) in result.overridden_non_cuda_fns.iter().copied() {
             if DetourAttach(original_fn, new_fn) != NO_ERROR as i32 {
                 return None;
             }

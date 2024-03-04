@@ -1186,7 +1186,7 @@ enum ADLGraphicCoreGeneration
 #define ADL_DL_MODETIMING_STANDARD_GTF             0x00000002 // GFT Standard
 #define ADL_DL_MODETIMING_STANDARD_DMT             0x00000004 // DMT Standard
 #define ADL_DL_MODETIMING_STANDARD_CUSTOM          0x00000008 // User-defined standard
-#define ADL_DL_MODETIMING_STANDARD_DRIVER_DEFAULT  0x00000010 // Remove Mode from overriden list
+#define ADL_DL_MODETIMING_STANDARD_DRIVER_DEFAULT  0x00000010 // Remove Mode from overridden list
 #define ADL_DL_MODETIMING_STANDARD_CVT_RB           0x00000020 // CVT-RB Standard
 /// @}
 

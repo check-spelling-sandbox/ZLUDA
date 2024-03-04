@@ -81,8 +81,8 @@ pub(crate) fn override_export_table(
                     });
                 }
             }
-            let overriden_table = unsafe {
-                get_overriden_export_table(
+            let overridden_table = unsafe {
+                get_overridden_export_table(
                     entry.key(),
                     // padding with false in case the export table got longer in a newer version
                     known_fns_bitmap.chain(iter::repeat(false)),
@@ -92,14 +92,14 @@ pub(crate) fn override_export_table(
                 )
             };
             entry
-                .insert((overriden_table, unsafe { *pp_export_table } as _))
+                .insert((overridden_table, unsafe { *pp_export_table } as _))
                 .0
                 .as_ptr() as _
         }
     }
 }
 
-unsafe fn get_overriden_export_table(
+unsafe fn get_overridden_export_table(
     guid: &Box<[u8; 16]>,
     known_exports: impl Iterator<Item = bool>,
     original_exports: impl Iterator<Item = *const c_void>,

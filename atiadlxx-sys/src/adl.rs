@@ -2744,7 +2744,7 @@ pub struct ADLDisplayConfig {
     #[doc = " HDTV capabilities."]
     pub ulDeviceData: ::std::os::raw::c_long,
     #[doc = " Overridden HDTV capabilities."]
-    pub ulOverridedDeviceData: ::std::os::raw::c_long,
+    pub ulOverriddenDeviceData: ::std::os::raw::c_long,
     #[doc = " Reserved field"]
     pub ulReserved: ::std::os::raw::c_long,
 }
