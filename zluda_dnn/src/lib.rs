@@ -653,7 +653,7 @@ fn activation_mode(mode: cudnnActivationMode_t) -> miopenActivationMode_t {
         }
         cudnnActivationMode_t::CUDNN_ACTIVATION_ELU => miopenActivationMode_t::miopenActivationELU,
         cudnnActivationMode_t::CUDNN_ACTIVATION_IDENTITY => {
-            miopenActivationMode_t::miopenActivationPASTHRU
+            miopenActivationMode_t::miopenActivationPASSTHRU
         }
         _ => panic!(),
     }

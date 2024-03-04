@@ -398,7 +398,7 @@ impl miopenBatchNormMode_t {
 pub struct miopenBatchNormMode_t(pub ::std::os::raw::c_uint);
 impl miopenActivationMode_t {
     #[doc = "< No activation, pass through the data"]
-    pub const miopenActivationPASTHRU: miopenActivationMode_t = miopenActivationMode_t(0);
+    pub const miopenActivationPASSTHRU: miopenActivationMode_t = miopenActivationMode_t(0);
 }
 impl miopenActivationMode_t {
     #[doc = "< Sigmoid function: \\f$1 / (1 + e^{-x})\\f$"]
