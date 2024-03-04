@@ -2878,7 +2878,7 @@ pub struct miopenFindOptions {
 pub type miopenFindOptions_t = *mut miopenFindOptions;
 extern "C" {
     #[must_use]
-    #[doc = " @brief Initializes miopenFindOptions object.\n\n @param options    Pointer to options object to initialze\n @return           miopenStatus_t"]
+    #[doc = " @brief Initializes miopenFindOptions object.\n\n @param options    Pointer to options object to initialize\n @return           miopenStatus_t"]
     pub fn miopenCreateFindOptions(options: *mut miopenFindOptions_t) -> miopenStatus_t;
 }
 extern "C" {

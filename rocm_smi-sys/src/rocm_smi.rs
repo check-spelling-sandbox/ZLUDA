@@ -1046,7 +1046,7 @@ pub union id__bindgen_ty_1 {
 pub type rsmi_func_id_value_t = id;
 extern "C" {
     #[must_use]
-    #[doc = "/\n/** @defgroup InitShutAdmin Initialization and Shutdown\n  These functions are used for initialization of ROCm SMI and clean up when\n  done.\n  @{\n/\n/**\n  @brief Initialize ROCm SMI.\n\n  @details When called, this initializes internal data structures,\n  including those corresponding to sources of information that SMI provides.\n\n  @param[in] init_flags Bit flags that tell SMI how to initialze. Values of\n  ::rsmi_init_flags_t may be OR'd together and passed through @p init_flags\n  to modify how RSMI initializes.\n\n  @retval ::RSMI_STATUS_SUCCESS is returned upon successful call."]
+    #[doc = "/\n/** @defgroup InitShutAdmin Initialization and Shutdown\n  These functions are used for initialization of ROCm SMI and clean up when\n  done.\n  @{\n/\n/**\n  @brief Initialize ROCm SMI.\n\n  @details When called, this initializes internal data structures,\n  including those corresponding to sources of information that SMI provides.\n\n  @param[in] init_flags Bit flags that tell SMI how to initialize. Values of\n  ::rsmi_init_flags_t may be OR'd together and passed through @p init_flags\n  to modify how RSMI initializes.\n\n  @retval ::RSMI_STATUS_SUCCESS is returned upon successful call."]
     pub fn rsmi_init(init_flags: u64) -> rsmi_status_t;
 }
 extern "C" {

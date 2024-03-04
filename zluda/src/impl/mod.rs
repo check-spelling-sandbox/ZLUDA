@@ -424,7 +424,7 @@ impl<T: Sync> Lazy<T> {
         });
     }
 
-    fn is_initalized(&self) -> bool {
+    fn is_initialized(&self) -> bool {
         self.once.is_completed()
     }
 
@@ -438,7 +438,7 @@ impl<T: Sync> Lazy<T> {
 }
 
 pub(crate) fn init(flags: u32) -> Result<(), CUresult> {
-    if GLOBAL_STATE.is_initalized() {
+    if GLOBAL_STATE.is_initialized() {
         return Ok(());
     }
     let comgr = Comgr::find_and_load().map_err(comgr_error_to_cuda)?;

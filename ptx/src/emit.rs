@@ -377,9 +377,9 @@ unsafe fn emit_init(
 unsafe fn get_llvm_const(
     ctx: &mut EmitContext,
     type_: ConstType,
-    initalizer: Option<ast::Initializer<Id>>,
+    initializer: Option<ast::Initializer<Id>>,
 ) -> Result<LLVMValueRef, TranslateError> {
-    let const_value = match (type_, initalizer) {
+    let const_value = match (type_, initializer) {
         (ConstType::Type(type_), None) => LLVMConstNull(get_llvm_type(ctx, type_)?),
         (ConstType::ArraySubtype(type_, dimensions), None) => LLVMConstNull(get_llvm_array_type(
             get_llvm_type(ctx, &ast::Type::Scalar(type_))?,
@@ -477,18 +477,18 @@ unsafe fn get_llvm_const_array(
             }
             let mut subinits = initializer
                 .into_iter()
-                .map(|inner_initalizer| {
+                .map(|inner_initializer| {
                     if rest.len() == 0 {
                         get_llvm_const(
                             ctx,
                             ConstType::Type(&ast::Type::Scalar(scalar_type)),
-                            Some(inner_initalizer),
+                            Some(inner_initializer),
                         )
                     } else {
                         get_llvm_const(
                             ctx,
                             ConstType::ArraySubtype(scalar_type, rest),
-                            Some(inner_initalizer),
+                            Some(inner_initializer),
                         )
                     }
                 })

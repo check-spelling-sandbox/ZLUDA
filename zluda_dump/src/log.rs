@@ -171,7 +171,7 @@ impl Factory {
         }
     }
 
-    fn initalize_fallible_emitter(
+    fn initialize_fallible_emitter(
         settings: &Settings,
     ) -> std::io::Result<Option<Box<dyn WriteTrailingZeroAware>>> {
         if !settings.log_enabled {
@@ -204,7 +204,7 @@ impl Factory {
         let log_enabled = self.log_enable;
         let mut first_logger = self.get_logger(func, arguments_writer);
         let settings = Settings::read_and_init(log_enabled, &mut first_logger);
-        match Self::initalize_fallible_emitter(&settings) {
+        match Self::initialize_fallible_emitter(&settings) {
             Ok(fallible_emitter) => {
                 *first_logger.fallible_emitter = fallible_emitter;
             }
