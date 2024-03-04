@@ -954,7 +954,7 @@ pub struct miopenConvAlgorithm_t(pub ::std::os::raw::c_uint);
 #[derive(Copy, Clone)]
 pub struct miopenConvAlgoPerf_t {
     pub __bindgen_anon_1: miopenConvAlgoPerf_t__bindgen_ty_1,
-    #[doc = "< Time to exectued the selected algorithm represented in the union"]
+    #[doc = "< Time to executed the selected algorithm represented in the union"]
     pub time: f32,
     #[doc = "< Workspace required to run the selected algorithm represented in the union"]
     pub memory: usize,
