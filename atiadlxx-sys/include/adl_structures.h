@@ -1822,10 +1822,10 @@ typedef struct ADLSLSTarget
     /// The target ID
     ADLDisplayTarget displayTarget;
 
-    /// Target postion X in SLS grid
+    /// Target position X in SLS grid
     int iSLSGridPositionX;
 
-    /// Target postion Y in SLS grid
+    /// Target position Y in SLS grid
     int iSLSGridPositionY;
 
     /// The view size width, height and rotation angle per SLS Target

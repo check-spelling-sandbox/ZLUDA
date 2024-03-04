@@ -3617,9 +3617,9 @@ pub struct ADLSLSTarget {
     pub iSLSMapIndex: ::std::os::raw::c_int,
     #[doc = " The target ID"]
     pub displayTarget: ADLDisplayTarget,
-    #[doc = " Target postion X in SLS grid"]
+    #[doc = " Target position X in SLS grid"]
     pub iSLSGridPositionX: ::std::os::raw::c_int,
-    #[doc = " Target postion Y in SLS grid"]
+    #[doc = " Target position Y in SLS grid"]
     pub iSLSGridPositionY: ::std::os::raw::c_int,
     #[doc = " The view size width, height and rotation angle per SLS Target"]
     pub viewSize: ADLMode,
