@@ -4507,7 +4507,7 @@ pub struct ADLFreeSyncCap {
     pub cReserved: [::std::os::raw::c_char; 3usize],
     pub iReserved: [::std::os::raw::c_int; 4usize],
 }
-#[doc = "\n\\brief Structure containing per display Display Connectivty Experience Settings\n\n This structure is used to store the Display Connectivity Experience settings of a\n display\n \\nosubgrouping\n"]
+#[doc = "\n\\brief Structure containing per display Display Connectivity Experience Settings\n\n This structure is used to store the Display Connectivity Experience settings of a\n display\n \\nosubgrouping\n"]
 #[repr(C)]
 #[derive(Copy, Clone)]
 pub struct ADLDceSettings {

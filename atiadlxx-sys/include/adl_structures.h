@@ -2822,7 +2822,7 @@ typedef struct ADLFreeSyncCap
 } ADLFreeSyncCap;
 
 /////////////////////////////////////////////////////////////////////////////////////////////
-///\brief Structure containing per display Display Connectivty Experience Settings
+///\brief Structure containing per display Display Connectivity Experience Settings
 ///
 /// This structure is used to store the Display Connectivity Experience settings of a
 /// display
