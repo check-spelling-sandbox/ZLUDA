@@ -133,7 +133,7 @@
 #define ADL_ERR_SET_INCOMPLETE                 -20
 /// There's no Linux XDisplay in Linux Console environment
 #define ADL_ERR_NO_XDISPLAY                    -21
-/// escape call failed because of incompatiable driver found in driver store
+/// escape call failed because of incompatible driver found in driver store
 #define ADL_ERR_CALL_TO_INCOMPATIABLE_DRIVER            -22
 /// not running as administrator
 #define ADL_ERR_NO_ADMINISTRATOR_PRIVILEGES            -23
