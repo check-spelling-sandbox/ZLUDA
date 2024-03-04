@@ -472,7 +472,7 @@ impl rsmi_voltage_type_t {
     pub const RSMI_VOLT_TYPE_INVALID: rsmi_voltage_type_t = rsmi_voltage_type_t(4294967295);
 }
 #[repr(transparent)]
-#[doc = " @brief This ennumeration is used to indicate which type of\n voltage reading should be obtained."]
+#[doc = " @brief This enumeration is used to indicate which type of\n voltage reading should be obtained."]
 #[derive(Copy, Clone, Hash, PartialEq, Eq)]
 pub struct rsmi_voltage_type_t(pub ::std::os::raw::c_uint);
 impl rsmi_power_profile_preset_masks_t {
@@ -1504,7 +1504,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = "  @brief Retrieve the enabled ECC bit-mask\n\n  @details Given a device index @p dv_ind, and a pointer to a uint64_t @p\n  enabled_mask, this function will write bits to memory pointed to by\n  @p enabled_blocks. Upon a successful call, @p enabled_blocks can then be\n  AND'd with elements of the ::rsmi_gpu_block_t ennumeration to determine if\n  the corresponding block has ECC enabled. Note that whether a block has ECC\n  enabled or not in the device is independent of whether there is kernel\n  support for error counting for that block. Although a block may be enabled,\n  but there may not be kernel support for reading error counters for that\n  block.\n\n  @param[in] dv_ind a device index\n\n  @param[inout] enabled_blocks A pointer to a uint64_t to which the enabled\n  blocks bits will be written.\n  If this parameter is nullptr, this function will return\n  ::RSMI_STATUS_INVALID_ARGS if the function is supported with the provided,\n  arguments and ::RSMI_STATUS_NOT_SUPPORTED if it is not supported with the\n  provided arguments.\n\n  @retval ::RSMI_STATUS_SUCCESS call was successful\n  @retval ::RSMI_STATUS_NOT_SUPPORTED installed software or hardware does not\n  support this function with the given arguments\n  @retval ::RSMI_STATUS_INVALID_ARGS the provided arguments are not valid"]
+    #[doc = "  @brief Retrieve the enabled ECC bit-mask\n\n  @details Given a device index @p dv_ind, and a pointer to a uint64_t @p\n  enabled_mask, this function will write bits to memory pointed to by\n  @p enabled_blocks. Upon a successful call, @p enabled_blocks can then be\n  AND'd with elements of the ::rsmi_gpu_block_t enumeration to determine if\n  the corresponding block has ECC enabled. Note that whether a block has ECC\n  enabled or not in the device is independent of whether there is kernel\n  support for error counting for that block. Although a block may be enabled,\n  but there may not be kernel support for reading error counters for that\n  block.\n\n  @param[in] dv_ind a device index\n\n  @param[inout] enabled_blocks A pointer to a uint64_t to which the enabled\n  blocks bits will be written.\n  If this parameter is nullptr, this function will return\n  ::RSMI_STATUS_INVALID_ARGS if the function is supported with the provided,\n  arguments and ::RSMI_STATUS_NOT_SUPPORTED if it is not supported with the\n  provided arguments.\n\n  @retval ::RSMI_STATUS_SUCCESS call was successful\n  @retval ::RSMI_STATUS_NOT_SUPPORTED installed software or hardware does not\n  support this function with the given arguments\n  @retval ::RSMI_STATUS_INVALID_ARGS the provided arguments are not valid"]
     pub fn rsmi_dev_ecc_enabled_get(dv_ind: u32, enabled_blocks: *mut u64) -> rsmi_status_t;
 }
 extern "C" {
