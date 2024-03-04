@@ -1014,7 +1014,7 @@ unsafe fn csr2cscex2(
     ))
 }
 
-unsafe fn destory_dnvec(dn_vec_descr: *mut cusparseDnVecDescr) -> cusparseStatus_t {
+unsafe fn destroy_dnvec(dn_vec_descr: *mut cusparseDnVecDescr) -> cusparseStatus_t {
     if dn_vec_descr == ptr::null_mut() {
         cusparseStatus_t::CUSPARSE_STATUS_SUCCESS
     } else {
@@ -1022,7 +1022,7 @@ unsafe fn destory_dnvec(dn_vec_descr: *mut cusparseDnVecDescr) -> cusparseStatus
     }
 }
 
-unsafe fn destory_csrilu02info(info: *mut csrilu02Info) -> cusparseStatus_t {
+unsafe fn destroy_csrilu02info(info: *mut csrilu02Info) -> cusparseStatus_t {
     if info == ptr::null_mut() {
         cusparseStatus_t::CUSPARSE_STATUS_SUCCESS
     } else {

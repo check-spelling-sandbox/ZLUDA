@@ -651,7 +651,7 @@ pub unsafe extern "system" fn cusparseCreateCsrilu02Info(
 pub unsafe extern "system" fn cusparseDestroyCsrilu02Info(
     info: csrilu02Info_t,
 ) -> cusparseStatus_t {
-    crate::destory_csrilu02info(info)
+    crate::destroy_csrilu02info(info)
 }
 
 #[no_mangle]
@@ -7617,7 +7617,7 @@ pub unsafe extern "system" fn cusparseCreateDnVec(
 pub unsafe extern "system" fn cusparseDestroyDnVec(
     dnVecDescr: cusparseDnVecDescr_t,
 ) -> cusparseStatus_t {
-    crate::destory_dnvec(dnVecDescr)
+    crate::destroy_dnvec(dnVecDescr)
 }
 
 #[no_mangle]
