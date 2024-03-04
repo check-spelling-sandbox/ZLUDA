@@ -258,7 +258,7 @@ typedef struct
 
 	/*!< Device pointer to index data */
 	hiprtDevicePtr triangleIndices;
-	/*!< Number of trinagles in index array */
+	/*!< Number of triangles in index array */
 	uint32_t triangleCount;
 	/*!< Stride in bytes between two triangles */
 	uint32_t triangleStride;
