@@ -4546,7 +4546,7 @@ impl cublasLtMatmulDescAttributes_t {
         cublasLtMatmulDescAttributes_t(1);
 }
 impl cublasLtMatmulDescAttributes_t {
-    #[doc = " Pointer mode of alpha and beta, see cublasLtPointerMode_t. When CUBLASLT_POINTER_MODE_DEVICE_VECTOR is in use,\n alpha/beta vector lenghts must match number of output matrix rows.\n\n int32_t, default: CUBLASLT_POINTER_MODE_HOST"]
+    #[doc = " Pointer mode of alpha and beta, see cublasLtPointerMode_t. When CUBLASLT_POINTER_MODE_DEVICE_VECTOR is in use,\n alpha/beta vector lengths must match number of output matrix rows.\n\n int32_t, default: CUBLASLT_POINTER_MODE_HOST"]
     pub const CUBLASLT_MATMUL_DESC_POINTER_MODE: cublasLtMatmulDescAttributes_t =
         cublasLtMatmulDescAttributes_t(2);
 }
