@@ -2094,7 +2094,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Prepares and executes the Convlution+Bias+Activation Fusion\n\n\n @param handle           MIOpen handle (input)\n @return           miopenStatus_t"]
+    #[doc = " @brief Prepares and executes the Convolution+Bias+Activation Fusion\n\n\n @param handle           MIOpen handle (input)\n @return           miopenStatus_t"]
     pub fn miopenConvolutionBiasActivationForward(
         handle: miopenHandle_t,
         alpha1: *const ::std::os::raw::c_void,
