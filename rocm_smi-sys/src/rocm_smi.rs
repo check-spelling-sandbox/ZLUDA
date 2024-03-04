@@ -1021,7 +1021,7 @@ pub struct rsmi_func_id_iter_handle {
 }
 #[doc = " @brief Opaque handle to function-support object"]
 pub type rsmi_func_id_iter_handle_t = *mut rsmi_func_id_iter_handle;
-#[doc = " @brief This union holds the value of an ::rsmi_func_id_iter_handle_t. The\n value may be a function name, or an ennumerated variant value of types\n such as ::rsmi_memory_type_t, ::rsmi_temperature_metric_t, etc."]
+#[doc = " @brief This union holds the value of an ::rsmi_func_id_iter_handle_t. The\n value may be a function name, or an enumerated variant value of types\n such as ::rsmi_memory_type_t, ::rsmi_temperature_metric_t, etc."]
 #[repr(C)]
 #[derive(Copy, Clone)]
 pub union id {
@@ -1042,7 +1042,7 @@ pub union id__bindgen_ty_1 {
     pub fw_block: rsmi_fw_block_t,
     pub gpu_block_type: rsmi_gpu_block_t,
 }
-#[doc = " @brief This union holds the value of an ::rsmi_func_id_iter_handle_t. The\n value may be a function name, or an ennumerated variant value of types\n such as ::rsmi_memory_type_t, ::rsmi_temperature_metric_t, etc."]
+#[doc = " @brief This union holds the value of an ::rsmi_func_id_iter_handle_t. The\n value may be a function name, or an enumerated variant value of types\n such as ::rsmi_memory_type_t, ::rsmi_temperature_metric_t, etc."]
 pub type rsmi_func_id_value_t = id;
 extern "C" {
     #[must_use]
