@@ -227,7 +227,7 @@ impl hipblasLtMatmulDescAttributes_t {
         hipblasLtMatmulDescAttributes_t(4);
 }
 impl hipblasLtMatmulDescAttributes_t {
-    #[doc = "<D scale vector length must match matrix D rows. It must match Scale data type. D scale vector is broadcast to all columns and multipied after final postprocssion. Data Type: void* /const void*"]
+    #[doc = "<D scale vector length must match matrix D rows. It must match Scale data type. D scale vector is broadcast to all columns and multiplied after final postprocssion. Data Type: void* /const void*"]
     pub const HIPBLASLT_MATMUL_DESC_D_SCALE_POINTER: hipblasLtMatmulDescAttributes_t =
         hipblasLtMatmulDescAttributes_t(5);
 }
