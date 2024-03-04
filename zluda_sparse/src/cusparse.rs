@@ -8529,10 +8529,10 @@ impl cusparseSpGEMMAlg_t {
     pub const CUSPARSE_SPGEMM_DEFAULT: cusparseSpGEMMAlg_t = cusparseSpGEMMAlg_t(0);
 }
 impl cusparseSpGEMMAlg_t {
-    pub const CUSPARSE_SPGEMM_CSR_ALG_DETERMINITIC: cusparseSpGEMMAlg_t = cusparseSpGEMMAlg_t(1);
+    pub const CUSPARSE_SPGEMM_CSR_ALG_DETERMINISTIC: cusparseSpGEMMAlg_t = cusparseSpGEMMAlg_t(1);
 }
 impl cusparseSpGEMMAlg_t {
-    pub const CUSPARSE_SPGEMM_CSR_ALG_NONDETERMINITIC: cusparseSpGEMMAlg_t = cusparseSpGEMMAlg_t(2);
+    pub const CUSPARSE_SPGEMM_CSR_ALG_NONDETERMINISTIC: cusparseSpGEMMAlg_t = cusparseSpGEMMAlg_t(2);
 }
 #[repr(transparent)]
 #[derive(Copy, Clone, Hash, PartialEq, Eq)]
