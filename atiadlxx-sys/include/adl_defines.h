@@ -53,9 +53,9 @@
 #define ADL_MAX_PATH                                    256
 /// Defines the maximum number of supported adapters
 #define ADL_MAX_ADAPTERS                               250
-/// Defines the maxumum number of supported displays
+/// Defines the maximum number of supported displays
 #define ADL_MAX_DISPLAYS                                150
-/// Defines the maxumum string length for device name
+/// Defines the maximum string length for device name
 #define ADL_MAX_DEVICENAME                                32
 /// Defines for all adapters
 #define ADL_ADAPTER_INDEX_ALL                            -1
