@@ -1144,7 +1144,7 @@ amd_comgr_action_info_set_language(
  *
  * @param[in] action_info The action info object to query.
  *
- * @param[out] language The language of the action info opject. @p
+ * @param[out] language The language of the action info object. @p
  * AMD_COMGR_LANGUAGE_NONE if not defined,
  *
  * @retval ::AMD_COMGR_STATUS_SUCCESS The function has
