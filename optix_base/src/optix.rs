@@ -1510,7 +1510,7 @@ pub struct OptixModuleCompileState(pub ::std::os::raw::c_uint);
 #[doc = ""]
 #[doc = " These values are compiled in to the module as constants. Once the constants are"]
 #[doc = " inserted into the code, an optimization pass will be run that will attempt to"]
-#[doc = " propagate the consants and remove unreachable code."]
+#[doc = " propagate the constants and remove unreachable code."]
 #[doc = ""]
 #[doc = " If caching is enabled, changes in these values will result in newly compiled modules."]
 #[doc = ""]
