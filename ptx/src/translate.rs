@@ -2303,8 +2303,8 @@ fn expand_arguments2_impl<'input>(
     fn_body: Vec<TypedStatement>,
 ) -> Result<Vec<ExpandedStatement>, TranslateError> {
     let mut result = Vec::with_capacity(fn_body.len());
-    for statment in fn_body {
-        match statment {
+    for statement in fn_body {
+        match statement {
             Statement::Call(call) => {
                 let mut visitor = FlattenArguments::new(&mut result, id_defs);
                 let (new_call, post_stmts) = (call.map(&mut visitor)?, visitor.post_stmts);
