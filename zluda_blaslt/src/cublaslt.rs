@@ -2241,7 +2241,7 @@ pub struct cudaMemPoolProps {
     pub handleTypes: cudaMemAllocationHandleType,
     #[doc = "< Location allocations should reside."]
     pub location: cudaMemLocation,
-    #[doc = " Windows-specific LPSECURITYATTRIBUTES required when\n ::cudaMemHandleTypeWin32 is specified.  This security attribute defines\n the scope of which exported allocations may be tranferred to other\n processes.  In all other cases, this field is required to be zero."]
+    #[doc = " Windows-specific LPSECURITYATTRIBUTES required when\n ::cudaMemHandleTypeWin32 is specified.  This security attribute defines\n the scope of which exported allocations may be transferred to other\n processes.  In all other cases, this field is required to be zero."]
     pub win32SecurityAttributes: *mut ::std::os::raw::c_void,
     #[doc = "< reserved for future use, must be 0"]
     pub reserved: [::std::os::raw::c_uchar; 64usize],
