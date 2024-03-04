@@ -18,7 +18,7 @@ use zluda_dark_api::{AntiZludaHashInput, CudaDarkApiDump, CudaDarkApiKnownExport
 const MINIMUM_FUNCTION_ADDRESS: usize = 0x1000;
 
 pub(crate) struct DarkApiState {
-    // Key is Box<CUuuid>, because thunk fn neeads a stable memory location for
+    // Key is Box<CUuuid>, because thunk fn needs a stable memory location for
     // the guid
     overrides: HashMap<Box<[u8; 16]>, (Vec<*const c_void>, *const *const c_void)>,
     known_exports: CudaDarkApiKnownExports,
