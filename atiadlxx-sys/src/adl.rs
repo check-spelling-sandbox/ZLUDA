@@ -3979,7 +3979,7 @@ impl ADLAppProcessState {
     pub const APP_PROC_INVALID: ADLAppProcessState = ADLAppProcessState(0);
 }
 impl ADLAppProcessState {
-    pub const APP_PROC_PREMPTION: ADLAppProcessState = ADLAppProcessState(1);
+    pub const APP_PROC_PREEMPTION: ADLAppProcessState = ADLAppProcessState(1);
 }
 impl ADLAppProcessState {
     pub const APP_PROC_CREATION: ADLAppProcessState = ADLAppProcessState(2);

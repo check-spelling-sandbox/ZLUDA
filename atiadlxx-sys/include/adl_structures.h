@@ -2366,7 +2366,7 @@ typedef struct ADLDisplayModeX2
 typedef enum ADLAppProcessState
 {
 	APP_PROC_INVALID = 0,          // Invalid Application
-	APP_PROC_PREMPTION = 1,          // The Application is being set up for Process Creation
+	APP_PROC_PREEMPTION = 1,          // The Application is being set up for Process Creation
 	APP_PROC_CREATION = 2,          // The Application's Main Process is created by the OS
 	APP_PROC_READ = 3,          // The Application's Data is ready to be read
 	APP_PROC_WAIT = 4,          // The Application is waiting for Timeout or Notification to Resume
