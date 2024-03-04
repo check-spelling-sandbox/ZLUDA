@@ -755,7 +755,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Retrieves a N-dimensional convolution layer descriptor's details\n\n @param convDesc               Convolution layer descriptor (input)\n @param requestedSpatialDim    Expected convolution spatial dimension (intput)\n @param spatialDim             Convolutional spatial dimension (output)\n @param padA                   Array of input data padding (output)\n @param strideA                Array of convolution stride (output)\n @param dilationA              Array of convolution dilation (output)\n @param c_mode                 Convolutional mode (output)\n @return                       miopenStatus_t"]
+    #[doc = " @brief Retrieves a N-dimensional convolution layer descriptor's details\n\n @param convDesc               Convolution layer descriptor (input)\n @param requestedSpatialDim    Expected convolution spatial dimension (input)\n @param spatialDim             Convolutional spatial dimension (output)\n @param padA                   Array of input data padding (output)\n @param strideA                Array of convolution stride (output)\n @param dilationA              Array of convolution dilation (output)\n @param c_mode                 Convolutional mode (output)\n @return                       miopenStatus_t"]
     pub fn miopenGetConvolutionNdDescriptor(
         convDesc: miopenConvolutionDescriptor_t,
         requestedSpatialDim: ::std::os::raw::c_int,
