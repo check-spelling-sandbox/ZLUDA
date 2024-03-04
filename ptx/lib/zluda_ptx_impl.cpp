@@ -1307,7 +1307,7 @@ extern "C"
         //   where the sequence is fence(seq_cst), s_barrier, fence(seq_cst)
         // * __builtin_amdgcn_fence(..., "workgroup") produce s_waitcnt on everything and L1 flush if it's seq_cst
         //   I don't see much point in emitting the fence twice. It's not like there were any memory loads or writes
-        //   in-between those fense to wait on
+        //   in-between those fences to wait on
         __builtin_amdgcn_fence(__ATOMIC_SEQ_CST, "workgroup");
         __builtin_amdgcn_s_barrier();
     }
