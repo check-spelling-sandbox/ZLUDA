@@ -219,7 +219,7 @@ unsafe fn build_and_dump_hiprt(
     };
     let options = [
         debug_level,
-        // We just want to emit LLVM, we'd use O0, but somehow IR emitted by O0 prevents inling.
+        // We just want to emit LLVM, we'd use O0, but somehow IR emitted by O0 prevents inlining.
         // Weirdly, -disable-llvm-optzns produces much bigger code
         b"-O1\0".as_ptr(),
         // Stop compilation at LLVM
