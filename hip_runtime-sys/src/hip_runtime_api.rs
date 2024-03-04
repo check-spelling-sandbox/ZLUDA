@@ -1259,7 +1259,7 @@ impl hipDeviceAttribute_t {
         hipDeviceAttribute_t(83);
 }
 impl hipDeviceAttribute_t {
-    #[doc = "< Global memory available on devicice."]
+    #[doc = "< Global memory available on device."]
     pub const hipDeviceAttributeTotalGlobalMem: hipDeviceAttribute_t = hipDeviceAttribute_t(84);
 }
 impl hipDeviceAttribute_t {
@@ -3717,7 +3717,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Sets resource limits of current device\n As the input enum limit, hipLimitStackSize sets the limit value of the stack size on current\n GPU devie, hipLimitMallocHeapSize sets the limit value of the heap used by the malloc()/free()\n calls.\n\n @param [in] limit enum of hipLimit_t to set\n @param [in] value the size of limit value in bytes\n\n @returns #hipSuccess, #hipErrorUnsupportedLimit, #hipErrorInvalidValue\n"]
+    #[doc = " @brief Sets resource limits of current device\n As the input enum limit, hipLimitStackSize sets the limit value of the stack size on current\n GPU device, hipLimitMallocHeapSize sets the limit value of the heap used by the malloc()/free()\n calls.\n\n @param [in] limit enum of hipLimit_t to set\n @param [in] value the size of limit value in bytes\n\n @returns #hipSuccess, #hipErrorUnsupportedLimit, #hipErrorInvalidValue\n"]
     pub fn hipDeviceSetLimit(limit: hipLimit_t, value: usize) -> hipError_t;
 }
 extern "C" {
