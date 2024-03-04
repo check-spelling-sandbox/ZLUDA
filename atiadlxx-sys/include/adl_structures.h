@@ -83,7 +83,7 @@ typedef struct AdapterInfo
 #if defined (LINUX)
 /// \LNX_STRUCT_MEM
 
-/// Internal X screen number from GPUMapInfo (DEPRICATED use XScreenInfo)
+/// Internal X screen number from GPUMapInfo (DEPRECATED use XScreenInfo)
     int iXScreenNum;
 /// Internal driver index from GPUMapInfo
     int iDrvIndex;
