@@ -3712,7 +3712,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Gets resource limits of current device\n The funtion querys the size of limit value, as required input enum hipLimit_t, can be either\n hipLimitStackSize, or hipLimitMallocHeapSize.\n\n @param [out] pValue returns the size of the limit in bytes\n @param [in]  limit the limit to query\n\n @returns #hipSuccess, #hipErrorUnsupportedLimit, #hipErrorInvalidValue\n"]
+    #[doc = " @brief Gets resource limits of current device\n The function querys the size of limit value, as required input enum hipLimit_t, can be either\n hipLimitStackSize, or hipLimitMallocHeapSize.\n\n @param [out] pValue returns the size of the limit in bytes\n @param [in]  limit the limit to query\n\n @returns #hipSuccess, #hipErrorUnsupportedLimit, #hipErrorInvalidValue\n"]
     pub fn hipDeviceGetLimit(pValue: *mut usize, limit: hipLimit_t) -> hipError_t;
 }
 extern "C" {
@@ -5129,7 +5129,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Find out attributes for a given function.\n\n @param [out] attr  Attributes of funtion\n @param [in] func  Pointer to the function handle\n\n @returns #hipSuccess, #hipErrorInvalidValue, #hipErrorInvalidDeviceFunction"]
+    #[doc = " @brief Find out attributes for a given function.\n\n @param [out] attr  Attributes of function\n @param [in] func  Pointer to the function handle\n\n @returns #hipSuccess, #hipErrorInvalidValue, #hipErrorInvalidDeviceFunction"]
     pub fn hipFuncGetAttributes(
         attr: *mut hipFuncAttributes,
         func: *const ::std::os::raw::c_void,
@@ -5137,7 +5137,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = " @brief Find out a specific attribute for a given function.\n\n @param [out] value  Pointer to the value\n @param [in]  attrib  Attributes of the given funtion\n @param [in]  hfunc  Function to get attributes from\n\n @returns #hipSuccess, #hipErrorInvalidValue, #hipErrorInvalidDeviceFunction"]
+    #[doc = " @brief Find out a specific attribute for a given function.\n\n @param [out] value  Pointer to the value\n @param [in]  attrib  Attributes of the given function\n @param [in]  hfunc  Function to get attributes from\n\n @returns #hipSuccess, #hipErrorInvalidValue, #hipErrorInvalidDeviceFunction"]
     pub fn hipFuncGetAttribute(
         value: *mut ::std::os::raw::c_int,
         attrib: hipFunction_attribute,
