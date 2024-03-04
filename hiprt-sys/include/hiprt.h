@@ -508,7 +508,7 @@ hiprtGetGeometryTraceTemporaryBufferSize( hiprtContext context, hiprtGeometry sc
  * hiprtScene representing acceleration structure topology.
  *
  * \param context HIPRT API context.
- * \param buildInput Decribes input geometires to build scene for.
+ * \param buildInput Describes input geometires to build scene for.
  * \param buildOptions Various flags controlling build process.
  * \param outScene Resulting scene.
  * \return HIPRT error in case of a failure, hiprtSuccess otherwise.
@@ -535,7 +535,7 @@ HIPRT_API hiprtError hiprtDestroyScene( hiprtContext context, hiprtScene outScen
  *
  * \param context HIPRT API context.
  * \param buildOperation Type of build operation.
- * \param buildInput Decribes input geometires to build scene for.
+ * \param buildInput Describes input geometires to build scene for.
  * \param buildOptions Various flags controlling build process.
  * \param temporaryBuffer Temporary buffer for build operation.
  * \param stream to run acceleration structure build command.
@@ -554,7 +554,7 @@ HIPRT_API hiprtError hiprtBuildScene(
 /** \brief Get temporary storage requirements for scene build.
  *
  * \param context HIPRT API context.
- * \param buildInput Decribes input geometires to build scene for.
+ * \param buildInput Describes input geometires to build scene for.
  * \param buildOptions Various flags controlling build process.
  * \param outSize Pointer to write result to.
  * \return HIPRT error in case of a failure, hiprtSuccess otherwise.

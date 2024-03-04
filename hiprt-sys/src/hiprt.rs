@@ -714,7 +714,7 @@ impl HipRt {
             .expect("Expected function, got error."))(context, scene, numRays, outSize)
     }
     #[must_use]
-    #[doc = " \\brief Create a scene.\n\n This function creates\n hiprtScene representing acceleration structure topology.\n\n \\param context HIPRT API context.\n \\param buildInput Decribes input geometires to build scene for.\n \\param buildOptions Various flags controlling build process.\n \\param outScene Resulting scene.\n \\return HIPRT error in case of a failure, hiprtSuccess otherwise."]
+    #[doc = " \\brief Create a scene.\n\n This function creates\n hiprtScene representing acceleration structure topology.\n\n \\param context HIPRT API context.\n \\param buildInput Describes input geometires to build scene for.\n \\param buildOptions Various flags controlling build process.\n \\param outScene Resulting scene.\n \\return HIPRT error in case of a failure, hiprtSuccess otherwise."]
     pub unsafe fn hiprtCreateScene(
         &self,
         context: hiprtContext,
@@ -742,7 +742,7 @@ impl HipRt {
             .expect("Expected function, got error."))(context, outScene)
     }
     #[must_use]
-    #[doc = " \\brief Build or update a scene.\n\n Given a number of hiprtGeometries from the client, this function builds\n hiprtScene representing top level acceleration structure topology (in case of\n a build) or updates acceleration structure keeping topology intact (update).\n\n \\param context HIPRT API context.\n \\param buildOperation Type of build operation.\n \\param buildInput Decribes input geometires to build scene for.\n \\param buildOptions Various flags controlling build process.\n \\param temporaryBuffer Temporary buffer for build operation.\n \\param stream to run acceleration structure build command.\n \\param outScene Resulting scene.\n \\return HIPRT error in case of a failure, hiprtSuccess otherwise."]
+    #[doc = " \\brief Build or update a scene.\n\n Given a number of hiprtGeometries from the client, this function builds\n hiprtScene representing top level acceleration structure topology (in case of\n a build) or updates acceleration structure keeping topology intact (update).\n\n \\param context HIPRT API context.\n \\param buildOperation Type of build operation.\n \\param buildInput Describes input geometires to build scene for.\n \\param buildOptions Various flags controlling build process.\n \\param temporaryBuffer Temporary buffer for build operation.\n \\param stream to run acceleration structure build command.\n \\param outScene Resulting scene.\n \\return HIPRT error in case of a failure, hiprtSuccess otherwise."]
     pub unsafe fn hiprtBuildScene(
         &self,
         context: hiprtContext,
@@ -767,7 +767,7 @@ impl HipRt {
         )
     }
     #[must_use]
-    #[doc = " \\brief Get temporary storage requirements for scene build.\n\n \\param context HIPRT API context.\n \\param buildInput Decribes input geometires to build scene for.\n \\param buildOptions Various flags controlling build process.\n \\param outSize Pointer to write result to.\n \\return HIPRT error in case of a failure, hiprtSuccess otherwise."]
+    #[doc = " \\brief Get temporary storage requirements for scene build.\n\n \\param context HIPRT API context.\n \\param buildInput Describes input geometires to build scene for.\n \\param buildOptions Various flags controlling build process.\n \\param outSize Pointer to write result to.\n \\return HIPRT error in case of a failure, hiprtSuccess otherwise."]
     pub unsafe fn hiprtGetSceneBuildTemporaryBufferSize(
         &self,
         context: hiprtContext,
