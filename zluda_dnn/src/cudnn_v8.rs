@@ -130,7 +130,7 @@ pub unsafe extern "system" fn cudnnSetTensorNdDescriptor(
     dimA: *const ::std::os::raw::c_int,
     strideA: *const ::std::os::raw::c_int,
 ) -> cudnnStatus_t {
-    crate::set_tensor_nd_decriptor(tensorDesc, dataType, nbDims, dimA, strideA)
+    crate::set_tensor_nd_descriptor(tensorDesc, dataType, nbDims, dimA, strideA)
 }
 
 #[no_mangle]

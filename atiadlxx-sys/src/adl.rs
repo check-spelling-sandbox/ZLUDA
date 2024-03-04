@@ -5610,7 +5610,7 @@ pub struct ADLMantleAppInfo {
     pub virtualMemPageSize: ::std::os::raw::c_longlong,
     #[doc = " mem update"]
     pub maxInlineMemoryUpdateSize: ::std::os::raw::c_longlong,
-    #[doc = " bound descriptot"]
+    #[doc = " bound descriptor"]
     pub maxBoundDescriptorSets: ::std::os::raw::c_long,
     #[doc = " thread group size"]
     pub maxThreadGroupSize: ::std::os::raw::c_long,

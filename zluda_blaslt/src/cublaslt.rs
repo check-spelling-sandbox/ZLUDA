@@ -4493,7 +4493,7 @@ pub unsafe extern "system" fn cublasLtMatrixLayoutInit_internal(
     crate::unsupported()
 }
 
-#[doc = " Create new matrix layout descriptor.\n\n \\retval     CUBLAS_STATUS_ALLOC_FAILED  if memory could not be allocated\n \\retval     CUBLAS_STATUS_SUCCESS       if desciptor was created successfully"]
+#[doc = " Create new matrix layout descriptor.\n\n \\retval     CUBLAS_STATUS_ALLOC_FAILED  if memory could not be allocated\n \\retval     CUBLAS_STATUS_SUCCESS       if descriptor was created successfully"]
 #[no_mangle]
 pub unsafe extern "system" fn cublasLtMatrixLayoutCreate(
     matLayout: *mut cublasLtMatrixLayout_t,
@@ -4676,7 +4676,7 @@ pub unsafe extern "system" fn cublasLtMatmulDescInit_internal(
     crate::unsupported()
 }
 
-#[doc = " Create new matmul operation descriptor.\n\n \\retval     CUBLAS_STATUS_ALLOC_FAILED  if memory could not be allocated\n \\retval     CUBLAS_STATUS_SUCCESS       if desciptor was created successfully"]
+#[doc = " Create new matmul operation descriptor.\n\n \\retval     CUBLAS_STATUS_ALLOC_FAILED  if memory could not be allocated\n \\retval     CUBLAS_STATUS_SUCCESS       if descriptor was created successfully"]
 #[no_mangle]
 pub unsafe extern "system" fn cublasLtMatmulDescCreate(
     matmulDesc: *mut cublasLtMatmulDesc_t,
@@ -4751,7 +4751,7 @@ pub unsafe extern "system" fn cublasLtMatrixTransformDescInit_internal(
     crate::unsupported()
 }
 
-#[doc = " Create new matrix transform operation descriptor.\n\n \\retval     CUBLAS_STATUS_ALLOC_FAILED  if memory could not be allocated\n \\retval     CUBLAS_STATUS_SUCCESS       if desciptor was created successfully"]
+#[doc = " Create new matrix transform operation descriptor.\n\n \\retval     CUBLAS_STATUS_ALLOC_FAILED  if memory could not be allocated\n \\retval     CUBLAS_STATUS_SUCCESS       if descriptor was created successfully"]
 #[no_mangle]
 pub unsafe extern "system" fn cublasLtMatrixTransformDescCreate(
     transformDesc: *mut cublasLtMatrixTransformDesc_t,
@@ -5010,7 +5010,7 @@ pub unsafe extern "system" fn cublasLtMatmulPreferenceInit_internal(
     crate::unsupported()
 }
 
-#[doc = " Create new matmul heuristic search preference descriptor.\n\n \\retval     CUBLAS_STATUS_ALLOC_FAILED  if memory could not be allocated\n \\retval     CUBLAS_STATUS_SUCCESS       if desciptor was created successfully"]
+#[doc = " Create new matmul heuristic search preference descriptor.\n\n \\retval     CUBLAS_STATUS_ALLOC_FAILED  if memory could not be allocated\n \\retval     CUBLAS_STATUS_SUCCESS       if descriptor was created successfully"]
 #[no_mangle]
 pub unsafe extern "system" fn cublasLtMatmulPreferenceCreate(
     pref: *mut cublasLtMatmulPreference_t,

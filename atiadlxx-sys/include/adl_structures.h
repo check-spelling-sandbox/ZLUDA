@@ -4186,7 +4186,7 @@ typedef struct ADLMantleAppInfo
 	long long virtualMemPageSize;
 	/// mem update
 	long long maxInlineMemoryUpdateSize;
-	/// bound descriptot
+	/// bound descriptor
 	long     maxBoundDescriptorSets;
 	/// thread group size
 	long     maxThreadGroupSize;

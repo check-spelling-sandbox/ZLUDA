@@ -90,7 +90,7 @@ unsafe fn cudnn_create_pooling_descriptor(
     to_cudnn(miopen_sys::miopenCreatePoolingDescriptor(pooling_desc as _))
 }
 
-unsafe fn set_tensor_nd_decriptor(
+unsafe fn set_tensor_nd_descriptor(
     tensor_desc: *mut cudnnTensorStruct,
     data_type: cudnnDataType_t,
     nb_dims: i32,

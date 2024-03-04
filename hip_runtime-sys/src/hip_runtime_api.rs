@@ -4710,7 +4710,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = "  @brief Create an array memory pointer on the device.\n\n  @param[out]  pHandle  Pointer to the array memory\n  @param[in]   pAllocateArray   Requested array desciptor\n\n  @return      #hipSuccess, #hipErrorInvalidValue, #hipErrorNotSupported\n\n  @see hipMallocArray, hipArrayDestroy, hipFreeArray"]
+    #[doc = "  @brief Create an array memory pointer on the device.\n\n  @param[out]  pHandle  Pointer to the array memory\n  @param[in]   pAllocateArray   Requested array descriptor\n\n  @return      #hipSuccess, #hipErrorInvalidValue, #hipErrorNotSupported\n\n  @see hipMallocArray, hipArrayDestroy, hipFreeArray"]
     pub fn hipArrayCreate(
         pHandle: *mut *mut hipArray,
         pAllocateArray: *const HIP_ARRAY_DESCRIPTOR,
@@ -4723,7 +4723,7 @@ extern "C" {
 }
 extern "C" {
     #[must_use]
-    #[doc = "  @brief Create a 3D array memory pointer on the device.\n\n  @param[out]  array  Pointer to the 3D array memory\n  @param[in]   pAllocateArray   Requested array desciptor\n\n  @return      #hipSuccess, #hipErrorInvalidValue, #hipErrorNotSupported\n\n  @see hipMallocArray, hipArrayDestroy, hipFreeArray"]
+    #[doc = "  @brief Create a 3D array memory pointer on the device.\n\n  @param[out]  array  Pointer to the 3D array memory\n  @param[in]   pAllocateArray   Requested array descriptor\n\n  @return      #hipSuccess, #hipErrorInvalidValue, #hipErrorNotSupported\n\n  @see hipMallocArray, hipArrayDestroy, hipFreeArray"]
     pub fn hipArray3DCreate(
         array: *mut *mut hipArray,
         pAllocateArray: *const HIP_ARRAY3D_DESCRIPTOR,
