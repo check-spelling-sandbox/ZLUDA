@@ -2676,7 +2676,7 @@ AnyBitType: ast::ScalarType = {
     ".b64" => ast::ScalarType::B64,
 };
 
-VariableScalarUnitialized<T>: (Option<u32>, T, &'input str) = {
+VariableScalarUninitialized<T>: (Option<u32>, T, &'input str) = {
     <align:Align?> <type_:T> <name:ExtendedID> => {
         (align, type_, name)
     }

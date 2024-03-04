@@ -1634,7 +1634,7 @@ typedef enum ADL_VIRTUALDISPLAY_TYPE
 ///////////////////////////////////////////////////////////////////////////
 enum ADLMultiChannelSplitStateFlag
 {
-    ADLMultiChannelSplit_Unitialized = 0,
+    ADLMultiChannelSplit_Uninitialized = 0,
     ADLMultiChannelSplit_Disabled    = 1,
     ADLMultiChannelSplit_Enabled     = 2,
     ADLMultiChannelSplit_SaveProfile = 3

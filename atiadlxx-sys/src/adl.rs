@@ -1108,7 +1108,7 @@ impl ADL_VIRTUALDISPLAY_TYPE {
 #[derive(Copy, Clone, Hash, PartialEq, Eq)]
 pub struct ADL_VIRTUALDISPLAY_TYPE(pub ::std::os::raw::c_int);
 impl ADLMultiChannelSplitStateFlag {
-    pub const ADLMultiChannelSplit_Unitialized: ADLMultiChannelSplitStateFlag =
+    pub const ADLMultiChannelSplit_Uninitialized: ADLMultiChannelSplitStateFlag =
         ADLMultiChannelSplitStateFlag(0);
 }
 impl ADLMultiChannelSplitStateFlag {
