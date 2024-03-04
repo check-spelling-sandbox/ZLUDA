@@ -1797,7 +1797,7 @@ enum ADLODNFeatureControl
      ADL_ODN_REMOVE_WATTMAN_PAGE         = 1 << 31 // Internal Only
 };
 
-//If any new feature is added, PPLIB only needs to add ext feature ID and Item ID(Seeting ID). These IDs should match the drive defined in CWDDEPM.h
+//If any new feature is added, PPLIB only needs to add ext feature ID and Item ID(Setting ID). These IDs should match the drive defined in CWDDEPM.h
 enum ADLODNExtFeatureControl
 {
 	ADL_ODN_EXT_FEATURE_MEMORY_TIMING_TUNE = 1 << 0,
@@ -1809,7 +1809,7 @@ enum ADLODNExtFeatureControl
 
 };
 
-//If any new feature is added, PPLIB only needs to add ext feature ID and Item ID(Seeting ID).These IDs should match the drive defined in CWDDEPM.h
+//If any new feature is added, PPLIB only needs to add ext feature ID and Item ID(Setting ID).These IDs should match the drive defined in CWDDEPM.h
 enum ADLODNExtSettingId
 {
 	ADL_ODN_PARAMETER_AC_TIMING = 0,
