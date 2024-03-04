@@ -14951,7 +14951,7 @@ pub struct _NV_GAZE_HANDLER_INIT_PARAMS_V2 {
     pub GazeDataType: NV_GAZE_DATA_TYPE,
     pub flags: NvU32,
     pub fHorizontalFOV: f32,
-    pub fVericalFOV: f32,
+    pub fVerticalFOV: f32,
     pub ppNvGazeHandler: *mut *mut ID3DNvGazeHandler_V2,
 }
 pub type NV_GAZE_HANDLER_INIT_PARAMS_V2 = _NV_GAZE_HANDLER_INIT_PARAMS_V2;
@@ -14964,7 +14964,7 @@ pub struct _NV_GAZE_HANDLER_INIT_PARAMS_V1 {
     pub GazeDataType: NV_GAZE_DATA_TYPE,
     pub flags: NvU32,
     pub fHorizontalFOV: f32,
-    pub fVericalFOV: f32,
+    pub fVerticalFOV: f32,
     pub ppNvGazeHandler: *mut *mut ID3DNvGazeHandler_V1,
 }
 pub type NV_GAZE_HANDLER_INIT_PARAMS_V1 = _NV_GAZE_HANDLER_INIT_PARAMS_V1;
